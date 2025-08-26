@@ -1,0 +1,9 @@
+// Export all section components
+export { default as Navigation } from './Navigation'
+export { default as HeroSection } from './HeroSection'
+export { default as CompanyOverview } from './CompanyOverview'
+export { default as PhilosophySection } from './PhilosophySection'
+export { default as ServicesSection } from './ServicesSection'
+export { default as ClientsSection } from './ClientsSection'
+export { default as ContactSection } from './ContactSection'
+export { default as Footer } from './Footer'

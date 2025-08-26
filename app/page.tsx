@@ -32,6 +32,7 @@ import {
   MapPin,
   MessageSquare,
 } from "lucide-react"
+import SlidingGradient from "@/components/ui/SlidingGradient"
 
 export default function HomePage() {
   return (
@@ -102,7 +103,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-muted/30">
+  <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">大阪ゴールドトレーディング</h2>
@@ -143,8 +144,132 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="services" className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Vision / Philosophy (moved above Services */}
+          <section id="philosophy" className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">企業理念・ビジョン</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  持続可能な発展を核心とし、信頼と品質を重視したビジネス生態系を構築
+                </p>
+              </div>
+
+              {/* Value Commitments */}
+              <div className="mb-20">
+                <h3 className="text-2xl font-bold text-foreground text-center mb-12">価値コミットメント</h3>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <Recycle className="h-8 w-8 text-accent" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-foreground mb-4">環境責任</h4>
+                      <p className="text-muted-foreground leading-relaxed">
+                        貴金属・宝石のリサイクル利用を推進し、環境負荷を軽減、持続可能な発展に貢献
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <Scale className="h-8 w-8 text-accent" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-foreground mb-4">コンプライアンス・透明性</h4>
+                      <p className="text-muted-foreground leading-relaxed">
+                        コンプライアンスと透明性の原則を堅持し、長期信頼関係を構築、すべての取引の信頼性を確保
+                      </p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <Heart className="h-8 w-8 text-accent" />
+                      </div>
+                      <h4 className="text-xl font-semibold text-foreground mb-4">生態系構築</h4>
+                      <p className="text-muted-foreground leading-relaxed">
+                        持続可能なビジネス・社交生態系を構築し、お客様により多くの価値と機会を創造
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+
+              {/* Vision Statement */}
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                  <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-8">
+                    <Target className="h-10 w-10 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-8">ビジョン</h3>
+                </div>
+
+                <Card className="border-accent/20 bg-gradient-to-br from-background to-muted/20">
+                  <CardContent className="p-12">
+                    <div className="space-y-6 text-center">
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        大阪に本社を置き、18Kゴールドジュエリーとダイヤモンドの大口取引を専門としています。信頼できる供給源を提供するだけでなく、 金地金代理、鑑定サポート、収集品流通、ビジネス社交スペースなどの付加価値サービスをお客様にお届けします。
+                      </p>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        国際化と新経済構造の中で、お客様の信頼できる長期パートナーとなることを目指しています。
+                      </p>
+
+                      <div className="flex flex-wrap justify-center gap-4 mt-8">
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Vision Pillars */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Coins className="h-6 w-6 text-accent" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">核心取引</h4>
+                  <p className="text-sm text-muted-foreground">Kゴールドジュエリー・ダイヤモンド</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="h-6 w-6 text-accent" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">市場コンサルティング</h4>
+                  <p className="text-sm text-muted-foreground">投資戦略指導</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Globe className="h-6 w-6 text-accent" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">収集流通</h4>
+                  <p className="text-sm text-muted-foreground">高級芸術品取引</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-6 w-6 text-accent" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">社交空間</h4>
+                  <p className="text-sm text-muted-foreground">シガーバー会員制</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      <section
+        id="services"
+        className="py-20 relative"
+        style={{
+          backgroundImage: "url('/gload-background-2.jpg')",
+          backgroundRepeat: 'repeat',
+          backgroundSize: '600px',
+        }}
+      >
+        <SlidingGradient />
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">事業サービス</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -410,8 +535,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="clients" className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        id="clients"
+        className="py-20 relative"
+        style={{
+          backgroundImage: "url('/gload-background-3.png')",
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* overlay mask to improve readability */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" aria-hidden />
+
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">お客様・パートナー</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -609,138 +746,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="philosophy" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">企業理念・ビジョン</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              持続可能な発展を核心とし、信頼と品質を重視したビジネス生態系を構築
-            </p>
-          </div>
-
-          {/* Value Commitments */}
-          <div className="mb-20">
-            <h3 className="text-2xl font-bold text-foreground text-center mb-12">価値コミットメント</h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Recycle className="h-8 w-8 text-accent" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">環境責任</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    貴金属・宝石のリサイクル利用を推進し、環境負荷を軽減、持続可能な発展に貢献
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Scale className="h-8 w-8 text-accent" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">コンプライアンス・透明性</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    コンプライアンスと透明性の原則を堅持し、長期信頼関係を構築、すべての取引の信頼性を確保
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Heart className="h-8 w-8 text-accent" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">生態系構築</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    持続可能なビジネス・社交生態系を構築し、お客様により多くの価値と機会を創造
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          {/* Vision Statement */}
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Target className="h-10 w-10 text-accent" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-8">ビジョン</h3>
-            </div>
-
-            <Card className="border-accent/20 bg-gradient-to-br from-background to-muted/20">
-              <CardContent className="p-12">
-                <div className="space-y-6 text-center">
-                  <p className="text-xl text-foreground leading-relaxed font-medium">
-                    大阪は国際化と新経済時代に向かっています。
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    大阪ゴールドトレーディングは引き続き{" "}
-                    <span className="text-accent font-semibold">Kゴールドジュエリー・ダイヤモンド取引</span>{" "}
-                    を核心とし、市場コンサルティング・収集流通・シガーバー社交空間を結合し、
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    日本とグローバル市場を結ぶ専門貿易会社となり、大阪の新たな構図において{" "}
-                    <span className="text-accent font-semibold">信頼性と高品質</span>を代表します。
-                  </p>
-
-                  <div className="flex flex-wrap justify-center gap-4 mt-8">
-                    <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                      国際化接続
-                    </Badge>
-                    <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                      専門貿易
-                    </Badge>
-                    <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                      信頼品質
-                    </Badge>
-                    <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                      大阪新構図
-                    </Badge>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Vision Pillars */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Coins className="h-6 w-6 text-accent" />
-              </div>
-              <h4 className="font-semibold text-foreground mb-2">核心取引</h4>
-              <p className="text-sm text-muted-foreground">Kゴールドジュエリー・ダイヤモンド</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-6 w-6 text-accent" />
-              </div>
-              <h4 className="font-semibold text-foreground mb-2">市場コンサルティング</h4>
-              <p className="text-sm text-muted-foreground">投資戦略指導</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="h-6 w-6 text-accent" />
-              </div>
-              <h4 className="font-semibold text-foreground mb-2">収集流通</h4>
-              <p className="text-sm text-muted-foreground">高級芸術品取引</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-6 w-6 text-accent" />
-              </div>
-              <h4 className="font-semibold text-foreground mb-2">社交空間</h4>
-              <p className="text-sm text-muted-foreground">シガーバー会員制</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -750,98 +755,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">ビジネスコンサルティング範囲</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Coins className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Kゴールドジュエリー・ダイヤモンド取引協力</h4>
-                      <p className="text-muted-foreground">
-                        卸売調達・国際貿易・サプライチェーン協力等の関連ビジネス相談
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Shield className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">金地金・収集品相談</h4>
-                      <p className="text-muted-foreground">認証金地金代理・高級収集品流通・投資コンサルティング</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Award className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">鑑定・市場コンサルティング</h4>
-                      <p className="text-muted-foreground">専門鑑定サービス・市場トレンド分析・投資戦略指導</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Users className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">シガーバー会員・ビジネス意向</h4>
-                      <p className="text-muted-foreground">
-                        高級社交空間会員申請とビジネス協力機会
-                        <Badge variant="secondary" className="ml-2 bg-accent/10 text-accent border-accent/20">
-                          近日オープン
-                        </Badge>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contact Details */}
-              <div className="bg-muted/30 rounded-lg p-8">
-                <h3 className="text-xl font-bold text-foreground mb-6">連絡先情報</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-accent" />
-                    <div>
-                      <p className="font-medium text-foreground">会社所在地</p>
-                      <p className="text-muted-foreground text-sm">
-                        〒541-0054 大阪府大阪市中央区南本町３丁目２番１１号２階２ＦＢ号室
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-3">
-                    <Building2 className="h-5 w-5 text-accent" />
-                    <div>
-                      <p className="font-medium text-foreground">会社情報</p>
-                      <p className="text-muted-foreground text-sm">
-                        阪福商事合同会社 | 法人番号：6120003029168 | 資本金：1000万円
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-accent" />
-                    <div>
-                      <p className="font-medium text-foreground">営業時間</p>
-                      <p className="text-muted-foreground text-sm">月曜日〜金曜日 9:00-18:00 (日本時間)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div className="flex justify-center items-center max-w-6xl mx-auto">
             {/* Contact Form */}
-            <div>
+            <div className="w-full lg:w-1/2">
               <Card className="border-accent/20">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold text-foreground mb-6">お問い合わせ送信</h3>

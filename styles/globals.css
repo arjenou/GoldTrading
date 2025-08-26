@@ -121,3 +121,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* sliding gradient used by SlidingGradient component */
+@keyframes slidingGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.sliding-gradient {
+  background: linear-gradient(90deg, rgba(255,215,0,0.06) 0%, rgba(0,0,0,0.25) 35%, rgba(0,0,0,0.2) 65%, rgba(255,215,0,0.04) 100%);
+  background-size: 200% 200%;
+  animation: slidingGradientMove 12s linear infinite;
+  mix-blend-mode: overlay;
+  will-change: background-position;
+}
+

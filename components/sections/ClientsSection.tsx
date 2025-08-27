@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
 import ParallaxBackground from "@/components/ui/ParallaxBackground"
+import Image from "next/image"
 import {
   ArrowRight,
   Shield,
@@ -22,18 +23,19 @@ import {
 export default function ClientsSection() {
   return (
     <ParallaxBackground
-      backgroundImage="/gload-background-3.png"
-      speed={0.4}
-      className="py-20"
+      backgroundImage="/back-03.jpg"
+      speed={0.05}
+      className="py-20 relative"
       overlay={true}
-      overlayOpacity={0.5}
+      overlayOpacity={0.7}
+      tileSize="500px"
     >
       <div id="clients" className="absolute top-0 left-0 invisible" aria-hidden />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeIn" delay={100}>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-lg">お客様・パートナー</h2>
-            <p className="text-lg text-white/90 max-w-3xl mx-auto drop-shadow-md">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-lg" style={{ color: '#c8ae83' }} >お客様・パートナー</h2>
+            <p className="text-lg text-white/90 max-w-3xl mx-auto drop-shadow-md" style={{ color: '#c8ae83' }} >
               お客様が私たちを選ぶ理由は、安定した供給源と専門的な実行力だけでなく、
               取引・鑑定・コンサルティング・社交を網羅する包括的なサポートを提供できるからです
             </p>
@@ -43,79 +45,144 @@ export default function ClientsSection() {
         {/* Service Targets */}
         <ScrollAnimation animation="slideUp" delay={200}>
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-white text-center mb-12 drop-shadow-lg">サービス対象</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Factory className="h-8 w-8 text-accent" />
+              {/* 精錬業者 */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="精錬業者"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">精錬業者</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    貴金属精錬企業に安定した原料供給と専門的な市場分析サービスを提供
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">精錬業者</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      貴金属精錬企業に安定した原料供給と専門的な市場分析サービスを提供
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Store className="h-8 w-8 text-accent" />
+              {/* 宝飾商・小売業者 */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="宝飾商・小売業者"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">宝飾商・小売業者</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    宝飾小売業者の優良供給源確保をサポート、製品鑑定と市場トレンドコンサルティングを提供
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">宝飾商・小売業者</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      宝飾小売業者の優良供給源確保をサポート、製品鑑定と市場トレンドコンサルティングを提供
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Globe className="h-8 w-8 text-accent" />
+              {/* 国際貿易商 */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="国際貿易商"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">国際貿易商</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    国際金・ダイヤモンド貿易商に越境取引サポートとコンプライアンス保証を提供
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">国際貿易商</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      国際金・ダイヤモンド貿易商に越境取引サポートとコンプライアンス保証を提供
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Crown className="h-8 w-8 text-accent" />
+              {/* 収集家・富裕層顧客 */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="収集家・富裕層顧客"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">収集家・富裕層顧客</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    収集家に希少コレクション取引、投資コンサルティング、プライベートカスタマイズサービスを提供
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">収集家・富裕層顧客</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      収集家に希少コレクション取引、投資コンサルティング、プライベートカスタマイズサービスを提供
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Building2 className="h-8 w-8 text-accent" />
+              {/* 企業・ファミリーオフィス */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="企業・ファミリーオフィス"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">企業・ファミリーオフィス</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    企業とファミリーオフィスに資産配置提案と財産管理ソリューションを提供
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">企業・ファミリーオフィス</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      企業とファミリーオフィスに資産配置提案と財産管理ソリューションを提供
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="border-border hover:border-accent transition-all duration-300 hover:shadow-lg group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                    <Briefcase className="h-8 w-8 text-accent" />
+              {/* 専門機関 */}
+              <div className="group relative cursor-pointer">
+                <div className="relative px-4">
+                  <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                    <Image
+                      src="/service-pattern/player.png"
+                      alt="専門機関"
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                    />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">専門機関</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    金融機関・投資ファンドなどの専門機関と長期協力関係を構築
-                  </p>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
+                  <div className="bg-white/90 backdrop-blur-sm p-6 text-center h-32 flex flex-col justify-start pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">専門機関</h4>
+                    <p className="text-gray-600 leading-relaxed text-sm">
+                      金融機関・投資ファンドなどの専門機関と長期協力関係を構築
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </ScrollAnimation>
@@ -126,7 +193,7 @@ export default function ClientsSection() {
             <Card className="border-accent/20 bg-gradient-to-br from-background to-muted/20">
               <CardContent className="p-12">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-lg">選ばれる理由</h3>
+                  <h3 className="text-2xl font-bold text-black mb-4 drop-shadow-lg">選ばれる理由</h3>
                   <p className="text-lg text-muted-foreground">従来の取引を超越し、包括的な専門サポートを提供</p>
                 </div>
 
@@ -210,28 +277,6 @@ export default function ClientsSection() {
           </div>
         </ScrollAnimation>
 
-        {/* Partnership Opportunities */}
-        <ScrollAnimation animation="slideUp" delay={100}>
-          <div className="text-center mt-16">
-            <h3 className="text-2xl font-bold text-white mb-6 drop-shadow-lg">協力機会</h3>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-              各種専門機関との長期協力関係構築を歓迎し、共に国際市場を開拓します
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                パートナーになる
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
-              >
-                協力詳細について
-              </Button>
-            </div>
-          </div>
-        </ScrollAnimation>
       </div>
     </ParallaxBackground>
   )

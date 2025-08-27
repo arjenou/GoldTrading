@@ -21,7 +21,10 @@ export default function ContactSection() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">お問い合わせ</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              大阪ゴールドトレーディングへのお問い合わせをお待ちしております。専門的な取引・投資サービスを提供いたします
+              大阪ゴールドトレーディングへのお問い合わせをお待ちしております。
+            </p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              専門的な取引・投資サービスを提供いたします
             </p>
           </div>
         </ScrollAnimation>
@@ -32,32 +35,42 @@ export default function ContactSection() {
             <div className="w-full lg:w-1/2">
               <Card className="border-accent/20">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-6">お問い合わせ送信</h3>
                   <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name" className="text-foreground">
-                          お名前 *
-                        </Label>
-                        <Input
-                          id="name"
-                          placeholder="お名前をご入力ください"
-                          className="border-border focus:border-accent"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="email" className="text-foreground">
-                          メールアドレス *
-                        </Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          placeholder="メールアドレスをご入力ください"
-                          className="border-border focus:border-accent"
-                          required
-                        />
-                      </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="name" className="text-foreground">
+                        お名前 *
+                      </Label>
+                      <Input
+                        id="name"
+                        placeholder="お名前をご入力ください"
+                        className="border-border focus:border-accent"
+                        required
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="email" className="text-foreground">
+                        メールアドレス *
+                      </Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="メールアドレスをご入力ください"
+                        className="border-border focus:border-accent"
+                        required
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="phone" className="text-foreground">
+                        電話番号
+                      </Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        placeholder="電話番号をご入力ください"
+                        className="border-border focus:border-accent"
+                      />
                     </div>
 
                     <div className="space-y-2">
@@ -65,7 +78,7 @@ export default function ContactSection() {
                         サービス要望 *
                       </Label>
                       <Select>
-                        <SelectTrigger className="border-border focus:border-accent">
+                        <SelectTrigger className="w-full border-border focus:border-accent">
                           <SelectValue placeholder="ご興味のあるサービスをお選びください" />
                         </SelectTrigger>
                         <SelectContent>
@@ -117,30 +130,74 @@ export default function ContactSection() {
 
         {/* Additional Contact Options */}
         <ScrollAnimation animation="fadeIn" delay={300}>
-          <div className="text-center mt-16">
-            <h3 className="text-xl font-bold text-foreground mb-6">その他の連絡方法</h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                variant="outline"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                電話相談予約
-              </Button>
-              <Button
-                variant="outline"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
-              >
-                <MapPin className="mr-2 h-4 w-4" />
-                現地訪問予約
-              </Button>
-              <Button
-                variant="outline"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
-              >
-                <MessageSquare className="mr-2 h-4 w-4" />
-                オンライン即時相談
-              </Button>
+          <div className="mt-16">
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Company Information - Left Side */}
+              <div className="rounded-2xl p-8 border border-accent/20">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-2xl font-bold text-foreground mb-4">大阪ゴールドトレーディング</h4>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-accent" />
+                      <span className="text-foreground">080-3835-1709</span>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <MessageSquare className="h-5 w-5 text-accent" />
+                      <span className="text-foreground">www.hanpuku01@gmail.com</span>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="h-5 w-5 text-accent mt-1" />
+                      <div className="text-foreground">
+                        <p>〒541-0054</p>
+                        <p>大阪府大阪市中央区南本町3丁目2-11</p>
+                        <p>日幸ビル 2階 2FB号室</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-4">
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
+                      >
+                        <Phone className="mr-2 h-4 w-4" />
+                        電話相談予約
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
+                      >
+                        <MapPin className="mr-2 h-4 w-4" />
+                        現地訪問予約
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Google Map - Right Side */}
+              <div className="rounded-2xl p-8 border border-accent/20">
+                <div className="h-80 w-full rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1234567890123!2d135.50000000000000!3d34.68194444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5b5b5b5b5b5%3A0x1234567890123456!2z5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW!5e0!3m2!1sja!2sjp!4v1234567890123"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="大阪ゴールドトレーディング 所在地"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </ScrollAnimation>

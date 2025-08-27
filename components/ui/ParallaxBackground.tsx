@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
+import React from "react"
 
 interface ParallaxBackgroundProps {
   children: React.ReactNode
@@ -21,50 +21,24 @@ export default function ParallaxBackground({
   overlayOpacity = 0.4,
   tileSize = "400px"
 }: ParallaxBackgroundProps) {
-  const [offsetY, setOffsetY] = useState(0)
-  const elementRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (elementRef.current) {
-        const rect = elementRef.current.getBoundingClientRect()
-        const scrolled = window.pageYOffset
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
-        
-        if (isVisible) {
-          // 计算视差偏移
-          const yPos = -(scrolled * speed)
-          setOffsetY(yPos)
-        }
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    handleScroll() // 初始调用
-
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [speed])
-
   return (
     <div
-      ref={elementRef}
-      className={`relative overflow-hidden ${className}`}
+      className={`relative overflow-hidden w-full ${className}`}
+      style={{ minHeight: '100%' }}
     >
-      {/* 视差背景图 - 拼接模式 */}
+      {/* 固定背景图 - 拼接模式 */}
       <div
-        className="absolute w-full h-full"
+        className="absolute inset-0"
         style={{
           backgroundImage: `url('${backgroundImage}')`,
           backgroundRepeat: 'repeat',
           backgroundSize: tileSize, // 可配置的拼接瓦片大小
-          backgroundPosition: 'top left',
-          transform: `translate3d(0, ${offsetY}px, 0)`,
-          willChange: 'transform',
-          height: '130%', // 增加背景高度，确保完全覆盖
-          top: '-15%',
-          left: '0',
-          right: '0',
-          bottom: '-15%'
+          backgroundPosition: 'center center',
+          backgroundAttachment: 'fixed', // 固定背景
+          height: '100%',
+          width: '100%',
+          position: 'absolute',
+          zIndex: 0
         }}
       />
       
@@ -72,13 +46,23 @@ export default function ParallaxBackground({
       {overlay && (
         <div 
           className="absolute inset-0 bg-black pointer-events-none"
-          style={{ opacity: overlayOpacity }}
+          style={{ 
+            opacity: overlayOpacity,
+            height: '100%',
+            width: '100%',
+            top: '0',
+            left: '0',
+            right: '0',
+            bottom: '0',
+            position: 'absolute',
+            zIndex: 1
+          }}
           aria-hidden
         />
       )}
       
       {/* 内容层 */}
-      <div className="relative z-10">
+      <div className="relative z-2">
         {children}
       </div>
     </div>

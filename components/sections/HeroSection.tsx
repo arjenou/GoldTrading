@@ -3,48 +3,68 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
-import ParallaxBackground from "@/components/ui/ParallaxBackground"
 
 export default function HeroSection() {
   return (
-    <ParallaxBackground
-      backgroundImage="/gload-background-1.jpg"
-      speed={0.5}
-      className="py-20 lg:py-32"
-      overlay={true}
-      overlayOpacity={0.6}
-      tileSize="600px"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollAnimation animation="slideUp" delay={200}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              <span className="text-accent">Kゴールド・ダイヤモンド</span>取引の国際企業
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
-              投資 · 収集 · グローバル接続
-            </p>
-            <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
-              大阪を拠点とし、精錬業者・宝飾商・国際顧客にサービスを提供。
-              <br />
-              安定したサプライチェーンと専門的な実行力で日本と世界を結びます。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg">
-                事業について
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-accent bg-white/10 backdrop-blur-sm shadow-lg"
+    <section className="relative py-20 lg:py-32 min-h-screen overflow-hidden">
+      {/* 背景图 - 不拼接，全覆盖，提高亮度 */}
+      <div
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: "url('/gload-background-1.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          filter: 'brightness(1.6)', // 提高亮度30%
+          willChange: 'transform'
+        }}
+      />
+      
+      {/* 覆盖层蒙版 */}
+      <div className="absolute inset-0 bg-black/60 pointer-events-none" aria-hidden />
+      
+      <div className="relative z-10 min-h-screen">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <ScrollAnimation animation="slideUp" delay={200}>
+            <div className="flex flex-col justify-center h-screen max-w-4xl space-y-8">
+              {/* 主标题 - 左对齐，调整顶部间距 */}
+              <h1 
+                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg text-left -mt-32"
+                style={{ color: '#cdad7d' }}
               >
-                お問い合わせ
-              </Button>
+                大阪<br />ゴールドトレーディング
+              </h1>
+              
+              {/* 副标题 - 左对齐 */}
+              <div className="space-y-2 mb-8 text-left">
+                <p 
+                  className="text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  style={{ color: '#eeead6' }}
+                >
+                  大阪を拠点とし、精錬業者・宝飾商・国際顧客にサービスを提供。
+                </p>
+                <p 
+                  className="text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  style={{ color: '#eeead6' }}
+                >
+                  安定したサプライチェーンと専門的な実行力で日本と世界を結びます。
+                </p>
+              </div>
+
+              {/* 按钮 - 左对齐 */}
+              <div className="flex justify-start">
+                <Button 
+                  size="lg" 
+                  className="px-8 py-3 text-black font-medium shadow-xl hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: '#cdad7d' }}
+                >
+                  お問い合わせ
+                </Button>
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </div>
       </div>
-    </ParallaxBackground>
+    </section>
   )
 }

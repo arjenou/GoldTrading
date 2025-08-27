@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Diamond, Coins, Shield } from "lucide-react"
+import { Diamond, Coins, Shield, TrendingUp, Globe, Users } from "lucide-react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
 
 export default function CompanyOverview() {
@@ -22,40 +22,42 @@ export default function CompanyOverview() {
             </div>
           </ScrollAnimation>
 
-          {/* Right Content - Service Cards */}
+        {/* Right Content - Vision Pillars */}
           <ScrollAnimation animation="slideInRight" delay={300}>
-            <div className="grid gap-6">
-              <Card className="border-border hover:border-accent transition-colors">
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <Diamond className="h-12 w-12 text-accent flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">ダイヤモンド取引</h3>
-                    <p className="text-muted-foreground">
-                      高品質ダイヤモンドの卸売と国際流通、透明で合規な信頼できるリソース
-                    </p>
+            <div className="space-y-8">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Coins className="h-8 w-8 text-accent" />
                   </div>
-                </CardContent>
-              </Card>
+                  <h4 className="font-semibold text-foreground mb-2">核心取引</h4>
+                  <p className="text-sm text-muted-foreground">Kゴールドジュエリー・ダイヤモンド</p>
+                </div>
 
-              <Card className="border-border hover:border-accent transition-colors">
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <Coins className="h-12 w-12 text-accent flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Kゴールドジュエリー</h3>
-                    <p className="text-muted-foreground">18Kゴールドジュエリーの卸売・輸出入、業者様に長期安定供給を提供</p>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="h-8 w-8 text-accent" />
                   </div>
-                </CardContent>
-              </Card>
+                  <h4 className="font-semibold text-foreground mb-2">市場コンサルティング</h4>
+                  <p className="text-sm text-muted-foreground">投資戦略指導</p>
+                </div>
 
-              <Card className="border-border hover:border-accent transition-colors">
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <Shield className="h-12 w-12 text-accent flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">認証金地金</h3>
-                    <p className="text-muted-foreground">正規ルートでの認証金地金代理販売、取引の安全性と透明性を確保</p>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Globe className="h-8 w-8 text-accent" />
                   </div>
-                </CardContent>
-              </Card>
+                  <h4 className="font-semibold text-foreground mb-2">収集流通</h4>
+                  <p className="text-sm text-muted-foreground">高級芸術品取引</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-8 w-8 text-accent" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">社交空間</h4>
+                  <p className="text-sm text-muted-foreground">シガーバー会員制</p>
+                </div>
+              </div>
             </div>
           </ScrollAnimation>
         </div>

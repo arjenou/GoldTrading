@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import SlidingGradient from "@/components/ui/SlidingGradient"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
-import SeamlessParallax from "@/components/ui/SeamlessParallax"
+import ParallaxBackground from "@/components/ui/ParallaxBackground"
 import {
   ArrowRight,
   Diamond,
@@ -22,13 +22,13 @@ import {
 
 export default function ServicesSection() {
   return (
-    <SeamlessParallax
+    <ParallaxBackground
       backgroundImage="/back-02.jpg"
-      speed={0.3}
-      className="py-20"
+      speed={0.05}
+      className="py-20 relative"
       overlay={true}
-      overlayOpacity={0.1}
-      tileSize="400px"
+      overlayOpacity={0.2}
+      tileSize="500px"
     >
       <div id="services" className="absolute top-0 left-0 invisible" aria-hidden />
       <SlidingGradient />
@@ -36,12 +36,12 @@ export default function ServicesSection() {
         <ScrollAnimation animation="fadeIn" delay={100}>
           <div className="text-center mb-16">
             {/* 标题区域使用半透明背景 */}
-            <div className="inline-block bg-black/60 backdrop-blur-sm rounded-2xl px-8 py-6 mb-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-2xl">事業サービス</h2>
-              <p className="text-lg text-white/95 max-w-2xl mx-auto drop-shadow-lg">
+            {/* <div className="inline-block backdrop-blur-sm rounded-2xl px-8 py-6 mb-6"> */}
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 drop-shadow-2xl" style={{ color: '#00001C' }}>事業サービス</h2>
+              <p className="text-lg max-w-2xl mx-auto drop-shadow-lg" style={{ color: '#00001C' }}>
                 取引から投資、鑑定から収集まで、包括的な専門サービスを提供
               </p>
-            </div>
+            {/* </div> */}
           </div>
         </ScrollAnimation>
 
@@ -50,7 +50,7 @@ export default function ServicesSection() {
           <ScrollAnimation animation="slideUp" delay={200}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* 服务内容文字区域 - 添加半透明背景 */}
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Coins className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">Kゴールドジュエリー取引</h3>
@@ -73,27 +73,29 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <Coins className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="aspect-video overflow-hidden rounded-lg border border-border">
+                <img 
+                  src="/service-image/18K.jpg" 
+                  alt="Kゴールドジュエリー取引" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
             </div>
           </ScrollAnimation>
 
           {/* Service 2: ダイヤモンド取引 */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <Card className="border-border lg:order-1">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <Diamond className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
-              <div className="lg:order-2 bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="aspect-video overflow-hidden rounded-lg border border-border lg:order-1">
+                <img 
+                  src="/service-image/diamond-2.jpg" 
+                  alt="ダイヤモンド取引" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
+              <div className="lg:order-2 bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Diamond className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">ダイヤモンド取引</h3>
@@ -122,7 +124,7 @@ export default function ServicesSection() {
           {/* Service 3: 認証金地金代理 */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Shield className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">認証金地金代理</h3>
@@ -145,27 +147,29 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <Shield className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="aspect-video overflow-hidden rounded-lg border border-border">
+                <img 
+                  src="/service-image/gold-1.jpg" 
+                  alt="認証金地金代理" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
             </div>
           </ScrollAnimation>
 
           {/* Service 4: 貴金属・宝石鑑定 */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <Card className="border-border lg:order-1">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <Award className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
-              <div className="lg:order-2 bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="aspect-video overflow-hidden rounded-lg border border-border lg:order-1">
+                <img 
+                  src="/service-image/diamond.jpg" 
+                  alt="貴金属・宝石鑑定" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
+              <div className="lg:order-2 bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Award className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">貴金属・宝石鑑定</h3>
@@ -194,7 +198,7 @@ export default function ServicesSection() {
           {/* Service 5: 市場・投資コンサルティング */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <TrendingUp className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">市場・投資コンサルティング</h3>
@@ -217,31 +221,29 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <BarChart3 className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="aspect-video overflow-hidden rounded-lg border border-border">
+                <img 
+                  src="/service-image/consult.jpg" 
+                  alt="市場・投資コンサルティング" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
             </div>
           </ScrollAnimation>
 
           {/* Service 6: 高級収集品流通 */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <Card className="border-border lg:order-1">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <div className="flex space-x-4">
-                      <Wine className="h-12 w-12 text-accent" />
-                      <Watch className="h-12 w-12 text-accent" />
-                      <Gem className="h-12 w-12 text-accent" />
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              <div className="lg:order-2 bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="aspect-video overflow-hidden rounded-lg border border-border lg:order-1">
+                <img 
+                  src="/service-image/lofty.jpg" 
+                  alt="高級収集品流通" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
+              <div className="lg:order-2 bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Globe className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">高級収集品流通</h3>
@@ -270,7 +272,7 @@ export default function ServicesSection() {
           {/* Service 7: 会員制シガーバー */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-6">
                   <Users className="h-10 w-10 text-accent drop-shadow-lg" />
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">会員制シガーバー</h3>
@@ -297,29 +299,18 @@ export default function ServicesSection() {
                   </div>
                 </div>
               </div>
-              <Card className="border-border">
-                <CardContent className="p-8">
-                  <div className="aspect-video bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg flex items-center justify-center">
-                    <Users className="h-16 w-16 text-accent" />
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="aspect-video overflow-hidden rounded-lg border border-border">
+                <img 
+                  src="/service-image/Bar.jpg" 
+                  alt="会員制シガーバー" 
+                  className="w-full h-full object-fill"
+                  style={{ display: 'block' }}
+                />
+              </div>
             </div>
           </ScrollAnimation>
         </div>
-
-        {/* Call to Action */}
-        <ScrollAnimation animation="fadeIn" delay={100}>
-          <div className="text-center mt-16">
-            <div className="inline-block bg-black/50 backdrop-blur-sm rounded-2xl px-8 py-6">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg">
-                事業詳細について
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-        </ScrollAnimation>
       </div>
-    </SeamlessParallax>
+    </ParallaxBackground>
   )
 }

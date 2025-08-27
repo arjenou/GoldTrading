@@ -32,9 +32,9 @@ export default function ParallaxBackground({
         style={{
           backgroundImage: `url('${backgroundImage}')`,
           backgroundRepeat: 'repeat',
-          backgroundSize: tileSize, // 可配置的拼接瓦片大小
+          backgroundSize: tileSize,
           backgroundPosition: 'center center',
-          backgroundAttachment: 'fixed', // 固定背景
+          backgroundAttachment: 'fixed',
           height: '100%',
           width: '100%',
           position: 'absolute',

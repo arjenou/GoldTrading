@@ -159,6 +159,8 @@
     -webkit-overflow-scrolling: touch;
   }
   
+
+  
   /* Prevent horizontal overflow */
   body {
     overflow-x: hidden;

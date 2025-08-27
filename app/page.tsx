@@ -8,7 +8,7 @@ import {
   Navigation,
   HeroSection,
   CompanyOverview,
-  PhilosophySection,
+  // PhilosophySection,
   NewsSection,
   ServicesSection,
   ClientsSection,
@@ -32,7 +32,7 @@ export default function HomePage() {
         <Navigation />
         <HeroSection />
         <CompanyOverview />
-        <PhilosophySection />
+        {/* <PhilosophySection /> */}
         <NewsSection />
         <ServicesSection />
         <ClientsSection />

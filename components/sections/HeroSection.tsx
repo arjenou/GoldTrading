@@ -6,7 +6,7 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation"
 
 export default function HeroSection() {
   return (
-    <section className="relative py-20 lg:py-32 min-h-screen overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-32 min-h-screen overflow-hidden">
       {/* 背景图 - 不拼接，全覆盖，提高亮度 */}
       <div
         className="absolute inset-0 w-full h-full"
@@ -26,36 +26,36 @@ export default function HeroSection() {
       <div className="relative z-10 min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <ScrollAnimation animation="slideUp" delay={200}>
-            <div className="flex flex-col justify-center h-screen max-w-4xl space-y-8">
-              {/* 主标题 - 左对齐，调整顶部间距 */}
+            <div className="flex flex-col justify-center h-screen max-w-4xl space-y-6 sm:space-y-8">
+              {/* 主标题 - 左对齐，调整顶部间距和移动端文字大小 */}
               <h1 
-                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg text-left -mt-32"
+                className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg text-left -mt-20 sm:-mt-32"
                 style={{ color: '#cdad7d' }}
               >
                 大阪<br />ゴールドトレーディング
               </h1>
               
-              {/* 副标题 - 左对齐 */}
-              <div className="space-y-2 mb-8 text-left">
+              {/* 副标题 - 左对齐，移动端文字大小调整 */}
+              <div className="space-y-2 mb-6 sm:mb-8 text-left">
                 <p 
-                  className="text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  className="text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md"
                   style={{ color: '#eeead6' }}
                 >
                   大阪を拠点とし、精錬業者・宝飾商・国際顧客にサービスを提供。
                 </p>
                 <p 
-                  className="text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  className="text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md"
                   style={{ color: '#eeead6' }}
                 >
                   安定したサプライチェーンと専門的な実行力で日本と世界を結びます。
                 </p>
               </div>
 
-              {/* 按钮 - 左对齐 */}
+              {/* 按钮 - 左对齐，移动端大小调整 */}
               <div className="flex justify-start">
                 <Button 
                   size="lg" 
-                  className="px-8 py-3 text-black font-medium shadow-xl hover:opacity-90 transition-opacity"
+                  className="px-6 sm:px-8 py-2 sm:py-3 text-black font-medium shadow-xl hover:opacity-90 transition-opacity text-sm sm:text-base"
                   style={{ backgroundColor: '#cdad7d' }}
                 >
                   お問い合わせ

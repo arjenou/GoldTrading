@@ -13,119 +13,119 @@ export default function Footer() {
       </div>
       
       <div className="relative z-10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           {/* 主要内容区域 */}
           <ScrollAnimation animation="fadeIn" delay={100}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-12 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
               
               {/* 公司信息 */}
               <div className="lg:col-span-2">
-                <div className="flex items-center space-x-3 mb-6">
+                <div className="flex items-center space-x-3 mb-4 sm:mb-6">
                   <div className="relative">
                     <img 
                       src="/gold-logo.png" 
                       alt="大阪ゴールドトレーディング" 
-                      className="h-12 w-auto drop-shadow-lg"
+                      className="h-10 w-auto sm:h-12 drop-shadow-lg"
                     />
-                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full flex items-center justify-center">
-                      <Shield className="h-2 w-2 text-black" />
+                    <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-accent rounded-full flex items-center justify-center">
+                      <Shield className="h-1.5 w-1.5 sm:h-2 sm:w-2 text-black" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white drop-shadow-lg">大阪ゴールドトレーディング</h3>
-                    <p className="text-accent font-medium">Osaka Gold Trading</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white drop-shadow-lg">大阪ゴールドトレーディング</h3>
+                    <p className="text-accent font-medium text-sm sm:text-base">Osaka Gold Trading</p>
                   </div>
                 </div>
                 
-                <p className="text-gray-300 leading-relaxed mb-6 max-w-lg">
-                  阪福商事合同会社として、18Kゴールドジュエリーとダイヤモンドの専門取引企業。
+                <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-lg text-sm sm:text-base">
+                  阪福商事合同会社として、18K金とダイヤモンドの専門取引企業。
                   国際的なサプライチェーンと専門的な実行力で、日本と世界を結ぶ信頼できるパートナーです。
                 </p>
                 
-                <div className="flex flex-wrap gap-4 mb-6">
-                  <Badge variant="outline" className="border-accent text-accent bg-transparent">
-                    <Award className="h-3 w-3 mr-1" />
+                <div className="flex flex-wrap gap-2 sm:gap-4 mb-4 sm:mb-6">
+                  <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
+                    <Award className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
                     認証済み
                   </Badge>
-                  <Badge variant="outline" className="border-accent text-accent bg-transparent">
-                    <Globe className="h-3 w-3 mr-1" />
+                  <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
+                    <Globe className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
                     国際取引
                   </Badge>
-                  <Badge variant="outline" className="border-accent text-accent bg-transparent">
-                    <Shield className="h-3 w-3 mr-1" />
+                  <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
+                    <Shield className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
                     セキュリティ
                   </Badge>
                 </div>
               </div>
 
-              {/* サービス */}
-              <div>
-                <h4 className="text-lg font-semibold mb-6 text-white border-b border-accent/30 pb-2">
+              {/* サービス - 移动端隐藏 */}
+              <div className="hidden lg:block">
+                <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2">
                   サービス
                 </h4>
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                <ul className="space-y-2 sm:space-y-3">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>18Kゴールドジュエリー取引</span>
+                    <span>18K金取引</span>
                   </li>
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
                     <span>ダイヤモンド大口卸売</span>
                   </li>
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
                     <span>認証金地金代理</span>
                   </li>
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
                     <span>貴金属・宝石鑑定</span>
                   </li>
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
                     <span>投資コンサルティング</span>
                   </li>
-                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer">
+                  <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
                     <span>高級収集品流通</span>
                   </li>
                 </ul>
               </div>
 
-              {/* 連絡先 */}
-              <div>
-                <h4 className="text-lg font-semibold mb-6 text-white border-b border-accent/30 pb-2">
+              {/* 連絡先 - 移动端隐藏 */}
+              <div className="hidden lg:block">
+                <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2">
                   連絡先
                 </h4>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium">本社所在地</p>
-                      <p className="text-gray-400 text-sm">大阪府大阪市</p>
+                      <p className="text-gray-300 font-medium text-sm sm:text-base">本社所在地</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">大阪府大阪市</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Phone className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium">電話相談</p>
-                      <p className="text-gray-400 text-sm">平日 9:00-18:00</p>
+                      <p className="text-gray-300 font-medium text-sm sm:text-base">電話相談</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">平日 9:00-18:00</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium">メール対応</p>
-                      <p className="text-gray-400 text-sm">24時間受付</p>
+                      <p className="text-gray-300 font-medium text-sm sm:text-base">メール対応</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">24時間受付</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium">現地訪問</p>
-                      <p className="text-gray-400 text-sm">要予約</p>
+                      <p className="text-gray-300 font-medium text-sm sm:text-base">現地訪問</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">要予約</p>
                     </div>
                   </div>
                 </div>
@@ -135,10 +135,10 @@ export default function Footer() {
 
           {/* フッター下部 */}
           <ScrollAnimation animation="fadeIn" delay={300}>
-            <div className="border-t border-gray-700 pt-8">
+            <div className="border-t border-gray-700 pt-6 sm:pt-8">
               <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
                 <div className="text-center lg:text-left">
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-400 text-xs sm:text-sm">
                     © 2024 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.
                   </p>
                   <p className="text-gray-500 text-xs mt-1">
@@ -146,18 +146,18 @@ export default function Footer() {
                   </p>
                 </div>
                 
-                <div className="flex space-x-6">
+                <div className="flex space-x-4 sm:space-x-6">
                   <a href="#" className="text-gray-400 hover:text-accent transition-colors">
                     <span className="sr-only">Privacy Policy</span>
-                    <Shield className="h-4 w-4" />
+                    <Shield className="h-3 w-3 sm:h-4 sm:w-4" />
                   </a>
                   <a href="#" className="text-gray-400 hover:text-accent transition-colors">
                     <span className="sr-only">Terms of Service</span>
-                    <Award className="h-4 w-4" />
+                    <Award className="h-3 w-3 sm:h-4 sm:w-4" />
                   </a>
                   <a href="#" className="text-gray-400 hover:text-accent transition-colors">
                     <span className="sr-only">Support</span>
-                    <Users className="h-4 w-4" />
+                    <Users className="h-3 w-3 sm:h-4 sm:w-4" />
                   </a>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
+import React from "react"
 
 interface ParallaxBackgroundProps {
   children: React.ReactNode
@@ -9,7 +9,7 @@ interface ParallaxBackgroundProps {
   className?: string
   overlay?: boolean
   overlayOpacity?: number
-  tileSize?: string
+  tileSize?: string // 拼接瓦片大小
 }
 
 export default function ParallaxBackground({
@@ -21,56 +21,24 @@ export default function ParallaxBackground({
   overlayOpacity = 0.4,
   tileSize = "400px"
 }: ParallaxBackgroundProps) {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const backgroundRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    let ticking = false
-    
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          if (!backgroundRef.current) return
-          
-          const scrolled = window.pageYOffset
-          const rate = scrolled * speed
-          
-          backgroundRef.current.style.transform = `translateY(${rate}px)`
-          ticking = false
-        })
-        ticking = true
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [speed])
-
   return (
     <div
-      ref={containerRef}
       className={`relative overflow-hidden w-full ${className}`}
       style={{ minHeight: '100%' }}
     >
-      {/* 视差背景图 */}
+      {/* 固定背景图 - 拼接模式 */}
       <div
-        ref={backgroundRef}
-        className="absolute inset-0 parallax-bg"
+        className="absolute inset-0"
         style={{
           backgroundImage: `url('${backgroundImage}')`,
           backgroundRepeat: 'repeat',
-          backgroundSize: tileSize,
+          backgroundSize: tileSize, // 可配置的拼接瓦片大小
           backgroundPosition: 'center center',
-          height: '120%', // 稍微增加高度以确保滚动时有足够的背景
+          backgroundAttachment: 'fixed', // 固定背景
+          height: '100%',
           width: '100%',
           position: 'absolute',
-          zIndex: 0,
-          top: 0,
-          left: 0,
-          willChange: 'transform' // 优化性能
+          zIndex: 0
         }}
       />
       

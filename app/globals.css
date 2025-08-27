@@ -159,22 +159,6 @@
     -webkit-overflow-scrolling: touch;
   }
   
-  /* Optimize parallax performance */
-  .parallax-bg {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  /* Ensure smooth scrolling on all devices */
-  body {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-  }
-  
-
-  
   /* Prevent horizontal overflow */
   body {
     overflow-x: hidden;

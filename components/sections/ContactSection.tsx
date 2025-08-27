@@ -175,18 +175,11 @@ export default function ContactSection() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent text-xs sm:text-sm"
+                        onClick={() => window.open('tel:080-3835-1709', '_self')}
+                        className="w-full sm:w-auto border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent text-xs sm:text-sm"
                       >
                         <Phone className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                         電話相談予約
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent text-xs sm:text-sm"
-                      >
-                        <MapPin className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        現地訪問予約
                       </Button>
                     </div>
                   </div>

@@ -51,11 +51,11 @@ export default function ClientsSection() {
                 <div className="relative px-4">
                   <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
                     <Image
-                      src="/service-pattern/player.png"
+                      src="/service-pattern/jinglian.png"
                       alt="精錬業者"
-                      width={400}
-                      height={200}
-                      className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
+                      width={133}
+                      height={67}
+                      className="w-full h-full object-cover object-bottom transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>
                 </div>
@@ -76,8 +76,8 @@ export default function ClientsSection() {
                     <Image
                       src="/service-pattern/player.png"
                       alt="宝飾商・小売業者"
-                      width={400}
-                      height={200}
+                      width={133}
+                      height={67}
                       className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>
@@ -97,10 +97,10 @@ export default function ClientsSection() {
                 <div className="relative px-4">
                   <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
                     <Image
-                      src="/service-pattern/player.png"
+                      src="/service-pattern/guoji.png"
                       alt="国際貿易商"
-                      width={400}
-                      height={200}
+                      width={133}
+                      height={67}
                       className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>
@@ -120,10 +120,10 @@ export default function ClientsSection() {
                 <div className="relative px-4">
                   <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
                     <Image
-                      src="/service-pattern/player.png"
+                      src="/service-pattern/shoucang.png"
                       alt="収集家・富裕層顧客"
-                      width={400}
-                      height={200}
+                      width={133}
+                      height={67}
                       className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>
@@ -143,10 +143,10 @@ export default function ClientsSection() {
                 <div className="relative px-4">
                   <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
                     <Image
-                      src="/service-pattern/player.png"
+                      src="/service-pattern/qiye.png"
                       alt="企業・ファミリーオフィス"
-                      width={400}
-                      height={200}
+                      width={133}
+                      height={67}
                       className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>
@@ -166,10 +166,10 @@ export default function ClientsSection() {
                 <div className="relative px-4">
                   <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
                     <Image
-                      src="/service-pattern/player.png"
+                      src="/service-pattern/zhuanmen.png"
                       alt="専門機関"
-                      width={400}
-                      height={200}
+                      width={133}
+                      height={67}
                       className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:opacity-80"
                     />
                   </div>

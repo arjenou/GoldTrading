@@ -167,6 +167,27 @@
   /* Improve form elements on mobile */
   input, select, textarea {
     font-size: 16px; /* Prevent zoom on iOS */
+    -webkit-appearance: none; /* Remove default iOS styling */
+    border-radius: 0; /* Remove default iOS border radius */
+  }
+  
+  /* Prevent zoom on input focus for iOS */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="search"],
+  textarea {
+    font-size: 16px !important;
+    transform: scale(1); /* Prevent any scaling */
+  }
+  
+  /* Ensure proper input behavior on mobile */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    transform: scale(1);
   }
   
   /* Better spacing for mobile */

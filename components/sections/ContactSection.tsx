@@ -45,6 +45,8 @@ export default function ContactSection() {
                         placeholder="お名前をご入力ください"
                         className="border-border focus:border-accent text-sm sm:text-base"
                         required
+                        autoComplete="name"
+                        inputMode="text"
                       />
                     </div>
 
@@ -58,6 +60,8 @@ export default function ContactSection() {
                         placeholder="メールアドレスをご入力ください"
                         className="border-border focus:border-accent text-sm sm:text-base"
                         required
+                        autoComplete="email"
+                        inputMode="email"
                       />
                     </div>
 
@@ -70,6 +74,8 @@ export default function ContactSection() {
                         type="tel"
                         placeholder="電話番号をご入力ください"
                         className="border-border focus:border-accent text-sm sm:text-base"
+                        autoComplete="tel"
+                        inputMode="tel"
                       />
                     </div>
 
@@ -103,6 +109,8 @@ export default function ContactSection() {
                         placeholder="ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします..."
                         className="border-border focus:border-accent min-h-[120px] text-sm sm:text-base"
                         rows={5}
+                        autoComplete="off"
+                        inputMode="text"
                       />
                     </div>
 

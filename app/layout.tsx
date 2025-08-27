@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     shortcut: '/gold-logo.png',
     apple: '/gold-logo.png',
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 }
 
 export default function RootLayout({

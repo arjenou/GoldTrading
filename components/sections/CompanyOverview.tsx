@@ -12,7 +12,7 @@ export default function CompanyOverview() {
           <ScrollAnimation animation="slideInLeft" delay={100}>
             <div className="space-y-6 sm:space-y-8">
               <div>
-                <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">大阪ゴールドトレーディング</h2>
+                <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">大阪ゴールドトレーディング</h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                   大阪に本社を置き、18K金とダイヤモンドの大口取引を専門としています。信頼できる供給源を提供するだけでなく、
                   金地金代理、鑑定サポート、収集品流通、ビジネス社交スペースなどの付加価値サービスをお客様にお届けします。

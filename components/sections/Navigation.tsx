@@ -8,6 +8,18 @@ export default function Navigation() {
   const [isLightText, setIsLightText] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  // Smooth scroll function
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+    closeMobileMenu()
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
@@ -42,7 +54,10 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo and Company Name */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
+          <button 
+            onClick={() => window.location.reload()}
+            className="flex items-center space-x-2 sm:space-x-3 hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+          >
             <img 
               src="/gold-logo.png" 
               alt="Gold Trading Osaka" 
@@ -58,38 +73,50 @@ export default function Navigation() {
                 大阪ゴールドトレーディング
               </div>
             </div>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <a href="#services" className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
-              isLightText 
-                ? 'text-white/90 hover:text-white' 
-                : 'text-gray-800/90 hover:text-gray-900'
-            }`}>
+            <button 
+              onClick={() => scrollToSection('company-overview')}
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              }`}
+            >
+              ホーム
+            </button>
+            <button 
+              onClick={() => scrollToSection('news')}
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              }`}
+            >
+              ニュース
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              }`}
+            >
               事業サービス
-            </a>
-            <a href="#philosophy" className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
-              isLightText 
-                ? 'text-white/90 hover:text-white' 
-                : 'text-gray-800/90 hover:text-gray-900'
-            }`}>
-              企業理念
-            </a>
-            <a href="#clients" className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
-              isLightText 
-                ? 'text-white/90 hover:text-white' 
-                : 'text-gray-800/90 hover:text-gray-900'
-            }`}>
+            </button>
+            <button 
+              onClick={() => scrollToSection('clients')}
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              }`}
+            >
               お客様・パートナー
-            </a>
-            <a href="#contact" className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
-              isLightText 
-                ? 'text-white/90 hover:text-white' 
-                : 'text-gray-800/90 hover:text-gray-900'
-            }`}>
-              お問い合わせ
-            </a>
+            </button>
           </div>
 
           {/* Desktop Button */}
@@ -97,13 +124,14 @@ export default function Navigation() {
             <Button
               variant="outline"
               size="sm"
+              onClick={() => scrollToSection('contact')}
               className={`transition-all duration-300 backdrop-blur-sm shadow-lg ${
                 isLightText
                   ? 'border-white/50 text-white hover:bg-white hover:text-black bg-transparent'
                   : 'border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80'
               }`}
             >
-              <span className="text-xs lg:text-sm">コンサルタントに相談</span>
+              <span className="text-xs lg:text-sm">お問い合わせ</span>
             </Button>
           </div>
 
@@ -130,38 +158,41 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-white/20">
             <div className="px-4 py-4 space-y-4">
-              <a 
-                href="#services" 
-                onClick={closeMobileMenu}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              <button 
+                onClick={() => scrollToSection('company-overview')}
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+              >
+                ホーム
+              </button>
+              <button 
+                onClick={() => scrollToSection('news')}
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+              >
+                ニュース
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
               >
                 事業サービス
-              </a>
-              <a 
-                href="#philosophy" 
-                onClick={closeMobileMenu}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors"
-              >
-                企業理念
-              </a>
-              <a 
-                href="#clients" 
-                onClick={closeMobileMenu}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              </button>
+              <button 
+                onClick={() => scrollToSection('clients')}
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
               >
                 お客様・パートナー
-              </a>
-              <a 
-                href="#contact" 
-                onClick={closeMobileMenu}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors"
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
               >
                 お問い合わせ
-              </a>
+              </button>
               <div className="pt-2">
                 <Button
                   variant="outline"
                   size="sm"
+                  onClick={() => scrollToSection('contact')}
                   className="w-full border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80"
                 >
                   <span className="text-sm">コンサルタントに相談</span>

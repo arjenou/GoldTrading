@@ -35,100 +35,10 @@ export default function NewsSection() {
   ]
 
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="news" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Why Choose Us */}
+        {/* 新着情報 Section Header */}
         <ScrollAnimation animation="fadeIn" delay={100}>
-          <div className="max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-20">
-            <Card className="border-accent/20 bg-gradient-to-br from-background to-muted/20">
-              <CardContent className="p-6 sm:p-8 lg:p-12">
-                <div className="text-center mb-6 sm:mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4 drop-shadow-lg">選ばれる理由</h3>
-                  <p className="text-base sm:text-lg text-muted-foreground">従来の取引を超越し、包括的な専門サポートを提供</p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-                  <div className="space-y-4 sm:space-y-6">
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">安定供給源</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          長期安定サプライチェーン保証、供給源品質と納期を確保
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <Award className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">専門実行</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          経験豊富なチーム、専門的な取引実行とリスク管理を提供
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <Scale className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">コンプライアンス保証</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          国際貿易法規を厳格遵守、すべての取引のコンプライアンスと透明性を確保
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4 sm:space-y-6">
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <TrendingUp className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">市場コンサルティング</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">市場トレンドに基づく専門投資提案と戦略指導</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <Gem className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">鑑定サービス</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          権威機関認証の専門鑑定、コレクションの真の価値を保証
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-3 sm:space-x-4 min-h-[5rem] sm:min-h-[6rem]">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <Users className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">社交ネットワーク</h4>
-                        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                          高級ビジネス社交プラットフォーム、ビジネス協力機会を拡大
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animation="fadeIn" delay={200}>
-          {/* セクションヘッダー - 只有这部分使用背景图 */}
           <div className="relative text-center mb-12 sm:mb-16 py-8 sm:py-12 overflow-hidden" style={{ marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
             {/* 背景画像 - 只应用于标题区域 */}
             <div className="absolute inset-0">
@@ -147,7 +57,9 @@ export default function NewsSection() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animation="slideUp" delay={300}>
+
+
+        <ScrollAnimation animation="slideUp" delay={200}>
           {/* ニュースコンテンツエリア */}
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">

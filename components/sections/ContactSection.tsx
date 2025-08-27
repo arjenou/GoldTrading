@@ -120,14 +120,16 @@ export default function ContactSection() {
                         size="lg"
                         className="w-full bg-accent hover:bg-accent/90 text-accent-foreground group text-sm sm:text-base"
                       >
-                        <MessageSquare className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                        コンサルタントに今すぐ相談
-                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
+                        <MessageSquare className="text-center mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                        送信
                       </Button>
                     </div>
 
                     <p className="text-xs sm:text-sm text-muted-foreground text-center">
-                      お客様のプライバシー情報を保護することをお約束し、24時間以内にお問い合わせにお返事いたします
+                      お客様のプライバシー情報を保護することをお約束し
+                    </p>
+                    <p className="text-xs sm:text-sm text-muted-foreground text-center">
+                      24時間以内にお問い合わせにお返事いたします
                     </p>
                   </form>
                 </CardContent>

@@ -6,7 +6,7 @@ import ScrollAnimation from "@/components/ui/ScrollAnimation"
 
 export default function HeroSection() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-32 min-h-screen overflow-hidden">
+    <section id="home" className="relative py-16 sm:py-20 lg:py-32 min-h-screen overflow-hidden">
       {/* 背景图 - 不拼接，全覆盖，提高亮度 */}
       <div
         className="absolute inset-0 w-full h-full"

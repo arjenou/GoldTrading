@@ -29,7 +29,7 @@ export default function HeroSection() {
             <div className="flex flex-col justify-center h-screen max-w-4xl space-y-6 sm:space-y-8">
               {/* 主标题 - 左对齐，调整顶部间距和移动端文字大小 */}
               <h1 
-                className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg text-left -mt-20 sm:-mt-32"
+                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg text-left -mt-20 sm:-mt-32"
                 style={{ color: '#cdad7d' }}
               >
                 大阪<br />ゴールドトレーディング
@@ -38,16 +38,22 @@ export default function HeroSection() {
               {/* 副标题 - 左对齐，移动端文字大小调整 */}
               <div className="space-y-2 mb-6 sm:mb-8 text-left">
                 <p 
-                  className="text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
                   style={{ color: '#eeead6' }}
                 >
-                  大阪を拠点とし、精錬業者・宝飾商・国際顧客にサービスを提供。
+                  大阪を拠点に、K18ジュエリーとダイヤモンドを中心とした国際貿易を展開。
                 </p>
                 <p 
-                  className="text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md"
+                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
                   style={{ color: '#eeead6' }}
                 >
-                  安定したサプライチェーンと専門的な実行力で日本と世界を結びます。
+                  国際化が進む大阪、IR開発によって広がる新しい経済圏の中で、
+                </p>
+                <p 
+                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
+                  style={{ color: '#eeead6' }}
+                >
+                  確かな供給力と専門性で、日本と世界を結ぶ信頼のパートナーを目指します。
                 </p>
               </div>
 

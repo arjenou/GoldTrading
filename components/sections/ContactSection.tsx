@@ -91,12 +91,10 @@ export default function ContactSection() {
                           <SelectValue placeholder="ご興味のあるサービスをお選びください" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="k-gold-diamond">K金・ダイヤモンド取引</SelectItem>
-                          <SelectItem value="gold-bars">認証金地金代理</SelectItem>
+                          <SelectItem value="k-gold-diamond">K18金</SelectItem>
+                          <SelectItem value="gold-bars">インゴットの購入・売却</SelectItem>
                           <SelectItem value="appraisal">貴金属・宝石鑑定</SelectItem>
-                          <SelectItem value="investment">市場・投資コンサルティング</SelectItem>
-                          <SelectItem value="collectibles">高級収集品流通</SelectItem>
-                          <SelectItem value="cigar-lounge">シガーバー会員相談</SelectItem>
+                          <SelectItem value="investment">改为資産運用</SelectItem>
                           <SelectItem value="partnership">パートナーシップ</SelectItem>
                           <SelectItem value="other">その他のお問い合わせ</SelectItem>
                         </SelectContent>

@@ -180,6 +180,9 @@
   textarea {
     font-size: 16px !important;
     transform: scale(1); /* Prevent any scaling */
+    -webkit-transform: scale(1);
+    -webkit-appearance: none;
+    border-radius: 0;
   }
   
   /* Ensure proper input behavior on mobile */
@@ -188,6 +191,20 @@
   select:focus {
     outline: none;
     transform: scale(1);
+    -webkit-transform: scale(1);
+    font-size: 16px !important;
+  }
+  
+  /* Additional iOS zoom prevention */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+      font-size: 16px !important;
+    }
   }
   
   /* Better spacing for mobile */

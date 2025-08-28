@@ -43,10 +43,11 @@ export default function ContactSection() {
                       <Input
                         id="name"
                         placeholder="お名前をご入力ください"
-                        className="border-border focus:border-accent text-sm sm:text-base"
+                        className="border-border focus:border-accent text-base"
                         required
                         autoComplete="name"
                         inputMode="text"
+                        style={{ fontSize: '16px' }}
                       />
                     </div>
 
@@ -58,10 +59,11 @@ export default function ContactSection() {
                         id="email"
                         type="email"
                         placeholder="メールアドレスをご入力ください"
-                        className="border-border focus:border-accent text-sm sm:text-base"
+                        className="border-border focus:border-accent text-base"
                         required
                         autoComplete="email"
                         inputMode="email"
+                        style={{ fontSize: '16px' }}
                       />
                     </div>
 
@@ -73,9 +75,10 @@ export default function ContactSection() {
                         id="phone"
                         type="tel"
                         placeholder="電話番号をご入力ください"
-                        className="border-border focus:border-accent text-sm sm:text-base"
+                        className="border-border focus:border-accent text-base"
                         autoComplete="tel"
                         inputMode="tel"
+                        style={{ fontSize: '16px' }}
                       />
                     </div>
 
@@ -84,7 +87,7 @@ export default function ContactSection() {
                         サービス要望 *
                       </Label>
                       <Select>
-                        <SelectTrigger className="w-full border-border focus:border-accent text-sm sm:text-base">
+                        <SelectTrigger className="w-full border-border focus:border-accent text-base" style={{ fontSize: '16px' }}>
                           <SelectValue placeholder="ご興味のあるサービスをお選びください" />
                         </SelectTrigger>
                         <SelectContent>
@@ -107,10 +110,11 @@ export default function ContactSection() {
                       <Textarea
                         id="message"
                         placeholder="ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします..."
-                        className="border-border focus:border-accent min-h-[120px] text-sm sm:text-base"
+                        className="border-border focus:border-accent min-h-[120px] text-base"
                         rows={5}
                         autoComplete="off"
                         inputMode="text"
+                        style={{ fontSize: '16px' }}
                       />
                     </div>
 
@@ -157,7 +161,7 @@ export default function ContactSection() {
                     
                     <div className="flex items-center space-x-3">
                       <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
-                      <span className="text-foreground text-sm sm:text-base">www.hanpuku01@gmail.com</span>
+                      <span className="text-foreground text-sm sm:text-base">hanpuku01@gmail.com</span>
                     </div>
                     
                     <div className="flex items-start space-x-3">

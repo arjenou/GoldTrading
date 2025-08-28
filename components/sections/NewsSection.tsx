@@ -37,11 +37,11 @@ export default function NewsSection() {
   return (
     <section id="news" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 新着情報 Section Header - 居中背景 */}
+        {/* 新着情報 Section Header */}
         <ScrollAnimation animation="fadeIn" delay={100}>
-          <div className="relative text-center mb-12 sm:mb-16 py-8 sm:py-12 overflow-hidden">
-            {/* 背景画像 - 居中显示 */}
-            <div className="absolute inset-0 w-full h-full">
+          <div className="relative text-center mb-12 sm:mb-16 py-8 sm:py-12 overflow-hidden" style={{ marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
+            {/* 背景画像 - 只应用于标题区域 */}
+            <div className="absolute inset-0">
               <div className="w-full h-full bg-[url('/news-backgroud.jpg')] bg-cover bg-center bg-no-repeat filter brightness-110"></div>
               <div className="absolute inset-0 bg-black/30"></div>
             </div>
@@ -56,7 +56,6 @@ export default function NewsSection() {
             </div>
           </div>
         </ScrollAnimation>
-
 
 
 

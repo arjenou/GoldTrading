@@ -14,7 +14,7 @@ interface ParallaxBackgroundProps {
 export default function ParallaxBackground({
   children,
   backgroundImage,
-  speed = 0.20,
+  speed = 0.22,
   className = "",
   overlay = true,
   overlayOpacity = 0.4,
@@ -37,7 +37,7 @@ export default function ParallaxBackground({
     // 目标/当前位置：加一点点平滑，避免视觉抖动
     let targetY = 0
     let currentY = 0
-    const SMOOTH = 0.18 // 0=无平滑，0.15~0.25较自然
+    const SMOOTH = 0.22 // 0=无平滑，0.15~0.25较自然
 
     const roundToDpr = (v: number) => Math.round(v * dpr) / dpr
 

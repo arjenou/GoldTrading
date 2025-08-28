@@ -17,7 +17,7 @@ export default function ClientsSection() {
   return (
     <ParallaxBackground
       backgroundImage="/back-03.jpg"
-      speed={0.05}
+      speed={0.20}
       className="py-12 sm:py-16 lg:py-20 relative"
       overlay={true}
       overlayOpacity={0.7}

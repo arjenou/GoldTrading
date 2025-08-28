@@ -55,6 +55,15 @@ export default function HeroSection() {
               <div className="flex justify-start">
                 <Button 
                   size="lg" 
+                  onClick={() => {
+                    const element = document.getElementById('contact')
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
                   className="px-6 sm:px-8 py-2 sm:py-3 text-black font-medium shadow-xl hover:opacity-90 transition-opacity text-sm sm:text-base"
                   style={{ backgroundColor: '#cdad7d' }}
                 >

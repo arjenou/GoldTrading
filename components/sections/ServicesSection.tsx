@@ -24,7 +24,7 @@ export default function ServicesSection() {
   return (
     <ParallaxBackground
       backgroundImage="/back-02.jpg"
-      speed={0.28}
+      speed={0.05}
       className="py-12 sm:py-16 lg:py-20 relative"
       overlay={true}
       overlayOpacity={0.6}

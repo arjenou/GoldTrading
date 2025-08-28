@@ -14,7 +14,7 @@ interface ParallaxBackgroundProps {
 export default function ParallaxBackground({
   children,
   backgroundImage,
-  speed = 0.5,
+  speed = 0.28,
   className = "",
   overlay = true,
   overlayOpacity = 0.4,

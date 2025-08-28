@@ -12,7 +12,7 @@ export default function CompanyOverview() {
           <ScrollAnimation animation="slideInLeft" delay={100}>
             <div className="space-y-6 sm:space-y-8">
               <div>
-                <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">大阪ゴールドトレーディング</h2>
+                <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">Gold Trading Osaka</h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed" style={{ textIndent: '1em' }}>
                   大阪を拠点に、K18ジュエリーとダイヤモンドの取引を主軸とし、
                   精錬業者、宝飾商、コレクターなど多様なお客様に安定した供給と専門的なサービスを提供しています。
@@ -37,7 +37,8 @@ export default function CompanyOverview() {
                     <Coins className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">核心取引</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground"> K18ジュエリー・ダイヤモンドの安定供給と大口取引</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">  K18ジュエリー・ダイヤモンド
+                  </p>
                 </div>
 
                 <div className="text-center">
@@ -45,7 +46,8 @@ export default function CompanyOverview() {
                     <TrendingUp className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">資産ソリューション</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground"> 不動産・貴金属の運用やM&A支援を含む総合アドバイザリー</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground"> 不動産・貴金属・M&A支援
+                  </p>
                 </div>
 
                 <div className="text-center">
@@ -53,7 +55,7 @@ export default function CompanyOverview() {
                     <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">コレクション流通</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">洋酒・高級時計・金工芸品など、資産価値を持つコレクションの流通</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">洋酒・高級時計・金工芸品</p>
                 </div>
 
                 <div className="text-center">
@@ -61,7 +63,8 @@ export default function CompanyOverview() {
                     <Users className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">会員制ラウンジ</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">富裕層向けのクラブ空間で、エンターテインメントとネットワークの場を展開</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">富裕層向けのクラブ</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">エンターテインメント</p>
                 </div>
               </div>
             </div>

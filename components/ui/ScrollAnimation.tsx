@@ -54,13 +54,13 @@ export default function ScrollAnimation({
         case "fadeIn":
           return `${baseClasses} opacity-0`
         case "slideUp":
-          return `${baseClasses} opacity-0 translate-y-8`
+          return `${baseClasses} opacity-0 translate-y-4`
         case "slideInLeft":
-          return `${baseClasses} opacity-0 -translate-x-8`
+          return `${baseClasses} opacity-0 -translate-x-4`
         case "slideInRight":
-          return `${baseClasses} opacity-0 translate-x-8`
+          return `${baseClasses} opacity-0 translate-x-4`
         case "scaleIn":
-          return `${baseClasses} opacity-0 scale-95`
+          return `${baseClasses} opacity-0 scale-98`
         default:
           return `${baseClasses} opacity-0`
       }

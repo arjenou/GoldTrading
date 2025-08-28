@@ -324,8 +324,7 @@ export default function ServicesSection() {
                   </Badge>
                 </div>
                 <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-4 sm:mb-6 drop-shadow-md">
-                  金文化と高級社交雰囲気を融合し、お客様にプライベートで上品なビジネス交流空間を提供。Exclusive Cigar
-                  Lounge — Coming soon.
+                  金文化と高級社交雰囲気を融合し、お客様にプライベートで上品なビジネス交流空間を提供。
                 </p>
                 <div className="space-y-2 sm:space-y-3">
                   <div className="flex items-center space-x-2">

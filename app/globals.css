@@ -126,6 +126,41 @@
     @apply bg-background text-foreground;
   }
   
+  /* Animation utilities */
+  .animate-in {
+    animation-fill-mode: both;
+  }
+  
+  .zoom-in-95 {
+    animation: zoom-in-95 0.2s ease-out;
+  }
+  
+  @keyframes zoom-in-95 {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .slide-in-from-bottom {
+    animation: slide-in-from-bottom 0.3s ease-out;
+  }
+  
+  @keyframes slide-in-from-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   /* Montserrat font class */
   .montserrat {
     font-family: var(--font-montserrat), sans-serif;

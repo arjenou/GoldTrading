@@ -14,7 +14,8 @@ export default function Navigation() {
   // Helper function to get font class based on current language
   const getFontClass = () => {
     return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
-           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : 
+           i18n.language === 'en' ? 'font-montserrat' : ''
   }
 
   // Smooth scroll function
@@ -209,13 +210,13 @@ export default function Navigation() {
                 <div className="flex items-center justify-between mb-2">
                   <span className={`text-sm font-medium text-gray-700 ${getFontClass()}`}>{t('language')}</span>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-3 gap-2">
                   <button
                     onClick={() => {
                       i18n.changeLanguage('ja')
                       closeMobileMenu()
                     }}
-                    className={`px-3 py-2 text-sm rounded-md border transition-colors ${
+                    className={`px-2 py-2 text-xs rounded-md border transition-colors ${
                       i18n.language === 'ja'
                         ? 'bg-accent text-white border-accent'
                         : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
@@ -228,13 +229,26 @@ export default function Navigation() {
                       i18n.changeLanguage('zh')
                       closeMobileMenu()
                     }}
-                    className={`px-3 py-2 text-sm rounded-md border transition-colors ${
+                    className={`px-2 py-2 text-xs rounded-md border transition-colors ${
                       i18n.language === 'zh'
                         ? 'bg-accent text-white border-accent'
                         : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
                     } ${getFontClass()}`}
                   >
                     🇨🇳 {t('chinese')}
+                  </button>
+                  <button
+                    onClick={() => {
+                      i18n.changeLanguage('en')
+                      closeMobileMenu()
+                    }}
+                    className={`px-2 py-2 text-xs rounded-md border transition-colors ${
+                      i18n.language === 'en'
+                        ? 'bg-accent text-white border-accent'
+                        : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+                    }`}
+                  >
+                    🇺🇸 {t('english')}
                   </button>
                 </div>
               </div>

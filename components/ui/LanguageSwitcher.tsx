@@ -24,6 +24,12 @@ const languages: LanguageOption[] = [
     name: 'Chinese',
     flag: '🇨🇳',
     nativeName: '中文'
+  },
+  {
+    code: 'en',
+    name: 'English',
+    flag: '🇺🇸',
+    nativeName: 'English'
   }
 ];
 
@@ -57,7 +63,8 @@ export default function LanguageSwitcher({ isLightText = true }: LanguageSwitche
                         <span className="text-lg">{currentLanguage.flag}</span>
                 <span className={`text-xs font-medium hidden sm:block ${
                   currentLanguage.code === 'ja' ? 'font-noto-sans-jp' : 
-                  currentLanguage.code === 'zh' ? 'font-noto-sans-sc' : ''
+                  currentLanguage.code === 'zh' ? 'font-noto-sans-sc' : 
+                  currentLanguage.code === 'en' ? 'font-montserrat' : ''
                 }`}>
                   {currentLanguage.nativeName}
                 </span>
@@ -81,7 +88,8 @@ export default function LanguageSwitcher({ isLightText = true }: LanguageSwitche
                 <div className="flex flex-col">
                   <span className={`text-sm font-medium ${
                     language.code === 'ja' ? 'font-noto-sans-jp' : 
-                    language.code === 'zh' ? 'font-noto-sans-sc' : ''
+                    language.code === 'zh' ? 'font-noto-sans-sc' : 
+                    language.code === 'en' ? 'font-montserrat' : ''
                   }`}>
                     {language.nativeName}
                   </span>

@@ -133,6 +133,31 @@ const resources = {
       // News Section
       newsTitle: 'ニュース',
       newsSubtitle: '最新情報',
+      
+      // Company Information
+      companyLegalName: '社名（商号）',
+      companyNameLegal: '阪福商事合同会社（ハンフクショウジ）',
+      companyAddress: '本店所在地',
+      companyAddressDetail: '〒541-0054 大阪府大阪市中央区南本町3丁目2番11号 2階 2FB号室',
+      companyNumber: '法人番号',
+      companyNumberValue: '6120-0030-29168',
+      companyCapital: '資本金',
+      companyCapitalValue: '1,000万円',
+      companyBusiness: '事業内容',
+      companyBusinessDetail: '貴金属・宝飾品を中心とした取引・流通事業、資産運用及び経営アドバイザリー事業、並びに高付加価値ライフスタイル関連事業の企画・運営。',
+      companyContact: 'お問い合わせ',
+      
+      // News Items
+      newsItem1Date: '2025.08.27',
+      newsItem1Content: '国際取引パートナーシップが拡大しました。より多くの国々との取引が可能になり、お客様により良いサービスをご提供いたします。',
+      newsItem2Date: '2025.08.27',
+      newsItem2Content: 'Test4ホームページが新しくなりました。今後はこちらのページをご覧ください。',
+      newsItem3Date: '2025.08.26',
+      newsItem3Content: 'Test3ホームページが新しくなりました。今後はこちらのページをご覧ください。',
+      newsItem4Date: '2025.08.25',
+      newsItem4Content: 'Test2ホームページが新しくなりました。今後はこちらのページをご覧ください。',
+      newsItem5Date: '2025.08.24',
+      newsItem5Content: 'Test1ホームページが新しくなりました。今後はこちらのページをご覧ください。',
       readMore: '続きを読む',
       
       // Clients Section
@@ -345,6 +370,31 @@ const resources = {
       // News Section
       newsTitle: '新闻资讯',
       newsSubtitle: '最新信息',
+      
+      // Company Information
+      companyLegalName: '公司名称（商号）',
+      companyNameLegal: '阪福商事合同会社（ハンフクショウジ）',
+      companyAddress: '总部所在地',
+      companyAddressDetail: '〒541-0054 大阪府大阪市中央区南本町3丁目2番11号 2階 2FB号室',
+      companyNumber: '法人编号',
+      companyNumberValue: '6120-0030-29168',
+      companyCapital: '注册资本',
+      companyCapitalValue: '1,000万円',
+      companyBusiness: '业务内容',
+      companyBusinessDetail: '以贵金属・珠宝饰品为中心的交易・流通事业、资产管理及经营咨询事业、以及高附加值生活方式相关事业的策划・运营。',
+      companyContact: '联系我们',
+      
+      // News Items
+      newsItem1Date: '2025.08.27',
+      newsItem1Content: '国际交易合作伙伴关系扩大了。现在可以与更多国家进行交易，为客户提供更好的服务。',
+      newsItem2Date: '2025.08.27',
+      newsItem2Content: 'Test4主页已更新。今后请查看此页面。',
+      newsItem3Date: '2025.08.26',
+      newsItem3Content: 'Test3主页已更新。今后请查看此页面。',
+      newsItem4Date: '2025.08.25',
+      newsItem4Content: 'Test2主页已更新。今后请查看此页面。',
+      newsItem5Date: '2025.08.24',
+      newsItem5Content: 'Test1主页已更新。今后请查看此页面。',
       readMore: '阅读更多',
       
       // Clients Section
@@ -425,6 +475,235 @@ const resources = {
       footerService6: '高级收藏品流通',
       allRightsReserved: '© 2024 阪福商事合同会社・大阪黄金交易. 版权所有.',
       licensedCompany: '获得许可和监管的贵金属交易公司',
+    }
+  },
+  en: {
+    translation: {
+      // Navigation
+      home: 'Home',
+      news: 'News',
+      services: 'Services',
+      clients: 'Clients & Partners',
+      contact: 'Contact',
+      consultant: 'Consult with Expert',
+      
+      // Company Name
+      companyName: 'GOLD TRADING OSAKA',
+      companyNameJP: 'Osaka Gold Trading',
+      
+      // Language Switcher
+      language: 'Language',
+      japanese: '日本語',
+      chinese: '中文',
+      english: 'English',
+      
+      // Other common texts
+      learnMore: 'Learn More',
+      readMore: 'Read More',
+      submit: 'Submit',
+      cancel: 'Cancel',
+      loading: 'Loading...',
+      error: 'An error occurred',
+      success: 'Sent successfully',
+      
+      // Hero Section
+      heroTitle: 'Osaka Gold Trading',
+      heroSubtitle1: 'Based in Osaka, we specialize in international trade of K18 jewelry and diamonds.',
+      heroSubtitle2: 'In Osaka, which is advancing toward internationalization and expanding new economic zones through IR development,',
+      heroSubtitle3: 'we aim to be a reliable partner connecting Japan and the world with solid supply capabilities and expertise.',
+      
+      // Company Overview Section
+      companyOverviewTitle: 'Company Overview',
+      companyOverviewSubtitle: 'Professional International Trading Company Based in Osaka',
+      companyDescription1: 'Based in Osaka, we focus on K18 jewelry and diamond trading, providing stable supply and professional services to diverse clients including refiners, jewelers, and collectors.',
+      companyDescription2: 'Furthermore, through authorized gold bar agency, appraisal support, collection distribution including fine wines, luxury watches, and gold crafts, and member lounges (cigar bars, etc.) for networking, we provide value-added services.',
+      companyDescription3: 'In Osaka, where new economic zones are expanding through internationalization and IR development, we aim to build long-term trust relationships with clients and become partners for mutual growth.',
+      
+      // Company Pillars
+      coreTradingTitle: 'Core Trading',
+      coreTradingDesc: 'K18 Jewelry & Diamonds',
+      assetSolutionTitle: 'Asset Solutions',
+      assetSolutionDesc: 'Real Estate, Precious Metals & M&A Support',
+      collectionTitle: 'Collection Distribution',
+      collectionDesc: 'Fine Wines, Luxury Watches & Gold Crafts',
+      loungeTitle: 'Member Lounge',
+      loungeDesc1: 'Club for High Net Worth',
+      loungeDesc2: 'Entertainment',
+      
+      // Mission & Vision
+      missionTitle: 'MISSION',
+      missionSubtitle: 'Mission to Create a Sustainable Future',
+      missionPoint1: 'Promote recycling of precious metals and gemstones to reduce environmental impact',
+      missionPoint2: 'Maintain compliance and transparency to build long-term trust',
+      missionPoint3: 'Create a sustainable business and networking ecosystem',
+      
+      visionTitle: 'VISION',
+      visionSubtitle: 'Future We Aim For to Achieve Our Mission',
+      visionPoint1: 'Osaka is now advancing toward internationalization and a new economic era.',
+      visionPoint2: 'Osaka Gold Trading will continue to develop as a specialized trading company connecting Japanese and world markets, with K-gold jewelry and diamond trading at its core, providing market consulting, collection distribution, and social spaces integrating cigar bars.',
+      visionPoint3: 'And we will become a presence representing trust and high quality in Osaka\'s new era.',
+      
+      // Services Section
+      servicesTitle: 'Business Services',
+      servicesSubtitle: 'Professional Trading Services',
+      servicesDescription: 'From trading to investment, from appraisal to collection, providing comprehensive professional services',
+      
+      // Service Details
+      serviceKGoldTitle: 'K-Gold Trading',
+      serviceKGoldDesc: 'Wholesale and import/export of 18K gold (new and pre-owned), providing long-term stable supply to refiners, jewelers, and international agents.',
+      serviceKGoldPoint1: 'New and pre-owned 18K gold wholesale',
+      serviceKGoldPoint2: 'International import/export trading services',
+      serviceKGoldPoint3: 'Long-term stable supply chain guarantee',
+      
+      serviceDiamondTitle: 'Diamond Trading',
+      serviceDiamondDesc: 'International trading of carefully selected diamonds',
+      serviceDiamondPoint1: 'International trading of carefully selected diamonds',
+      serviceDiamondPoint2: 'Quality assurance and appraisal services',
+      serviceDiamondPoint3: 'Global supply chain',
+      
+      serviceConsultingTitle: 'International Trade Consulting',
+      serviceConsultingDesc: 'Professional advice and support for trading operations',
+      serviceConsultingPoint1: 'Market analysis and strategic proposals',
+      serviceConsultingPoint2: 'Risk management and compliance',
+      serviceConsultingPoint3: 'International trading support',
+      
+      // Additional Services
+      serviceGoldBarsTitle: 'Certified Gold Bar Agency',
+      serviceGoldBarsDesc: 'Authorized agency sales of Japanese certified gold bars and international certified gold bars through legitimate channels, ensuring transaction safety and source transparency.',
+      serviceGoldBarsPoint1: 'Japanese certified gold bar agency',
+      serviceGoldBarsPoint2: 'International certified gold bar sales',
+      serviceGoldBarsPoint3: 'Source transparency, transaction safety',
+      
+      serviceAppraisalTitle: 'Precious Metals & Gemstone Appraisal',
+      serviceAppraisalDesc: 'Collaborating with authoritative institutions to provide professional appraisal and evaluation of gold, diamonds, and gemstones, ensuring true value for trading and collection.',
+      serviceAppraisalPoint1: 'Authoritative institution collaboration appraisal',
+      serviceAppraisalPoint2: 'Professional value evaluation services',
+      serviceAppraisalPoint3: 'Trading and collection value guarantee',
+      
+      serviceInvestmentTitle: 'Market & Investment Consulting',
+      serviceInvestmentDesc: 'Based on gold and diamond market trends, combined with real estate, stocks, and collectibles, providing diversified allocation proposals for clients.',
+      serviceInvestmentPoint1: 'Precious metals market trend analysis',
+      serviceInvestmentPoint2: 'Diversified investment allocation proposals',
+      serviceInvestmentPoint3: 'Professional investment strategy formulation',
+      
+      serviceCollectionTitle: 'Luxury Collection Distribution',
+      serviceCollectionDesc: 'Specializing in distribution and brokerage of fine wines, luxury watches, and gold crafts, providing clients\' assets with both appreciation potential and cultural sophistication.',
+      serviceCollectionPoint1: 'Luxury wine collection trading',
+      serviceCollectionPoint2: 'Luxury watch distribution brokerage services',
+      serviceCollectionPoint3: 'Gold craft value evaluation',
+      
+      serviceLoungeTitle: 'Member Cigar Bar',
+      serviceLoungeSubtitle: 'Opening Soon',
+      serviceLoungeDesc: 'Integrating gold culture and luxury social atmosphere to provide clients with a private and elegant business networking space.',
+      serviceLoungePoint1: 'Private luxury social space',
+      serviceLoungePoint2: 'Gold culture themed atmosphere',
+      serviceLoungePoint3: 'Elegant business networking experience',
+      
+      // News Section
+      newsTitle: 'News',
+      newsSubtitle: 'Latest Information',
+      
+      // Company Information
+      companyLegalName: 'Company Name (Trade Name)',
+      companyNameLegal: 'Hanpuku Shouji LLC (ハンフクショウジ)',
+      companyAddress: 'Head Office Location',
+      companyAddressDetail: '〒541-0054 2F, 2FB Room, 3-2-11 Minami-Honmachi, Chuo-ku, Osaka-shi, Osaka Prefecture',
+      companyNumber: 'Corporate Number',
+      companyNumberValue: '6120-0030-29168',
+      companyCapital: 'Capital',
+      companyCapitalValue: '¥10,000,000',
+      companyBusiness: 'Business Description',
+      companyBusinessDetail: 'Trading and distribution business centered on precious metals and jewelry, asset management and management advisory services, and planning and operation of high value-added lifestyle related businesses.',
+      companyContact: 'Contact Us',
+      
+      // News Items
+      newsItem1Date: '2025.08.27',
+      newsItem1Content: 'International trading partnerships have expanded. We can now trade with more countries and provide better services to our clients.',
+      newsItem2Date: '2025.08.27',
+      newsItem2Content: 'Test4 homepage has been updated. Please view this page going forward.',
+      newsItem3Date: '2025.08.26',
+      newsItem3Content: 'Test3 homepage has been updated. Please view this page going forward.',
+      newsItem4Date: '2025.08.25',
+      newsItem4Content: 'Test2 homepage has been updated. Please view this page going forward.',
+      newsItem5Date: '2025.08.24',
+      newsItem5Content: 'Test1 homepage has been updated. Please view this page going forward.',
+      
+      // Clients Section
+      clientsTitle: 'Clients & Partners',
+      clientsSubtitle: 'Trusted Partnerships',
+      clientsDescription: 'Clients choose us not only for our stable supply sources and professional execution capabilities, but also because we can provide comprehensive support covering trading, appraisal, consulting, and social networking.',
+      
+      // Client Types
+      clientRefiner: 'Refiners',
+      clientRefinerDesc: 'Providing stable raw material supply and professional market analysis services to precious metal refining companies',
+      clientJewelry: 'Jewelers & Retailers',
+      clientJewelryDesc: 'Supporting jewelry retailers in securing quality supply sources, providing product appraisal and market trend consulting services',
+      clientInternational: 'International Traders',
+      clientInternationalDesc: 'Providing cross-border trading support and compliance assurance for international gold and diamond traders',
+      clientCollector: 'Collectors & Worth Clients',
+      clientCollectorDesc: 'Providing rare collection trading, investment consulting, and private customization services for collectors',
+      clientCorporate: 'Corporations & Family Offices',
+      clientCorporateDesc: 'Providing asset allocation advice and wealth management solutions for corporations and family offices',
+      clientInstitution: 'Professional Institutions',
+      clientInstitutionDesc: 'Building long-term cooperative relationships with financial institutions, investment funds, and other professional institutions',
+      
+      // Contact Section
+      contactDescription1: 'We look forward to hearing from you at Osaka Gold Trading.',
+      contactDescription2: 'Providing professional trading and investment services',
+      nameLabel: 'Name',
+      emailLabel: 'Email Address',
+      phoneLabel: 'Phone Number',
+      serviceLabel: 'Service Request',
+      messageLabel: 'Detailed Message',
+      sendButton: 'Send',
+      sending: 'Sending...',
+      successMessage: 'Email sent successfully. We will reply within 24 hours.',
+      errorMessage: 'Please try again.',
+      privacyMessage: 'We promise to protect your privacy information',
+      responseMessage: 'We will reply to your inquiry within 24 hours',
+      
+      // Form Placeholders
+      namePlaceholder: 'Please enter your name',
+      emailPlaceholder: 'Please enter your email address',
+      phonePlaceholder: 'Please enter your phone number',
+      servicePlaceholder: 'Please select the service you are interested in',
+      messagePlaceholder: 'Please describe your needs or questions in detail. We will provide professional answers as soon as possible...',
+      
+      // Service Options
+      serviceKGold: 'K18 Gold',
+      serviceGoldBars: 'Gold Bar Purchase & Sale',
+      serviceAppraisal: 'Precious Metals & Gemstone Appraisal',
+      serviceInvestment: 'Asset Management',
+      servicePartnership: 'Partnership',
+      serviceOther: 'Other Inquiries',
+      
+      // Validation Messages
+      requiredFields: 'Name, email address, and service request are required fields.',
+      invalidEmail: 'Please enter a valid email address.',
+      networkError: 'A network error occurred.',
+      sendFailed: 'Sending failed.',
+      
+      // Footer
+      footerDescription: 'Professional international trading company based in Osaka',
+      footerCompanyDesc: 'As Hanpuku Shouji LLC, we are a specialized trading company for 18K gold and diamonds. Through international supply chains and professional execution capabilities, we become a reliable partner connecting Japan and the world.',
+      footerServices: 'Services',
+      footerContact: 'Contact',
+      footerHeadquarters: 'Headquarters Location',
+      footerPhone: 'Phone Consultation',
+      footerEmail: 'Email Support',
+      footerVisit: 'On-site Visit',
+      footerByAppointment: 'By Appointment',
+      footerCertified: 'Certified',
+      footerInternational: 'International Trading',
+      footerSecurity: 'Security',
+      footerService1: '18K Gold Trading',
+      footerService2: 'Diamond Bulk Wholesale',
+      footerService3: 'Certified Gold Bar Agency',
+      footerService4: 'Precious Metals & Gemstone Appraisal',
+      footerService5: 'Investment Consulting',
+      footerService6: 'Luxury Collection Distribution',
+      allRightsReserved: '© 2024 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.',
+      licensedCompany: 'Licensed and regulated precious metals trading company',
     }
   }
 };

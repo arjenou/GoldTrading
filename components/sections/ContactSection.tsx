@@ -31,9 +31,10 @@ export default function ContactSection() {
   const { t, i18n } = useTranslation()
   
   // Helper function to get font class based on current language
-  const getFontClass = () => {
-    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
-           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+    const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' :
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : 
+           i18n.language === 'en' ? 'font-montserrat' : ''
   }
   
   const [formData, setFormData] = useState<FormData>({
@@ -317,35 +318,32 @@ export default function ContactSection() {
                 <CardFlowerDecoration />
                 <div className="space-y-4 sm:space-y-6">
                   <div>
-                    <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#d1a73c' }}>社名（商号）  </h4>
-                    <p className="text-foreground text-sm sm:text-base">阪福商事合同会社（ハンフクショウジ）</p>
+                    <h4 className={`text-xl sm:text-2xl font-bold mb-3 sm:mb-4 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('companyLegalName')}</h4>
+                    <p className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>{t('companyNameLegal')}</p>
                   </div>
                   
                   <div className="space-y-3 sm:space-y-4">
                     <div>
-                      <h5 className="text-sm sm:text-base font-semibold mb-2" style={{ color: '#d1a73c' }}>本店所在地</h5>
-                      <div className="text-foreground text-sm sm:text-base">
-                        <p>〒541-0054</p>
-                        <p>大阪府大阪市中央区南本町3丁目2番11号 2階 2FB号室</p>
+                      <h5 className={`text-sm sm:text-base font-semibold mb-2 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('companyAddress')}</h5>
+                      <div className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        <p>{t('companyAddressDetail')}</p>
                       </div>
                     </div>
                     
                     <div>
-                      <h5 className="text-sm sm:text-base font-semibold mb-2" style={{ color: '#d1a73c' }}>法人番号</h5>
-                      <p className="text-foreground text-sm sm:text-base">6120-0030-29168</p>
+                      <h5 className={`text-sm sm:text-base font-semibold mb-2 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('companyNumber')}</h5>
+                      <p className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>{t('companyNumberValue')}</p>
                     </div>
                     
                     <div>
-                      <h5 className="text-sm sm:text-base font-semibold mb-2" style={{ color: '#d1a73c' }}>資本金</h5>
-                      <p className="text-foreground text-sm sm:text-base">1,000万円</p>
+                      <h5 className={`text-sm sm:text-base font-semibold mb-2 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('companyCapital')}</h5>
+                      <p className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>{t('companyCapitalValue')}</p>
                     </div>
                     
                     <div>
-                      <h5 className="text-sm sm:text-base font-semibold mb-2" style={{ color: '#d1a73c' }}>事業内容</h5>
-                      <div className="text-foreground text-sm sm:text-base">
-                        <p>貴金属・宝飾品を中心とした取引・流通事業、</p>
-                        <p>資産運用及び経営アドバイザリー事業、</p>
-                        <p>並びに高付加価値ライフスタイル関連事業の企画・運営。</p>
+                      <h5 className={`text-sm sm:text-base font-semibold mb-2 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('companyBusiness')}</h5>
+                      <div className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        <p>{t('companyBusinessDetail')}</p>
                       </div>
                     </div>
                   </div>

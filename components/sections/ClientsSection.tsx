@@ -20,7 +20,8 @@ export default function ClientsSection() {
   // Helper function to get font class based on current language
   const getFontClass = () => {
     return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
-           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : 
+           i18n.language === 'en' ? 'font-montserrat' : ''
   }
   
   return (

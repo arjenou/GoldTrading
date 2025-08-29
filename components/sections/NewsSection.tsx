@@ -17,41 +17,32 @@ export default function NewsSection() {
   const { t, i18n } = useTranslation()
   
   // Helper function to get font class based on current language
-  const getFontClass = () => {
-    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
-           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+    const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' :
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : 
+           i18n.language === 'en' ? 'font-montserrat' : ''
   }
   
   const newsItems = [
     {
-      date: "2025.08.27",
-      content: i18n.language === 'ja' 
-        ? "国際取引パートナーシップが拡大しました。より多くの国々との取引が可能になり、お客様により良いサービスをご提供いたします。"
-        : "国际交易合作伙伴关系扩大了。现在可以与更多国家进行交易，为客户提供更好的服务。"
+      date: t('newsItem1Date'),
+      content: t('newsItem1Content')
     },
     {
-      date: "2025.08.27",
-      content: i18n.language === 'ja' 
-        ? "Test4ホームページが新しくなりました。今後はこちらのページをご覧ください。"
-        : "Test4主页已更新。今后请查看此页面。"
+      date: t('newsItem2Date'),
+      content: t('newsItem2Content')
     },
     {
-      date: "2025.08.26",
-      content: i18n.language === 'ja' 
-        ? "Test3ホームページが新しくなりました。今後はこちらのページをご覧ください。"
-        : "Test3主页已更新。今后请查看此页面。"
+      date: t('newsItem3Date'),
+      content: t('newsItem3Content')
     },
     {
-      date: "2025.08.25",
-      content: i18n.language === 'ja' 
-        ? "Test2ホームページが新しくなりました。今後はこちらのページをご覧ください。"
-        : "Test2主页已更新。今后请查看此页面。"
+      date: t('newsItem4Date'),
+      content: t('newsItem4Content')
     },
     {
-      date: "2025.08.24",
-      content: i18n.language === 'ja' 
-        ? "Test1ホームページが新しくなりました。今後はこちらのページをご覧ください。"
-        : "Test1主页已更新。今后请查看此页面。"
+      date: t('newsItem5Date'),
+      content: t('newsItem5Content')
     }
   ]
 

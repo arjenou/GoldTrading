@@ -43,14 +43,15 @@ export async function POST(request: NextRequest) {
 
     // 邮件内容
     const mailOptions = {
-      from: 'hanpuku01@gmail.com',
+      from: 'hanpuku01@gmail.com', // 必须使用验证过的发送邮箱
       to: 'hanpuku01@gmail.com', // 发送到指定的 Gmail
+      replyTo: email, // 回复地址设置为填写表格的人的邮箱
       subject: `【大阪ゴールドトレーディング】新しいお問い合わせ - ${name}様`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
           <div style="background-color: #d1a73c; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
             <h3 style="margin: 0; font-size: 24px;">大阪ゴールドトレーディング</h3>
-            <p style="margin: 5px 0 0 0; font-size: 16px;">新しいお問い合わせ</p>
+            <p style="margin: 5px 0 0 0; font-size: 16px;">新しいお問い合わせ - ${name}様より</p>
           </div>
           
           <div style="background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">

@@ -80,42 +80,36 @@ export default function CompanyOverview() {
         <div className="grid lg:grid-cols-2 min-h-[500px] sm:min-h-[600px]">
           {/* Left Side - Mission Content with Gold Overlay */}
           <ScrollAnimation animation="slideInLeft" delay={200}>
-            <div className="relative h-full min-h-[300px] sm:min-h-[400px] bg-gradient-to-br from-yellow-50 to-amber-100">
+            <div className="relative h-full min-h-[300px] sm:min-h-[400px] bg-gradient-to-br from-yellow-50 to-amber-100 group cursor-pointer transition-all duration-300 ease-in-out">
               {/* Background Image (blurred office interior) */}
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/30 transition-all duration-300 ease-in-out group-hover:from-yellow-500/10 group-hover:to-amber-600/15"></div>
               
               {/* Dark overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/30"></div>
+              <div className="absolute inset-0 bg-black/30 transition-all duration-300 ease-in-out group-hover:bg-black/50"></div>
               
               {/* Content */}
-              <div className="relative z-10 p-6 sm:p-8 lg:p-12 flex flex-col justify-center h-full">
+              <div className="relative z-10 p-6 sm:p-8 lg:p-12 flex flex-col justify-center h-full transition-all duration-300 ease-in-out group-hover:scale-[1.02]">
                 {/* Icon */}
-                <div className="mb-6">
-                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 4L18.5 10.5L25 11L20 15.5L21.5 22L16 18.5L10.5 22L12 15.5L7 11L13.5 10.5L16 4Z" fill="white" opacity="0.8"/>
-                      <circle cx="16" cy="16" r="8" stroke="white" strokeWidth="1.5" opacity="0.6"/>
-                    </svg>
-                  </div>
+                <div className="mb-6 transition-all duration-300 ease-in-out group-hover:scale-110">
                 </div>
                 
                 {/* Mission Text */}
                 <div className="text-white">
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat transition-all duration-300 ease-in-out group-hover:text-yellow-200">
                     MISSION
                   </h3>
-                  <p className="text-base sm:text-lg leading-relaxed lead">
+                  <p className="text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100">
                     持続可能な未来を<br className="only-sp" />
                     創造する使命
                   </p>
                   <div className="mt-6 space-y-3">
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       貴金属と宝石のリサイクルを推進し、環境負荷を軽減する
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       コンプライアンスと透明性を堅持し、長期的な信頼を築く
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       持続可能なビジネスと交流のエコシステムを創造する
                     </p>
                   </div>
@@ -126,48 +120,35 @@ export default function CompanyOverview() {
 
           {/* Right Side - Vision Content with Gold Overlay */}
           <ScrollAnimation animation="slideInRight" delay={400}>
-            <div className="relative h-full min-h-[300px] sm:min-h-[400px] bg-gradient-to-br from-amber-50 to-yellow-100">
+            <div className="relative h-full min-h-[300px] sm:min-h-[400px] bg-gradient-to-br from-amber-50 to-yellow-100 group cursor-pointer transition-all duration-300 ease-in-out">
               {/* Background Image (blurred office interior) */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-yellow-600/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-yellow-600/30 transition-all duration-300 ease-in-out group-hover:from-amber-500/10 group-hover:to-yellow-600/15"></div>
               
               {/* Dark overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/30"></div>
+              <div className="absolute inset-0 bg-black/30 transition-all duration-300 ease-in-out group-hover:bg-black/50"></div>
               
               {/* Content */}
-              <div className="relative z-10 p-6 sm:p-8 lg:p-12 flex flex-col justify-center h-full">
-                {/* Icon */}
-                <div className="mb-6">
-                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="2" fill="white" opacity="0.8"/>
-                      <circle cx="24" cy="8" r="2" fill="white" opacity="0.8"/>
-                      <circle cx="16" cy="16" r="2" fill="white" opacity="0.8"/>
-                      <circle cx="8" cy="24" r="2" fill="white" opacity="0.8"/>
-                      <circle cx="24" cy="24" r="2" fill="white" opacity="0.8"/>
-                      <path d="M8 8L24 8M8 8L16 16M16 16L24 24M8 24L16 16M24 8L16 16" stroke="white" strokeWidth="1.5" opacity="0.6"/>
-                    </svg>
-                  </div>
-                </div>
+              <div className="relative z-10 p-6 sm:p-8 lg:p-12 flex flex-col justify-center h-full transition-all duration-300 ease-in-out group-hover:scale-[1.02]">
                 
                 {/* Vision Text */}
                 <div className="text-white">
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat transition-all duration-300 ease-in-out group-hover:text-yellow-200">
                     VISION
                   </h3>
-                  <p className="text-base sm:text-lg leading-relaxed lead">
+                  <p className="text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100">
                     MISSIONを達成するために<br className="only-sp" />
                     目指すべき未来
                   </p>
                   <div className="mt-6 space-y-3">
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       大阪は今、国際化と新しい経済時代へと歩みを進めています。
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       Osaka Gold Trading は、Kゴールドジュエリーとダイヤモンド貿易を中核に据え、
                       市場コンサルティング、コレクション流通、そしてシガーバーを融合した社交空間を提供し、
                       日本と世界のマーケットをつなぐ専門的な貿易会社として発展を続けます。
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
                       そして、大阪の新しい時代において、信頼と高品質を代表する存在となります。
                     </p>
                   </div>

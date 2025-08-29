@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
+import { LightFlowerDecoration } from "@/components/ui/FlowerDecoration"
+import { CardFlowerDecoration } from "@/components/ui/WhiteAreaDecoration"
 import {
   ArrowRight,
   Phone,
@@ -15,7 +17,10 @@ import {
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 relative">
+      {/* 花朵装饰 */}
+      <LightFlowerDecoration />
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeIn" delay={100}>
           <div className="text-center mb-12 sm:mb-16">
@@ -33,7 +38,9 @@ export default function ContactSection() {
           <div className="flex justify-center items-center max-w-6xl mx-auto">
             {/* Contact Form */}
             <div className="w-full lg:w-1/2">
-              <Card className="border-accent/20">
+              <Card className="border-accent/20 relative">
+                {/* 卡片花朵装饰 */}
+                <CardFlowerDecoration />
                 <CardContent className="p-6 sm:p-8">
                   <form className="space-y-4 sm:space-y-6">
                     <div className="space-y-2">
@@ -145,7 +152,9 @@ export default function ContactSection() {
           <div className="mt-12 sm:mt-16">
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
               {/* Company Information - Left Side */}
-              <div className="rounded-2xl p-6 sm:p-8 border border-accent/20">
+              <div className="rounded-2xl p-6 sm:p-8 border border-accent/20 relative">
+                {/* 卡片花朵装饰 */}
+                <CardFlowerDecoration />
                 <div className="space-y-4 sm:space-y-6">
                   <div>
                     <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#d1a73c' }}>社名（商号）  </h4>
@@ -184,7 +193,9 @@ export default function ContactSection() {
               </div>
               
               {/* Google Map - Right Side */}
-              <div className="rounded-2xl p-6 sm:p-8 border border-accent/20">
+              <div className="rounded-2xl p-6 sm:p-8 border border-accent/20 relative">
+                {/* 卡片花朵装饰 */}
+                <CardFlowerDecoration />
                 <div className="h-full w-full rounded-lg overflow-hidden">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1234567890123!2d135.50000000000000!3d34.68194444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5b5b5b5b5b5%3A0x1234567890123456!2z5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW!5e0!3m2!1sja!2sjp!4v1234567890123"

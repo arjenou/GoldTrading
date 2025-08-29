@@ -3,11 +3,15 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Diamond, Coins, Shield, TrendingUp, Globe, Users, Heart, Target } from "lucide-react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
 import Image from "next/image"
+import { FlowerDecorationGroup } from "@/components/ui/FlowerDecoration"
 
 export default function CompanyOverview() {
   return (
     <>
-      <section id="company-overview" className="py-12 sm:py-16 bg-muted/30">
+      <section id="company-overview" className="py-12 sm:py-16 bg-muted/30 relative">
+        {/* 花朵装饰 */}
+        <FlowerDecorationGroup />
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             {/* Left Content */}

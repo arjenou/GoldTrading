@@ -1,6 +1,8 @@
 import React from "react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
 import { Card, CardContent } from "@/components/ui/card"
+import { LightFlowerDecoration } from "@/components/ui/FlowerDecoration"
+import { CardFlowerDecoration } from "@/components/ui/WhiteAreaDecoration"
 import {
   Shield,
   Award,
@@ -36,6 +38,9 @@ export default function NewsSection() {
 
   return (
     <section id="news" className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      {/* 花朵装饰 */}
+      <LightFlowerDecoration />
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* 新着情報 Section Header */}
         <ScrollAnimation animation="fadeIn" delay={100}>
@@ -62,7 +67,9 @@ export default function NewsSection() {
         <ScrollAnimation animation="slideUp" delay={200}>
           {/* ニュースコンテンツエリア */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8 relative">
+              {/* 卡片花朵装饰 */}
+              <CardFlowerDecoration />
               <div className="space-y-4 sm:space-y-6">
                 {newsItems.map((item, index) => (
                   <div key={index}>

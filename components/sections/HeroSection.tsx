@@ -21,7 +21,7 @@ export default function HeroSection() {
       />
       
       {/* 覆盖层蒙版 */}
-      <div className="absolute inset-0 bg-black/60 pointer-events-none" aria-hidden />
+      <div className="absolute inset-0 bg-black/75 pointer-events-none" aria-hidden />
       
       <div className="relative z-10 min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">

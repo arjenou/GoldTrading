@@ -3,8 +3,17 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Coins, MapPin, Phone, Mail, Globe, Shield, Award, Users, Clock, ArrowRight } from "lucide-react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
+import { useTranslation } from "react-i18next"
 
 export default function Footer() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   return (
     <footer className="relative bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
       {/* 背景装饰 */}
@@ -32,75 +41,74 @@ export default function Footer() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white drop-shadow-lg">大阪ゴールドトレーディング</h3>
+                    <h3 className={`text-xl sm:text-2xl font-bold text-white drop-shadow-lg ${getFontClass()}`}>{t('companyNameJP')}</h3>
                     <p className="text-accent font-medium text-sm sm:text-base">Osaka Gold Trading</p>
                   </div>
                 </div>
                 
-                <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-lg text-sm sm:text-base">
-                  阪福商事合同会社として、18K金とダイヤモンドの専門取引企業。
-                  国際的なサプライチェーンと専門的な実行力で、日本と世界を結ぶ信頼できるパートナーです。
+                <p className={`text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-lg text-sm sm:text-base ${getFontClass()}`}>
+                  {t('footerCompanyDesc')}
                 </p>
                 
                 <div className="flex flex-wrap gap-2 sm:gap-4 mb-4 sm:mb-6">
                   <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
                     <Award className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
-                    認証済み
+                    <span className={getFontClass()}>{t('footerCertified')}</span>
                   </Badge>
                   <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
                     <Globe className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
-                    国際取引
+                    <span className={getFontClass()}>{t('footerInternational')}</span>
                   </Badge>
                   <Badge variant="outline" className="border-accent text-accent bg-transparent text-xs">
                     <Shield className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-1" />
-                    セキュリティ
+                    <span className={getFontClass()}>{t('footerSecurity')}</span>
                   </Badge>
                 </div>
               </div>
 
               {/* サービス - 移动端隐藏 */}
               <div className="hidden lg:block">
-                <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2">
-                  サービス
+                <h4 className={`text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2 ${getFontClass()}`}>
+                  {t('footerServices')}
                 </h4>
                 <ul className="space-y-2 sm:space-y-3">
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>18K金取引</span>
+                    <span className={getFontClass()}>{t('footerService1')}</span>
                   </li>
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>ダイヤモンド大口卸売</span>
+                    <span className={getFontClass()}>{t('footerService2')}</span>
                   </li>
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>認証金地金代理</span>
+                    <span className={getFontClass()}>{t('footerService3')}</span>
                   </li>
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>貴金属・宝石鑑定</span>
+                    <span className={getFontClass()}>{t('footerService4')}</span>
                   </li>
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>投資コンサルティング</span>
+                    <span className={getFontClass()}>{t('footerService5')}</span>
                   </li>
                   <li className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors cursor-pointer text-sm sm:text-base">
                     <div className="w-1 h-1 bg-accent rounded-full"></div>
-                    <span>高級収集品流通</span>
+                    <span className={getFontClass()}>{t('footerService6')}</span>
                   </li>
                 </ul>
               </div>
 
               {/* 連絡先 - 移动端隐藏 */}
               <div className="hidden lg:block">
-                <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2">
-                  連絡先
+                <h4 className={`text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white border-b border-accent/30 pb-2 ${getFontClass()}`}>
+                  {t('footerContact')}
                 </h4>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium text-sm sm:text-base">本社所在地</p>
+                      <p className={`text-gray-300 font-medium text-sm sm:text-base ${getFontClass()}`}>{t('footerHeadquarters')}</p>
                       <p className="text-gray-400 text-xs sm:text-sm">大阪府大阪市</p>
                     </div>
                   </div>
@@ -108,7 +116,7 @@ export default function Footer() {
                   <div className="flex items-start space-x-3">
                     <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium text-sm sm:text-base">電話相談</p>
+                      <p className={`text-gray-300 font-medium text-sm sm:text-base ${getFontClass()}`}>{t('footerPhone')}</p>
                       <p className="text-gray-400 text-xs sm:text-sm">080-3835-1709</p>
                     </div>
                   </div>
@@ -116,7 +124,7 @@ export default function Footer() {
                   <div className="flex items-start space-x-3">
                     <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium text-sm sm:text-base">メール対応</p>
+                      <p className={`text-gray-300 font-medium text-sm sm:text-base ${getFontClass()}`}>{t('footerEmail')}</p>
                       <p className="text-gray-400 text-xs sm:text-sm">hanpuku01@gmail.com</p>
                     </div>
                   </div>
@@ -124,8 +132,8 @@ export default function Footer() {
                   <div className="flex items-start space-x-3">
                     <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-gray-300 font-medium text-sm sm:text-base">現地訪問</p>
-                      <p className="text-gray-400 text-xs sm:text-sm">要予約</p>
+                      <p className={`text-gray-300 font-medium text-sm sm:text-base ${getFontClass()}`}>{t('footerVisit')}</p>
+                      <p className={`text-gray-400 text-xs sm:text-sm ${getFontClass()}`}>{t('footerByAppointment')}</p>
                     </div>
                   </div>
                 </div>
@@ -138,11 +146,11 @@ export default function Footer() {
             <div className="border-t border-gray-700 pt-6 sm:pt-8">
               <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
                 <div className="text-center lg:text-left">
-                  <p className="text-gray-400 text-xs sm:text-sm">
-                    © 2024 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.
+                  <p className={`text-gray-400 text-xs sm:text-sm ${getFontClass()}`}>
+                    {t('allRightsReserved')}
                   </p>
-                  <p className="text-gray-500 text-xs mt-1">
-                    Licensed and regulated precious metals trading company
+                  <p className={`text-gray-500 text-xs mt-1 ${getFontClass()}`}>
+                    {t('licensedCompany')}
                   </p>
                 </div>
                 

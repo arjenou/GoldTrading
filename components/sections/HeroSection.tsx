@@ -3,8 +3,17 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
+import { useTranslation } from "react-i18next"
 
 export default function HeroSection() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   return (
     <section id="home" className="relative py-16 sm:py-20 lg:py-32 min-h-screen overflow-hidden">
       {/* 背景图 - 不拼接，全覆盖，提高亮度 */}
@@ -29,31 +38,31 @@ export default function HeroSection() {
             <div className="flex flex-col justify-center h-screen max-w-4xl space-y-6 sm:space-y-8">
               {/* 主标题 - 左对齐，调整顶部间距和移动端文字大小 */}
               <h1 
-                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg text-left -mt-20 sm:-mt-32"
+                className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg text-left -mt-20 sm:-mt-32 ${getFontClass()}`}
                 style={{ color: '#cdad7d' }}
               >
-                大阪<br />ゴールドトレーディング
+                {t('heroTitle')}
               </h1>
               
               {/* 副标题 - 左对齐，移动端文字大小调整 */}
               <div className="space-y-2 mb-6 sm:mb-8 text-left">
                 <p 
-                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
+                  className={`text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md ${getFontClass()}`}
                   style={{ color: '#eeead6' }}
                 >
-                  大阪を拠点に、K18ジュエリーとダイヤモンドを中心とした国際貿易を展開。
+                  {t('heroSubtitle1')}
                 </p>
                 <p 
-                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
+                  className={`text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md ${getFontClass()}`}
                   style={{ color: '#eeead6' }}
                 >
-                  国際化が進む大阪、IR開発によって広がる新しい経済圏の中で、
+                  {t('heroSubtitle2')}
                 </p>
                 <p 
-                  className="text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md"
+                  className={`text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-md ${getFontClass()}`}
                   style={{ color: '#eeead6' }}
                 >
-                  確かな供給力と専門性で、日本と世界を結ぶ信頼のパートナーを目指します。
+                  {t('heroSubtitle3')}
                 </p>
               </div>
 
@@ -73,7 +82,7 @@ export default function HeroSection() {
                   className="px-6 sm:px-8 py-2 sm:py-3 text-black font-medium shadow-xl hover:opacity-90 transition-opacity text-sm sm:text-base"
                   style={{ backgroundColor: '#cdad7d' }}
                 >
-                  お問い合わせ
+                  <span className={getFontClass()}>{t('contact')}</span>
                 </Button>
               </div>
             </div>

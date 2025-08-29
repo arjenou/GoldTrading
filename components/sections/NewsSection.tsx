@@ -11,28 +11,47 @@ import {
   Gem,
   Users,
 } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 export default function NewsSection() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   const newsItems = [
     {
       date: "2025.08.27",
-      content: "国際取引パートナーシップが拡大しました。より多くの国々との取引が可能になり、お客様により良いサービスをご提供いたします。"
+      content: i18n.language === 'ja' 
+        ? "国際取引パートナーシップが拡大しました。より多くの国々との取引が可能になり、お客様により良いサービスをご提供いたします。"
+        : "国际交易合作伙伴关系扩大了。现在可以与更多国家进行交易，为客户提供更好的服务。"
     },
     {
       date: "2025.08.27",
-      content: "Test4ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+      content: i18n.language === 'ja' 
+        ? "Test4ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+        : "Test4主页已更新。今后请查看此页面。"
     },
     {
       date: "2025.08.26",
-      content: "Test3ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+      content: i18n.language === 'ja' 
+        ? "Test3ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+        : "Test3主页已更新。今后请查看此页面。"
     },
     {
       date: "2025.08.25",
-      content: "Test2ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+      content: i18n.language === 'ja' 
+        ? "Test2ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+        : "Test2主页已更新。今后请查看此页面。"
     },
     {
       date: "2025.08.24",
-      content: "Test1ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+      content: i18n.language === 'ja' 
+        ? "Test1ホームページが新しくなりました。今後はこちらのページをご覧ください。"
+        : "Test1主页已更新。今后请查看此页面。"
     }
   ]
 
@@ -52,11 +71,11 @@ export default function NewsSection() {
             </div>
             
             <div className="relative z-10">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white drop-shadow-2xl">
-                新着情報
+              <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white drop-shadow-2xl ${getFontClass()}`}>
+                {t('newsTitle')}
               </h2>
-              <p className="text-base sm:text-lg max-w-2xl mx-auto text-gray-200 drop-shadow-lg px-4">
-                最新のお知らせをお届けします
+              <p className={`text-base sm:text-lg max-w-2xl mx-auto text-gray-200 drop-shadow-lg px-4 ${getFontClass()}`}>
+                {t('newsSubtitle')}
               </p>
             </div>
           </div>
@@ -83,7 +102,7 @@ export default function NewsSection() {
                       
                       {/* ニュース内容 */}
                       <div className="flex-1">
-                        <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
+                        <p className={`text-gray-800 text-base sm:text-lg leading-relaxed ${getFontClass()}`}>
                           {item.content}
                         </p>
                       </div>

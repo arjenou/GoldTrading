@@ -3,10 +3,19 @@
 import React, { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Coins, Menu, X } from "lucide-react"
+import { useTranslation } from "react-i18next"
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher"
 
 export default function Navigation() {
+  const { t, i18n } = useTranslation()
   const [isLightText, setIsLightText] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
 
   // Smooth scroll function
   const scrollToSection = (sectionId: string) => {
@@ -63,16 +72,19 @@ export default function Navigation() {
               alt="Gold Trading Osaka" 
               className="h-6 w-6 sm:h-8 sm:w-8"
             />
-            <div className="text-left">
-              <div className="text-xs sm:text-xs font-medium tracking-wider" style={{ color: '#cdad7d' }}>
-                GOLD TRADING OSAKA
+                          <div className="text-left">
+                <div className="text-xs sm:text-xs font-medium tracking-wider" style={{ color: '#cdad7d' }}>
+                  {t('companyName')}
+                </div>
+                <div className={`text-xs sm:text-sm font-bold drop-shadow-lg transition-colors duration-300 ${
+                  isLightText ? 'text-white' : 'text-gray-800'
+                } ${
+                  i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+                  i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+                }`}>
+                  {t('companyNameJP')}
+                </div>
               </div>
-              <div className={`text-xs sm:text-sm font-bold drop-shadow-lg transition-colors duration-300 ${
-                isLightText ? 'text-white' : 'text-gray-800'
-              }`}>
-                大阪ゴールドトレーディング
-              </div>
-            </div>
           </button>
 
           {/* Desktop Navigation */}
@@ -83,9 +95,12 @@ export default function Navigation() {
                 isLightText 
                   ? 'text-white/90 hover:text-white' 
                   : 'text-gray-800/90 hover:text-gray-900'
+              } ${
+                i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+                i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
               }`}
             >
-              ホーム
+              {t('home')}
             </button>
             <button 
               onClick={() => scrollToSection('news')}
@@ -93,9 +108,9 @@ export default function Navigation() {
                 isLightText 
                   ? 'text-white/90 hover:text-white' 
                   : 'text-gray-800/90 hover:text-gray-900'
-              }`}
+              } ${getFontClass()}`}
             >
-              ニュース
+              {t('news')}
             </button>
             <button 
               onClick={() => scrollToSection('services')}
@@ -103,9 +118,9 @@ export default function Navigation() {
                 isLightText 
                   ? 'text-white/90 hover:text-white' 
                   : 'text-gray-800/90 hover:text-gray-900'
-              }`}
+              } ${getFontClass()}`}
             >
-              事業サービス
+              {t('services')}
             </button>
             <button 
               onClick={() => scrollToSection('clients')}
@@ -113,14 +128,15 @@ export default function Navigation() {
                 isLightText 
                   ? 'text-white/90 hover:text-white' 
                   : 'text-gray-800/90 hover:text-gray-900'
-              }`}
+              } ${getFontClass()}`}
             >
-              お客様・パートナー
+              {t('clients')}
             </button>
           </div>
 
           {/* Desktop Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher isLightText={isLightText} />
             <Button
               variant="outline"
               size="sm"
@@ -131,7 +147,7 @@ export default function Navigation() {
                   : 'border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80'
               }`}
             >
-              <span className="text-xs lg:text-sm">お問い合わせ</span>
+              <span className={`text-xs lg:text-sm ${getFontClass()}`}>{t('contact')}</span>
             </Button>
           </div>
 
@@ -160,34 +176,69 @@ export default function Navigation() {
             <div className="px-4 py-4 space-y-4">
               <button 
                 onClick={() => scrollToSection('company-overview')}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
-                ホーム
+                {t('home')}
               </button>
               <button 
                 onClick={() => scrollToSection('news')}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
-                ニュース
+                {t('news')}
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
-                事業サービス
-              </button>
+                {t('services')}
+            </button>
               <button 
                 onClick={() => scrollToSection('clients')}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
-                お客様・パートナー
+                {t('clients')}
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
-                お問い合わせ
+                {t('contact')}
               </button>
+              {/* Mobile Language Switcher */}
+              <div className="pt-2 border-t border-gray-200">
+                <div className="flex items-center justify-between mb-2">
+                  <span className={`text-sm font-medium text-gray-700 ${getFontClass()}`}>{t('language')}</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    onClick={() => {
+                      i18n.changeLanguage('ja')
+                      closeMobileMenu()
+                    }}
+                    className={`px-3 py-2 text-sm rounded-md border transition-colors ${
+                      i18n.language === 'ja'
+                        ? 'bg-accent text-white border-accent'
+                        : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+                    } ${getFontClass()}`}
+                  >
+                    🇯🇵 {t('japanese')}
+                  </button>
+                  <button
+                    onClick={() => {
+                      i18n.changeLanguage('zh')
+                      closeMobileMenu()
+                    }}
+                    className={`px-3 py-2 text-sm rounded-md border transition-colors ${
+                      i18n.language === 'zh'
+                        ? 'bg-accent text-white border-accent'
+                        : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+                    } ${getFontClass()}`}
+                  >
+                    🇨🇳 {t('chinese')}
+                  </button>
+                </div>
+              </div>
+              
               <div className="pt-2">
                 <Button
                   variant="outline"
@@ -195,7 +246,7 @@ export default function Navigation() {
                   onClick={() => scrollToSection('contact')}
                   className="w-full border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80"
                 >
-                  <span className="text-sm">コンサルタントに相談</span>
+                  <span className={`text-sm ${getFontClass()}`}>{t('consultant')}</span>
                 </Button>
               </div>
             </div>

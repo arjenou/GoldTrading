@@ -4,8 +4,17 @@ import { Diamond, Coins, Shield, TrendingUp, Globe, Users, Heart, Target } from 
 import ScrollAnimation from "@/components/ui/ScrollAnimation"
 import Image from "next/image"
 import { FlowerDecorationGroup } from "@/components/ui/FlowerDecoration"
+import { useTranslation } from "react-i18next"
 
 export default function CompanyOverview() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   return (
     <>
       <section id="company-overview" className="py-12 sm:py-16 bg-muted/30 relative">
@@ -19,16 +28,14 @@ export default function CompanyOverview() {
               <div className="space-y-6 sm:space-y-8">
                 <div>
                   <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">Gold Trading Osaka</h2>
-                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed" style={{ textIndent: '1em' }}>
-                    大阪を拠点に、K18ジュエリーとダイヤモンドの取引を主軸とし、
-                    精錬業者、宝飾商、コレクターなど多様なお客様に安定した供給と専門的なサービスを提供しています。
+                  <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${getFontClass()}`} style={{ textIndent: '1em' }}>
+                    {t('companyDescription1')}
                   </p>
-                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed" style={{ textIndent: '1em' }}>さらに、金地金の正規代理や鑑定サポート、洋酒・高級時計・金工芸品といったコレクション流通、
-                    そして会員制ラウンジ（シガーバー等）による交流の場を通じ、付加価値のあるサービスを展開しています。
+                  <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${getFontClass()}`} style={{ textIndent: '1em' }}>
+                    {t('companyDescription2')}
                   </p>
-                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed" style={{ textIndent: '1em' }}>
-                    国際化とIR開発により新しい経済圏が広がる大阪において、
-                    お客様と長期的な信頼関係を築き、共に成長するパートナーであることを目指します。
+                  <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${getFontClass()}`} style={{ textIndent: '1em' }}>
+                    {t('companyDescription3')}
                   </p>
                 </div>
               </div>
@@ -42,35 +49,33 @@ export default function CompanyOverview() {
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                       <Coins className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">核心取引</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground">  K18ジュエリー・ダイヤモンド
-                    </p>
+                    <h4 className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base ${getFontClass()}`}>{t('coreTradingTitle')}</h4>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('coreTradingDesc')}</p>
                   </div>
 
                   <div className="text-center">
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                       <TrendingUp className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">資産ソリューション</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground"> 不動産・貴金属・M&A支援
-                    </p>
+                    <h4 className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base ${getFontClass()}`}>{t('assetSolutionTitle')}</h4>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('assetSolutionDesc')}</p>
                   </div>
 
                   <div className="text-center">
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                       <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">コレクション流通</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground">洋酒・高級時計・金工芸品</p>
+                    <h4 className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base ${getFontClass()}`}>{t('collectionTitle')}</h4>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('collectionDesc')}</p>
                   </div>
 
                   <div className="text-center">
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                       <Users className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">会員制ラウンジ</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground">富裕層向けのクラブ</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">エンターテインメント</p>
+                    <h4 className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base ${getFontClass()}`}>{t('loungeTitle')}</h4>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('loungeDesc1')}</p>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('loungeDesc2')}</p>
                   </div>
                 </div>
               </div>
@@ -100,21 +105,20 @@ export default function CompanyOverview() {
                 {/* Mission Text */}
                 <div className="text-white">
                   <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat transition-all duration-300 ease-in-out group-hover:text-yellow-200">
-                    MISSION
+                    {t('missionTitle')}
                   </h3>
-                  <p className="text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100">
-                    持続可能な未来を<br className="only-sp" />
-                    創造する使命
+                  <p className={`text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100 ${getFontClass()}`}>
+                    {t('missionSubtitle')}
                   </p>
                   <div className="mt-6 space-y-3">
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      貴金属と宝石のリサイクルを推進し、環境負荷を軽減する
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('missionPoint1')}
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      コンプライアンスと透明性を堅持し、長期的な信頼を築く
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('missionPoint2')}
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      持続可能なビジネスと交流のエコシステムを創造する
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('missionPoint3')}
                     </p>
                   </div>
                 </div>
@@ -137,23 +141,20 @@ export default function CompanyOverview() {
                 {/* Vision Text */}
                 <div className="text-white">
                   <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 montserrat transition-all duration-300 ease-in-out group-hover:text-yellow-200">
-                    VISION
+                    {t('visionTitle')}
                   </h3>
-                  <p className="text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100">
-                    MISSIONを達成するために<br className="only-sp" />
-                    目指すべき未来
+                  <p className={`text-base sm:text-lg leading-relaxed lead transition-all duration-300 ease-in-out group-hover:text-yellow-100 ${getFontClass()}`}>
+                    {t('visionSubtitle')}
                   </p>
                   <div className="mt-6 space-y-3">
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      大阪は今、国際化と新しい経済時代へと歩みを進めています。
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('visionPoint1')}
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      Osaka Gold Trading は、Kゴールドジュエリーとダイヤモンド貿易を中核に据え、
-                      市場コンサルティング、コレクション流通、そしてシガーバーを融合した社交空間を提供し、
-                      日本と世界のマーケットをつなぐ専門的な貿易会社として発展を続けます。
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('visionPoint2')}
                     </p>
-                    <p className="text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100">
-                      そして、大阪の新しい時代において、信頼と高品質を代表する存在となります。
+                    <p className={`text-sm sm:text-base leading-relaxed opacity-90 transition-all duration-300 ease-in-out group-hover:opacity-100 ${getFontClass()}`}>
+                      {t('visionPoint3')}
                     </p>
                   </div>
                 </div>

@@ -1,12 +1,23 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Montserrat } from 'next/font/google'
+import { Montserrat, Noto_Sans_JP, Noto_Sans_SC } from 'next/font/google'
 import './globals.css'
+import I18nProvider from '@/components/I18nProvider'
 
 const montserrat = Montserrat({ 
   subsets: ['latin'],
   variable: '--font-montserrat',
+})
+
+const notoSansJP = Noto_Sans_JP({ 
+  subsets: ['latin'],
+  variable: '--font-noto-sans-jp',
+})
+
+const notoSansSC = Noto_Sans_SC({ 
+  subsets: ['latin'],
+  variable: '--font-noto-sans-sc',
 })
 
 export const metadata: Metadata = {
@@ -35,8 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${montserrat.variable}`}>
-        {children}
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${montserrat.variable} ${notoSansJP.variable} ${notoSansSC.variable}`}>
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </body>
     </html>
   )

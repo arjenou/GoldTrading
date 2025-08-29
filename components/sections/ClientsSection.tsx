@@ -12,8 +12,17 @@ import {
   Building2,
   Briefcase,
 } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 export default function ClientsSection() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   return (
     <ParallaxBackground
       backgroundImage="/back-03.jpg"
@@ -27,10 +36,9 @@ export default function ClientsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeIn" delay={100}>
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg" style={{ color: '#c8ae83' }} >お客様・パートナー</h2>
-            <p className="text-base sm:text-lg text-white/90 max-w-3xl mx-auto drop-shadow-md px-4" style={{ color: '#c8ae83' }} >
-              お客様が私たちを選ぶ理由は、安定した供給源と専門的な実行力だけでなく、
-              取引・鑑定・コンサルティング・社交を網羅する包括的なサポートを提供できるからです
+            <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg ${getFontClass()}`} style={{ color: '#c8ae83' }} >{t('clientsTitle')}</h2>
+            <p className={`text-base sm:text-lg text-white/90 max-w-3xl mx-auto drop-shadow-md px-4 ${getFontClass()}`} style={{ color: '#c8ae83' }} >
+              {t('clientsDescription')}
             </p>
           </div>
         </ScrollAnimation>
@@ -54,9 +62,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>精錬業者</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      貴金属精錬企業に安定した原料供給と専門的な市場分析サービスを提供
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientRefiner')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientRefinerDesc')}
                     </p>
                   </div>
                 </div>
@@ -77,9 +85,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>宝飾商・小売業者</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      宝飾小売業者の優良供給源確保をサポート、製品鑑定と市場トレンドコンサルティングを提供
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientJewelry')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientJewelryDesc')}
                     </p>
                   </div>
                 </div>
@@ -100,9 +108,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>国際貿易商</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      国際金・ダイヤモンド貿易商に越境取引サポートとコンプライアンス保証を提供
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientInternational')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientInternationalDesc')}
                     </p>
                   </div>
                 </div>
@@ -123,9 +131,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>収集家・富裕層顧客</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      収集家に希少コレクション取引、投資コンサルティング、プライベートカスタマイズサービスを提供
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientCollector')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientCollectorDesc')}
                     </p>
                   </div>
                 </div>
@@ -146,9 +154,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>企業・ファミリーオフィス</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      企業とファミリーオフィスに資産配置提案と財産管理ソリューションを提供
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientCorporate')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientCorporateDesc')}
                     </p>
                   </div>
                 </div>
@@ -169,9 +177,9 @@ export default function ClientsSection() {
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 -mt-6 sm:-mt-8 relative z-10 mx-2 group-hover:bg-yellow-50/90" style={{ border: '1px solid #D0A900', position: 'relative' }}>
                   <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 text-center h-28 sm:h-32 flex flex-col justify-start pt-3 sm:pt-4 relative after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:pointer-events-none after:border after:border-[#D0A900] transition-all duration-300 group-hover:bg-yellow-50/90">
-                    <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3" style={{ color: '#C7ae87' }}>専門機関</h4>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                      金融機関・投資ファンドなどの専門機関と長期協力関係を構築
+                    <h4 className={`text-lg sm:text-xl font-bold mb-2 sm:mb-3 ${getFontClass()}`} style={{ color: '#C7ae87' }}>{t('clientInstitution')}</h4>
+                    <p className={`text-gray-600 leading-relaxed text-xs sm:text-sm ${getFontClass()}`}>
+                      {t('clientInstitutionDesc')}
                     </p>
                   </div>
                 </div>

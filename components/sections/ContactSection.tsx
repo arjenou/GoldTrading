@@ -17,6 +17,7 @@ import {
   AlertCircle,
   Loader2,
 } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 interface FormData {
   name: string;
@@ -27,6 +28,14 @@ interface FormData {
 }
 
 export default function ContactSection() {
+  const { t, i18n } = useTranslation()
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : ''
+  }
+  
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -54,7 +63,7 @@ export default function ContactSection() {
     // 验证必填字段
     if (!formData.name || !formData.email || !formData.service) {
       setSubmitStatus('error');
-      setSubmitMessage('お名前、メールアドレス、サービス要望は必須項目です。');
+      setSubmitMessage(t('requiredFields'));
       return false;
     }
 
@@ -62,7 +71,7 @@ export default function ContactSection() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setSubmitStatus('error');
-      setSubmitMessage('有効なメールアドレスを入力してください。');
+      setSubmitMessage(t('invalidEmail'));
       return false;
     }
 
@@ -102,11 +111,11 @@ export default function ContactSection() {
         }, 100);
       } else {
         setSubmitStatus('error');
-        setSubmitMessage(result.error || '送信に失敗しました。');
+        setSubmitMessage(result.error || t('sendFailed'));
       }
     } catch (error) {
       setSubmitStatus('error');
-      setSubmitMessage('ネットワークエラーが発生しました。');
+      setSubmitMessage(t('networkError'));
     } finally {
       setIsSubmitting(false);
     }
@@ -122,12 +131,12 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeIn" delay={100}>
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#d1a73c' }}>お問い合わせ</h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-              大阪ゴールドトレーディングへのお問い合わせをお待ちしております。
+            <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ${getFontClass()}`} style={{ color: '#d1a73c' }}>{t('contactTitle')}</h2>
+            <p className={`text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4 ${getFontClass()}`}>
+              {t('contactDescription1')}
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-              専門的な取引・投資サービスを提供いたします
+            <p className={`text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4 ${getFontClass()}`}>
+              {t('contactDescription2')}
             </p>
           </div>
         </ScrollAnimation>
@@ -145,8 +154,8 @@ export default function ContactSection() {
                     <div className="mb-6 p-4 bg-green-50 border-2 border-green-300 rounded-lg flex items-center shadow-sm animate-in slide-in-from-top-2 duration-300">
                       <CheckCircle className="h-6 w-6 text-green-600 mr-3 flex-shrink-0" />
                       <div>
-                        <p className="text-green-800 font-medium text-sm">{submitMessage}</p>
-                        <p className="text-green-600 text-xs mt-1">メールが正常に送信されました。24時間以内にご返信いたします。</p>
+                        <p className={`text-green-800 font-medium text-sm ${getFontClass()}`}>{submitMessage}</p>
+                        <p className={`text-green-600 text-xs mt-1 ${getFontClass()}`}>{t('successMessage')}</p>
                       </div>
                     </div>
                   )}
@@ -155,22 +164,22 @@ export default function ContactSection() {
                     <div className="mb-6 p-4 bg-red-50 border-2 border-red-300 rounded-lg flex items-center shadow-sm animate-in slide-in-from-top-2 duration-300">
                       <AlertCircle className="h-6 w-6 text-red-600 mr-3 flex-shrink-0" />
                       <div>
-                        <p className="text-red-800 font-medium text-sm">{submitMessage}</p>
-                        <p className="text-red-600 text-xs mt-1">もう一度お試しください。</p>
+                        <p className={`text-red-800 font-medium text-sm ${getFontClass()}`}>{submitMessage}</p>
+                        <p className={`text-red-600 text-xs mt-1 ${getFontClass()}`}>{t('errorMessage')}</p>
                       </div>
                     </div>
                   )}
 
                   <form id="contact-form" onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-foreground text-sm sm:text-base">
-                        お名前 *
+                      <Label htmlFor="name" className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        {t('nameLabel')} *
                       </Label>
                       <Input
                         id="name"
                         value={formData.name}
                         onChange={(e) => handleInputChange('name', e.target.value)}
-                        placeholder="お名前をご入力ください"
+                        placeholder={t('namePlaceholder')}
                         className="border-border focus:border-accent text-base"
                         required
                         autoComplete="name"
@@ -181,15 +190,15 @@ export default function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-foreground text-sm sm:text-base">
-                        メールアドレス *
+                      <Label htmlFor="email" className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        {t('emailLabel')} *
                       </Label>
                       <Input
                         id="email"
                         type="email"
                         value={formData.email}
                         onChange={(e) => handleInputChange('email', e.target.value)}
-                        placeholder="メールアドレスをご入力ください"
+                        placeholder={t('emailPlaceholder')}
                         className="border-border focus:border-accent text-base"
                         required
                         autoComplete="email"
@@ -200,15 +209,15 @@ export default function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-foreground text-sm sm:text-base">
-                        電話番号
+                      <Label htmlFor="phone" className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        {t('phoneLabel')}
                       </Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="電話番号をご入力ください"
+                        placeholder={t('phonePlaceholder')}
                         className="border-border focus:border-accent text-base"
                         autoComplete="tel"
                         inputMode="tel"
@@ -218,8 +227,8 @@ export default function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="service" className="text-foreground text-sm sm:text-base">
-                        サービス要望 *
+                      <Label htmlFor="service" className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        {t('serviceLabel')} *
                       </Label>
                       <Select 
                         value={formData.service} 
@@ -227,28 +236,28 @@ export default function ContactSection() {
                         disabled={isSubmitting}
                       >
                         <SelectTrigger className="w-full border-border focus:border-accent text-base" style={{ fontSize: '16px' }}>
-                          <SelectValue placeholder="ご興味のあるサービスをお選びください" />
+                          <SelectValue placeholder={t('servicePlaceholder')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="k-gold-diamond">K18金</SelectItem>
-                          <SelectItem value="gold-bars">インゴットの購入・売却</SelectItem>
-                          <SelectItem value="appraisal">貴金属・宝石鑑定</SelectItem>
-                          <SelectItem value="investment">資産運用</SelectItem>
-                          <SelectItem value="partnership">パートナーシップ</SelectItem>
-                          <SelectItem value="other">その他のお問い合わせ</SelectItem>
+                          <SelectItem value="k-gold-diamond">{t('serviceKGold')}</SelectItem>
+                          <SelectItem value="gold-bars">{t('serviceGoldBars')}</SelectItem>
+                          <SelectItem value="appraisal">{t('serviceAppraisal')}</SelectItem>
+                          <SelectItem value="investment">{t('serviceInvestment')}</SelectItem>
+                          <SelectItem value="partnership">{t('servicePartnership')}</SelectItem>
+                          <SelectItem value="other">{t('serviceOther')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message" className="text-foreground text-sm sm:text-base">
-                        詳細メッセージ
+                      <Label htmlFor="message" className={`text-foreground text-sm sm:text-base ${getFontClass()}`}>
+                        {t('messageLabel')}
                       </Label>
                       <Textarea
                         id="message"
                         value={formData.message}
                         onChange={(e) => handleInputChange('message', e.target.value)}
-                        placeholder="ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします..."
+                        placeholder={t('messagePlaceholder')}
                         className="border-border focus:border-accent min-h-[120px] text-base"
                         rows={5}
                         autoComplete="off"
@@ -274,22 +283,22 @@ export default function ContactSection() {
                         {isSubmitting ? (
                           <>
                             <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
-                            送信中...
+                            <span className={getFontClass()}>{t('sending')}</span>
                           </>
                         ) : (
                           <>
                             <MessageSquare className="text-center mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                            送信
+                            <span className={getFontClass()}>{t('sendButton')}</span>
                           </>
                         )}
                       </Button>
                     </div>
 
-                    <p className="text-xs sm:text-sm text-muted-foreground text-center">
-                      お客様のプライバシー情報を保護することをお約束し
+                    <p className={`text-xs sm:text-sm text-muted-foreground text-center ${getFontClass()}`}>
+                      {t('privacyMessage')}
                     </p>
-                    <p className="text-xs sm:text-sm text-muted-foreground text-center">
-                      24時間以内にお問い合わせにお返事いたします
+                    <p className={`text-xs sm:text-sm text-muted-foreground text-center ${getFontClass()}`}>
+                      {t('responseMessage')}
                     </p>
                   </form>
                 </CardContent>

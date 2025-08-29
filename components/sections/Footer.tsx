@@ -109,7 +109,7 @@ export default function Footer() {
                     <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-gray-300 font-medium text-sm sm:text-base">電話相談</p>
-                      <p className="text-gray-400 text-xs sm:text-sm">平日 9:00-18:00</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">080-3835-1709</p>
                     </div>
                   </div>
                   
@@ -117,7 +117,7 @@ export default function Footer() {
                     <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-gray-300 font-medium text-sm sm:text-base">メール対応</p>
-                      <p className="text-gray-400 text-xs sm:text-sm">24時間受付</p>
+                      <p className="text-gray-400 text-xs sm:text-sm">hanpuku01@gmail.com</p>
                     </div>
                   </div>
                   

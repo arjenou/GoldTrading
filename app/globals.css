@@ -79,6 +79,7 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,6 +124,22 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Montserrat font class */
+  .montserrat {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+  
+  /* Responsive line break for mobile */
+  .only-sp {
+    display: block;
+  }
+  
+  @media (min-width: 640px) {
+    .only-sp {
+      display: none;
+    }
   }
   
   /* Mobile-first responsive text scaling */

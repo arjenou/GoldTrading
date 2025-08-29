@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -13,9 +13,95 @@ import {
   Phone,
   MapPin,
   MessageSquare,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
 } from "lucide-react"
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  message: string;
+}
+
 export default function ContactSection() {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleInputChange = (field: keyof FormData, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // 验证必填字段
+    if (!formData.name || !formData.email || !formData.service) {
+      setSubmitStatus('error');
+      setSubmitMessage('お名前、メールアドレス、サービス要望は必須項目です。');
+      return;
+    }
+
+    // 验证邮箱格式
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setSubmitStatus('error');
+      setSubmitMessage('有効なメールアドレスを入力してください。');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setSubmitMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setSubmitMessage(result.message);
+        // 清空表单
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus('error');
+        setSubmitMessage(result.error || '送信に失敗しました。');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage('ネットワークエラーが発生しました。');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 relative">
       {/* 花朵装饰 */}
@@ -42,19 +128,37 @@ export default function ContactSection() {
                 {/* 卡片花朵装饰 */}
                 <CardFlowerDecoration />
                 <CardContent className="p-6 sm:p-8">
-                  <form className="space-y-4 sm:space-y-6">
+                  {/* 提交状态提示 */}
+                  {submitStatus === 'success' && (
+                    <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                      <p className="text-green-800 text-sm">{submitMessage}</p>
+                    </div>
+                  )}
+                  
+                  {submitStatus === 'error' && (
+                    <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center">
+                      <AlertCircle className="h-5 w-5 text-red-600 mr-3" />
+                      <p className="text-red-800 text-sm">{submitMessage}</p>
+                    </div>
+                  )}
+
+                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-foreground text-sm sm:text-base">
                         お名前 *
                       </Label>
                       <Input
                         id="name"
+                        value={formData.name}
+                        onChange={(e) => handleInputChange('name', e.target.value)}
                         placeholder="お名前をご入力ください"
                         className="border-border focus:border-accent text-base"
                         required
                         autoComplete="name"
                         inputMode="text"
                         style={{ fontSize: '16px' }}
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -65,12 +169,15 @@ export default function ContactSection() {
                       <Input
                         id="email"
                         type="email"
+                        value={formData.email}
+                        onChange={(e) => handleInputChange('email', e.target.value)}
                         placeholder="メールアドレスをご入力ください"
                         className="border-border focus:border-accent text-base"
                         required
                         autoComplete="email"
                         inputMode="email"
                         style={{ fontSize: '16px' }}
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -81,11 +188,14 @@ export default function ContactSection() {
                       <Input
                         id="phone"
                         type="tel"
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange('phone', e.target.value)}
                         placeholder="電話番号をご入力ください"
                         className="border-border focus:border-accent text-base"
                         autoComplete="tel"
                         inputMode="tel"
                         style={{ fontSize: '16px' }}
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -93,7 +203,11 @@ export default function ContactSection() {
                       <Label htmlFor="service" className="text-foreground text-sm sm:text-base">
                         サービス要望 *
                       </Label>
-                      <Select>
+                      <Select 
+                        value={formData.service} 
+                        onValueChange={(value) => handleInputChange('service', value)}
+                        disabled={isSubmitting}
+                      >
                         <SelectTrigger className="w-full border-border focus:border-accent text-base" style={{ fontSize: '16px' }}>
                           <SelectValue placeholder="ご興味のあるサービスをお選びください" />
                         </SelectTrigger>
@@ -101,7 +215,7 @@ export default function ContactSection() {
                           <SelectItem value="k-gold-diamond">K18金</SelectItem>
                           <SelectItem value="gold-bars">インゴットの購入・売却</SelectItem>
                           <SelectItem value="appraisal">貴金属・宝石鑑定</SelectItem>
-                          <SelectItem value="investment">改为資産運用</SelectItem>
+                          <SelectItem value="investment">資産運用</SelectItem>
                           <SelectItem value="partnership">パートナーシップ</SelectItem>
                           <SelectItem value="other">その他のお問い合わせ</SelectItem>
                         </SelectContent>
@@ -114,12 +228,15 @@ export default function ContactSection() {
                       </Label>
                       <Textarea
                         id="message"
+                        value={formData.message}
+                        onChange={(e) => handleInputChange('message', e.target.value)}
                         placeholder="ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします..."
                         className="border-border focus:border-accent min-h-[120px] text-base"
                         rows={5}
                         autoComplete="off"
                         inputMode="text"
                         style={{ fontSize: '16px' }}
+                        disabled={isSubmitting}
                       />
                     </div>
 
@@ -128,9 +245,19 @@ export default function ContactSection() {
                         type="submit"
                         size="lg"
                         className="w-full bg-accent hover:bg-accent/90 text-accent-foreground group text-sm sm:text-base"
+                        disabled={isSubmitting}
                       >
-                        <MessageSquare className="text-center mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                        送信
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
+                            送信中...
+                          </>
+                        ) : (
+                          <>
+                            <MessageSquare className="text-center mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                            送信
+                          </>
+                        )}
                       </Button>
                     </div>
 
@@ -198,7 +325,7 @@ export default function ContactSection() {
                 <CardFlowerDecoration />
                 <div className="h-full w-full rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1234567890123!2d135.50000000000000!3d34.68194444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5b5b5b5b5b5%3A0x1234567890123456!2z5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW!5e0!3m2!1sja!2sjp!4v1234567890123"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1234567890123!2d135.50000000000000!3d34.68194444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5b5b5b5b5b5%3A0x1234567890123456!2z5aSn6YGT44Kq44Oq44Kk44Oq44Oq44O85YyW5aSn6YGT44Kq44Oq44Kk44Oq44O85YyW!5e0!3m2!1sja!2sjp!4v1234567890123"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

@@ -47,13 +47,15 @@ export default function ContactSection() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    // 确保阻止表单默认行为
     e.preventDefault();
+    e.stopPropagation();
     
     // 验证必填字段
     if (!formData.name || !formData.email || !formData.service) {
       setSubmitStatus('error');
       setSubmitMessage('お名前、メールアドレス、サービス要望は必須項目です。');
-      return;
+      return false;
     }
 
     // 验证邮箱格式
@@ -61,7 +63,7 @@ export default function ContactSection() {
     if (!emailRegex.test(formData.email)) {
       setSubmitStatus('error');
       setSubmitMessage('有効なメールアドレスを入力してください。');
-      return;
+      return false;
     }
 
     setIsSubmitting(true);
@@ -90,6 +92,14 @@ export default function ContactSection() {
           service: '',
           message: ''
         });
+        
+        // 滚动到提示信息
+        setTimeout(() => {
+          const formElement = document.getElementById('contact-form');
+          if (formElement) {
+            formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
       } else {
         setSubmitStatus('error');
         setSubmitMessage(result.error || '送信に失敗しました。');
@@ -100,6 +110,8 @@ export default function ContactSection() {
     } finally {
       setIsSubmitting(false);
     }
+    
+    return false;
   };
 
   return (
@@ -130,20 +142,26 @@ export default function ContactSection() {
                 <CardContent className="p-6 sm:p-8">
                   {/* 提交状态提示 */}
                   {submitStatus === 'success' && (
-                    <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                      <p className="text-green-800 text-sm">{submitMessage}</p>
+                    <div className="mb-6 p-4 bg-green-50 border-2 border-green-300 rounded-lg flex items-center shadow-sm animate-in slide-in-from-top-2 duration-300">
+                      <CheckCircle className="h-6 w-6 text-green-600 mr-3 flex-shrink-0" />
+                      <div>
+                        <p className="text-green-800 font-medium text-sm">{submitMessage}</p>
+                        <p className="text-green-600 text-xs mt-1">メールが正常に送信されました。24時間以内にご返信いたします。</p>
+                      </div>
                     </div>
                   )}
                   
                   {submitStatus === 'error' && (
-                    <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center">
-                      <AlertCircle className="h-5 w-5 text-red-600 mr-3" />
-                      <p className="text-red-800 text-sm">{submitMessage}</p>
+                    <div className="mb-6 p-4 bg-red-50 border-2 border-red-300 rounded-lg flex items-center shadow-sm animate-in slide-in-from-top-2 duration-300">
+                      <AlertCircle className="h-6 w-6 text-red-600 mr-3 flex-shrink-0" />
+                      <div>
+                        <p className="text-red-800 font-medium text-sm">{submitMessage}</p>
+                        <p className="text-red-600 text-xs mt-1">もう一度お試しください。</p>
+                      </div>
                     </div>
                   )}
 
-                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <form id="contact-form" onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-foreground text-sm sm:text-base">
                         お名前 *
@@ -246,6 +264,12 @@ export default function ContactSection() {
                         size="lg"
                         className="w-full bg-accent hover:bg-accent/90 text-accent-foreground group text-sm sm:text-base"
                         disabled={isSubmitting}
+                        onClick={(e) => {
+                          if (isSubmitting) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                          }
+                        }}
                       >
                         {isSubmitting ? (
                           <>

@@ -97,12 +97,12 @@ export default function NewsSection() {
                       </div>
                       
                       {/* ニュース内容 */}
-                      <div className="flex-1">
-                        <p className={`text-gray-800 text-base sm:text-lg leading-relaxed ${getFontClass()}`}>
+                      <div className="flex-1 min-h-[120px] flex flex-col">
+                        <p className={`text-gray-800 text-base sm:text-lg leading-relaxed ${getFontClass()} flex-1`}>
                           {item.content}
                         </p>
                         {item.link && (
-                          <div className="mt-3">
+                          <div className="mt-3 flex-shrink-0">
                             <a 
                               href={item.link}
                               target="_blank"

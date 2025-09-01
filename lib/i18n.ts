@@ -74,8 +74,8 @@ const resources = {
       servicesDescription: '取引から投資、鑑定から収集まで、包括的な専門サービスを提供',
       
       // Service Details
-      serviceKGoldTitle: 'K金取引',
-      serviceKGoldDesc: '18K金（新品・中古）の卸売・輸出入、精錬業者・宝飾商・国際代理店に長期安定供給を提供。',
+      serviceKGoldTitle: 'K18ジュエリー取引',
+      serviceKGoldDesc: '新品・中古K18ジュエリーの卸売・輸出入、精錬業者・宝飾商・国際代理店に長期安定供給を提供。',
       serviceKGoldPoint1: '新品・中古18K金卸売',
       serviceKGoldPoint2: '国際輸出入取引サービス',
       serviceKGoldPoint3: '長期安定サプライチェーン保証',
@@ -94,10 +94,10 @@ const resources = {
       
       // Additional Services
       serviceDiamondTitle: 'ダイヤモンド取引',
-      serviceDiamondDesc: '高品質ダイヤモンドの卸売と国際流通、透明で合規なルートで宝飾業界と収集顧客に信頼できるリソースを提供。',
+      serviceDiamondDesc: '厳選された高品質ダイヤモンドを、原産地に基づく優位性と世界的に競争力ある価格でご提供。国際的に認証された証明書を完備し、宝飾業界およびコレクターに安心と信頼のソースをお届けします。',
       serviceDiamondPoint1: '高品質ダイヤモンド卸売取引',
-      serviceDiamondPoint2: '透明で合規な取引ルート',
-      serviceDiamondPoint3: '国際流通ネットワークサポート',
+      serviceDiamondPoint2: '原産地優位によるグローバル最安水準の価格',
+      serviceDiamondPoint3: '国際鑑定機関（GIA等）による証明書付き',
       
       serviceGoldBarsTitle: '認証金地金代理',
       serviceGoldBarsDesc: '正規ルートでの日本公認金地金と国際認証金地金の代理販売、取引の安全性と出所の透明性を確保。',
@@ -149,19 +149,19 @@ const resources = {
       
       // News Items
       newsItem1Date: '2025.08.11',
-      newsItem1Content: '日本製ジュエリーの国際競争力向上、K18技術革新で海外市場開拓加速。伝統工芸と最新技術を融合した日本製ジュエリーが、アジア富裕層市場で高い評価を得ており、輸出額が前年比30%増加。品質とデザインの両面で世界市場での存在感を高めている。',
+      newsItem1Content: '宝石市場の規模、シェア＆業界分析、製品（ネックレス、イヤリング、リング、ブレスレットなど）、材料タイプ（金、プラチナ、ダイヤモンドなど）、エンドユーザー（男性と女性）、地域予測、2025-2032別。',
       newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
       newsItem2Date: '2025.06.25',
-      newsItem2Content: 'マネーフォワード、超富裕層向け資産管理プラットフォームを2025年6月に提供開始。金融資産10億円以上を対象に、専用アプリと専門コンシェルジュによる総合資産管理サービスを展開。非金融資産も含めた可視化を通じて、次世代資産運用の基盤を支える。',
+      newsItem2Content: 'マネーフォワードプライベートバンク、超富裕層のための資産管理プラットフォーム『Money Forward Private BANK』を2025年6月25日より提供開始。',
       newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
-      newsItem3Date: '2025.04.14',
-      newsItem3Content: '大阪初のIR着工、「夢洲」が経済変革の起点に。日本初の統合型リゾート施設が2025年4月に着工。ホテル・カジノ・MICE機能を併せ持ち、大阪・関西圏に新たな産業と雇用創出をもたらす期待が高まる。',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: '日本初のIR、大阪万博会場隣地で24日に本体工事着工へ。',
       newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
       newsItem4Date: '2025.03.01',
-      newsItem4Content: '大谷翔平×今与によるK18七宝ダイヤモンドペンダント、MLB東京シリーズ記念で318点限定発売。日本伝統工芸・七宝焼を用いたK18製ジュエリーが、2025年MLB東京シリーズ開催を記念して登場。限定318点の高付加価値商品として、高資産層コレクターの注目を集めること必至。',
+      newsItem4Content: '大谷翔平選手オフィシャルジュエリー最新作「K18 SHIPPO DIAMOND PENDANTS」 全国主要百貨店および小売店にて好評受注販売中。',
       newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
       newsItem5Date: '2025.02.13',
-      newsItem5Content: '日本の富裕層、2025年に過去最高を更新—165万世帯、金融資産469兆円。野村総研の調査によると、純金融資産1億円以上を持つ世帯が増加し、富裕層・超富裕層の合計は165.3万世帯に。資産市場の拡大と高需要を背景に、資産運用ニーズのさらなる高まりが見込まれる。',
+      newsItem5Content: '野村総合研究所、日本の富裕層・超富裕層は合計約165万世帯、その純金融資産の総額は約469兆円と推計。',
       newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       readMore: '続きを読む',
       
@@ -235,13 +235,13 @@ const resources = {
       footerCertified: '認証済み',
       footerInternational: '国際取引',
       footerSecurity: 'セキュリティ',
-      footerService1: '18K金取引',
+      footerService1: 'K18ジュエリー取引',
       footerService2: 'ダイヤモンド大口卸売',
       footerService3: '認証金地金代理',
       footerService4: '貴金属・宝石鑑定',
       footerService5: '投資コンサルティング',
       footerService6: '高級収集品流通',
-      allRightsReserved: '© 2024 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.',
+      allRightsReserved: '© 2025 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
     }
   },
@@ -316,9 +316,9 @@ const resources = {
       servicesDescription: '从交易到投资，从鉴定到收藏，提供全面的专业服务',
       
       // Service Details
-      serviceKGoldTitle: 'K金交易',
-      serviceKGoldDesc: '18K金（新品・二手）的批发・进出口，为精炼商・珠宝商・国际代理商提供长期稳定供应。',
-      serviceKGoldPoint1: '新品・二手18K金批发',
+      serviceKGoldTitle: 'K18珠宝交易',
+      serviceKGoldDesc: '新品・二手K18珠宝的批发・进出口，为精炼商・珠宝商・国际代理商提供长期稳定供应。',
+      serviceKGoldPoint1: '新品・二手K18珠宝批发',
       serviceKGoldPoint2: '国际进出口交易服务',
       serviceKGoldPoint3: '长期稳定供应链保证',
       
@@ -336,10 +336,10 @@ const resources = {
       
       // Additional Services
       serviceDiamondTitle: '钻石交易',
-      serviceDiamondDesc: '高品质钻石的批发和国际流通，通过透明合规的渠道为珠宝行业和收藏客户提供可靠的资源。',
+      serviceDiamondDesc: '精选高品质钻石，基于原产地优势以全球竞争力价格提供。配备国际认证证书，为珠宝行业及收藏家提供安心可靠的来源。',
       serviceDiamondPoint1: '高品质钻石批发交易',
-      serviceDiamondPoint2: '透明合规的交易渠道',
-      serviceDiamondPoint3: '国际流通网络支持',
+      serviceDiamondPoint2: '原产地优势带来的全球最低价格水平',
+      serviceDiamondPoint3: '国际鉴定机构（GIA等）认证证书',
       
       serviceGoldBarsTitle: '认证金条代理',
       serviceGoldBarsDesc: '通过正规渠道代理销售日本公认金条和国际认证金条，确保交易安全和来源透明。',
@@ -391,19 +391,19 @@ const resources = {
       
       // News Items
       newsItem1Date: '2025.08.11',
-      newsItem1Content: '日本制珠宝国际竞争力提升，K18技术创新加速海外市场开拓。融合传统工艺与最新技术的日本制珠宝在亚洲富裕层市场获得高度评价，出口额同比增长30%。在品质与设计两方面提升世界市场存在感。',
+      newsItem1Content: '宝石市场规模、份额及行业分析，产品（项链、耳环、戒指、手镯等），材料类型（金、铂金、钻石等），终端用户（男性和女性），地区预测，2025-2032年分别。',
       newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
       newsItem2Date: '2025.06.25',
-      newsItem2Content: 'Money Forward推出超富裕层资产管理平台，聚焦专业化与可视化服务。面向金融资产10亿日元以上客户，提供专用应用和专业管家综合资产管理服务。通过包含非金融资产的可视化，支撑下一代资产运用的基础。',
+      newsItem2Content: 'Money Forward Private Bank，超富裕层资产管理平台《Money Forward Private BANK》于2025年6月25日开始提供服务。',
       newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
-      newsItem3Date: '2025.04.14',
-      newsItem3Content: '大阪梦洲首座IR项目开工，助力地区经济腾飞。日本首个综合度假区于2025年4月正式开工建设，集酒店、赌场、MICE功能于一体，为大阪关西地区带来新产业和就业机会，经济发展前景广阔。',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: '日本首个IR，大阪万博会场邻地24日主体工程开工。',
       newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
       newsItem4Date: '2025.03.01',
-      newsItem4Content: '大谷翔平×今与联名K18吊坠限量发售，兼具传统技法与奢华材质。采用日本传统七宝烧工艺制作的K18珠宝，为纪念2025年MLB东京系列赛特别推出。限量318件的高附加值商品，必将吸引高资产层收藏家的关注。',
+      newsItem4Content: '大谷翔平选手官方珠宝最新作品「K18 SHIPPO DIAMOND PENDANTS」在全国主要百货店及零售店好评预订销售中。',
       newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
       newsItem5Date: '2025.02.13',
-      newsItem5Content: '日本富裕层家庭总数创历史新高，金融资产总额达469兆円。野村综合研究所调查显示，纯金融资产1亿日元以上家庭持续增长，富裕层与超富裕层合计达165.3万户。在资产市场扩大和高需求的背景下，资产运用需求将进一步增长。',
+      newsItem5Content: '野村综合研究所，日本富裕层・超富裕层合计约165万户，其纯金融资产总额约469兆円推算。',
       newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       readMore: '阅读更多',
       
@@ -451,7 +451,7 @@ const resources = {
       messagePlaceholder: '请详细描述您的需求或问题。我们将尽快为您提供专业回答...',
       
       // Service Options
-      serviceKGold: 'K18金',
+      serviceKGold: 'K18珠宝',
       serviceGoldBars: '金条购买・销售',
       serviceAppraisal: '贵金属・宝石鉴定',
       serviceInvestment: '资产管理',
@@ -477,13 +477,13 @@ const resources = {
       footerCertified: '已认证',
       footerInternational: '国际贸易',
       footerSecurity: '安全',
-      footerService1: '18K金交易',
+      footerService1: 'K18珠宝交易',
       footerService2: '钻石大宗批发',
       footerService3: '认证金条代理',
       footerService4: '贵金属・宝石鉴定',
       footerService5: '投资咨询',
       footerService6: '高级收藏品流通',
-      allRightsReserved: '© 2024 阪福商事合同会社・大阪黄金交易. 版权所有.',
+      allRightsReserved: '© 2025 阪福商事合同会社・大阪黄金交易. 版权所有.',
       licensedCompany: '获得许可和监管的贵金属交易公司',
     }
   },
@@ -559,17 +559,17 @@ const resources = {
       servicesDescription: 'From trading to investment, from appraisal to collection, providing comprehensive professional services',
       
       // Service Details
-      serviceKGoldTitle: 'K-Gold Trading',
-      serviceKGoldDesc: 'Wholesale and import/export of 18K gold (new and pre-owned), providing long-term stable supply to refiners, jewelers, and international agents.',
-      serviceKGoldPoint1: 'New and pre-owned 18K gold wholesale',
+      serviceKGoldTitle: 'K18 Jewelry Trading',
+      serviceKGoldDesc: 'Wholesale and import/export of new and pre-owned K18 jewelry, providing long-term stable supply to refiners, jewelers, and international agents.',
+      serviceKGoldPoint1: 'New and pre-owned K18 jewelry wholesale',
       serviceKGoldPoint2: 'International import/export trading services',
       serviceKGoldPoint3: 'Long-term stable supply chain guarantee',
       
       serviceDiamondTitle: 'Diamond Trading',
-      serviceDiamondDesc: 'International trading of carefully selected diamonds',
-      serviceDiamondPoint1: 'International trading of carefully selected diamonds',
-      serviceDiamondPoint2: 'Quality assurance and appraisal services',
-      serviceDiamondPoint3: 'Global supply chain',
+      serviceDiamondDesc: 'Carefully selected high-quality diamonds provided with origin-based advantages and globally competitive pricing. Complete with internationally certified certificates, delivering peace of mind and reliable sources to the jewelry industry and collectors.',
+      serviceDiamondPoint1: 'High-quality diamond wholesale trading',
+      serviceDiamondPoint2: 'Global lowest price levels through origin advantages',
+      serviceDiamondPoint3: 'International certification from institutions (GIA, etc.)',
       
       serviceConsultingTitle: 'International Trade Consulting',
       serviceConsultingDesc: 'Professional advice and support for trading operations',
@@ -628,19 +628,19 @@ const resources = {
       
       // News Items
       newsItem1Date: '2025.08.11',
-      newsItem1Content: 'Japanese jewelry international competitiveness rises with K18 technological innovation accelerating overseas market expansion. Japanese jewelry combining traditional craftsmanship with latest technology receives high praise in Asian affluent markets, with exports increasing 30% year-over-year. Enhancing global market presence in both quality and design.',
+      newsItem1Content: 'Jewelry market size, share & industry analysis, products (necklaces, earrings, rings, bracelets, etc.), material types (gold, platinum, diamonds, etc.), end users (male and female), regional forecasts, 2025-2032.',
       newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
       newsItem2Date: '2025.06.25',
-      newsItem2Content: 'Money Forward launches ultra-high-net-worth asset management platform in June 2025. Targeting clients with over ¥1 billion in financial assets, offering dedicated apps and professional concierge comprehensive asset management services. Supporting next-generation asset management foundation through visualization including non-financial assets.',
+      newsItem2Content: 'Money Forward Private Bank launches ultra-high-net-worth asset management platform "Money Forward Private BANK" starting June 25, 2025.',
       newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
-      newsItem3Date: '2025.04.14',
-      newsItem3Content: 'Osaka\'s first IR project begins construction at Yumeshima, marking a new era of economic transformation. Japan\'s first integrated resort facility officially started construction in April 2025, combining hotel, casino, and MICE functions to bring new industries and employment opportunities to the Osaka-Kansai region.',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: 'Japan\'s first IR, main construction work begins on 24th adjacent to Osaka Expo site.',
       newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
       newsItem4Date: '2025.03.01',
-      newsItem4Content: 'Shohei Ohtani × IMAYO collaboration K18 cloisonné diamond pendant limited release commemorates MLB Tokyo Series. Japanese traditional cloisonné craftsmanship combined with K18 jewelry debuts for the 2025 MLB Tokyo Series. Limited to 318 pieces, this high-value product is set to attract attention from high-net-worth collectors.',
+      newsItem4Content: 'Shohei Ohtani official jewelry latest work "K18 SHIPPO DIAMOND PENDANTS" receiving favorable advance orders at major department stores and retail stores nationwide.',
       newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
       newsItem5Date: '2025.02.13',
-      newsItem5Content: 'Japan\'s affluent households reach historic high with 1.65 million households and ¥469 trillion in financial assets. Nomura Research Institute survey shows continued growth in households with over ¥100 million in net financial assets, with affluent and ultra-affluent households totaling 1.653 million. Asset management needs expected to grow further amid expanding asset markets and high demand.',
+      newsItem5Content: 'Nomura Research Institute estimates Japan\'s affluent and ultra-affluent households total approximately 1.65 million, with total net financial assets of approximately ¥469 trillion.',
       newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       
       // Clients Section
@@ -685,7 +685,7 @@ const resources = {
       messagePlaceholder: 'Please describe your needs or questions in detail. We will provide professional answers as soon as possible...',
       
       // Service Options
-      serviceKGold: 'K18 Gold',
+      serviceKGold: 'K18 Jewelry',
       serviceGoldBars: 'Gold Bar Purchase & Sale',
       serviceAppraisal: 'Precious Metals & Gemstone Appraisal',
       serviceInvestment: 'Asset Management',
@@ -711,13 +711,13 @@ const resources = {
       footerCertified: 'Certified',
       footerInternational: 'International Trading',
       footerSecurity: 'Security',
-      footerService1: '18K Gold Trading',
+      footerService1: 'K18 Jewelry Trading',
       footerService2: 'Diamond Bulk Wholesale',
       footerService3: 'Certified Gold Bar Agency',
       footerService4: 'Precious Metals & Gemstone Appraisal',
       footerService5: 'Investment Consulting',
       footerService6: 'Luxury Collection Distribution',
-      allRightsReserved: '© 2024 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.',
+      allRightsReserved: '© 2025 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
     }
   }

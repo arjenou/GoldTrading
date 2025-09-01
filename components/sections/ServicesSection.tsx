@@ -56,7 +56,7 @@ export default function ServicesSection() {
         </ScrollAnimation>
 
         <div className="space-y-12 sm:space-y-16">
-          {/* Service 1: K金取引 */}
+          {/* Service 1: K18ジュエリー取引 */}
           <ScrollAnimation animation="slideUp" delay={200}>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* 服务内容文字区域 - 添加半透明背景 */}
@@ -93,7 +93,7 @@ export default function ServicesSection() {
               <div id="service-1-image" className="aspect-video overflow-hidden rounded-lg border border-border order-2 lg:order-2">
                 <img 
                   src="/service-image/18K.jpg" 
-                  alt="K金取引" 
+                  alt="K18ジュエリー取引" 
                   className="w-full h-full object-fill"
                   style={{ display: 'block' }}
                 />

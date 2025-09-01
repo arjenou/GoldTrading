@@ -26,23 +26,28 @@ export default function NewsSection() {
   const newsItems = [
     {
       date: t('newsItem1Date'),
-      content: t('newsItem1Content')
+      content: t('newsItem1Content'),
+      link: t('newsItem1Link')
     },
     {
       date: t('newsItem2Date'),
-      content: t('newsItem2Content')
+      content: t('newsItem2Content'),
+      link: t('newsItem2Link')
     },
     {
       date: t('newsItem3Date'),
-      content: t('newsItem3Content')
+      content: t('newsItem3Content'),
+      link: t('newsItem3Link')
     },
     {
       date: t('newsItem4Date'),
-      content: t('newsItem4Content')
+      content: t('newsItem4Content'),
+      link: t('newsItem4Link')
     },
     {
       date: t('newsItem5Date'),
-      content: t('newsItem5Content')
+      content: t('newsItem5Content'),
+      link: t('newsItem5Link')
     }
   ]
 
@@ -96,6 +101,21 @@ export default function NewsSection() {
                         <p className={`text-gray-800 text-base sm:text-lg leading-relaxed ${getFontClass()}`}>
                           {item.content}
                         </p>
+                        {item.link && (
+                          <div className="mt-3">
+                            <a 
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-accent hover:text-accent/80 font-medium text-sm transition-colors duration-200"
+                            >
+                              {t('readMore')}
+                              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                            </a>
+                          </div>
+                        )}
                       </div>
                     </div>
                     

@@ -100,10 +100,10 @@ const resources = {
       serviceDiamondPoint3: '国際鑑定機関（GIA等）による証明書付き',
       
       serviceGoldBarsTitle: '認証金地金代理',
-      serviceGoldBarsDesc: '正規ルートでの日本公認金地金と国際認証金地金の代理販売、取引の安全性と出所の透明性を確保。',
-      serviceGoldBarsPoint1: '日本公認金地金代理',
-      serviceGoldBarsPoint2: '国際認証金地金販売',
-      serviceGoldBarsPoint3: '出所透明、取引安全',
+      serviceGoldBarsDesc: '日本公認ブランドや国際認証を受けた金地金を、正規ルートで安心してお取引いただけます。また、寄託販売にも対応し、透明性と信頼性の高いサービスを提供しています。',
+      serviceGoldBarsPoint1: '日本公認金地金の正規代理販売',
+      serviceGoldBarsPoint2: '国際認証金地金の取扱い',
+      serviceGoldBarsPoint3: '寄託販売サービス',
       
       serviceAppraisalTitle: '貴金属・宝石鑑定',
       serviceAppraisalDesc: '権威ある機関と連携し、金・ダイヤモンド・宝石の専門鑑定と評価を提供、取引と収集の真の価値を保証。',
@@ -342,10 +342,10 @@ const resources = {
       serviceDiamondPoint3: '国际鉴定机构（GIA等）认证证书',
       
       serviceGoldBarsTitle: '认证金条代理',
-      serviceGoldBarsDesc: '通过正规渠道代理销售日本公认金条和国际认证金条，确保交易安全和来源透明。',
-      serviceGoldBarsPoint1: '日本公认金条代理',
-      serviceGoldBarsPoint2: '国际认证金条销售',
-      serviceGoldBarsPoint3: '来源透明、交易安全',
+      serviceGoldBarsDesc: '日本公认品牌和国际认证金条，可通过正规渠道安心交易。此外，还提供托管销售服务，提供高透明度和可靠性的服务。',
+      serviceGoldBarsPoint1: '日本公认金条的正规代理销售',
+      serviceGoldBarsPoint2: '国际认证金条的处理',
+      serviceGoldBarsPoint3: '托管销售服务',
       
       serviceAppraisalTitle: '贵金属・宝石鉴定',
       serviceAppraisalDesc: '与权威机构合作，提供金・钻石・宝石的专业鉴定和评估，保证交易和收藏的真实价值。',
@@ -579,10 +579,10 @@ const resources = {
       
       // Additional Services
       serviceGoldBarsTitle: 'Certified Gold Bar Agency',
-      serviceGoldBarsDesc: 'Authorized agency sales of Japanese certified gold bars and international certified gold bars through legitimate channels, ensuring transaction safety and source transparency.',
-      serviceGoldBarsPoint1: 'Japanese certified gold bar agency',
-      serviceGoldBarsPoint2: 'International certified gold bar sales',
-      serviceGoldBarsPoint3: 'Source transparency, transaction safety',
+      serviceGoldBarsDesc: 'Japanese certified brands and internationally certified gold bars can be traded safely through legitimate channels. Additionally, we provide consignment sales services, offering high transparency and reliability.',
+      serviceGoldBarsPoint1: 'Official agency sales of Japanese certified gold bars',
+      serviceGoldBarsPoint2: 'Handling of internationally certified gold bars',
+      serviceGoldBarsPoint3: 'Consignment sales services',
       
       serviceAppraisalTitle: 'Precious Metals & Gemstone Appraisal',
       serviceAppraisalDesc: 'Collaborating with authoritative institutions to provide professional appraisal and evaluation of gold, diamonds, and gemstones, ensuring true value for trading and collection.',

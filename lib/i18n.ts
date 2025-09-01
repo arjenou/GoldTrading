@@ -76,7 +76,7 @@ const resources = {
       // Service Details
       serviceKGoldTitle: 'K18ジュエリー取引',
       serviceKGoldDesc: '新品・中古K18ジュエリーの卸売・輸出入、精錬業者・宝飾商・国際代理店に長期安定供給を提供。',
-      serviceKGoldPoint1: '新品・中古18K金卸売',
+      serviceKGoldPoint1: '新品・中古K18ジュエリー金卸売',
       serviceKGoldPoint2: '国際輸出入取引サービス',
       serviceKGoldPoint3: '長期安定サプライチェーン保証',
       

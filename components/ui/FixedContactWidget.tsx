@@ -18,7 +18,7 @@ export default function FixedContactWidget() {
 
   return (
     <>
-      <div className="fixed right-4 top-1/3 transform -translate-y-1/2 z-40 flex flex-col space-y-2">
+      <div className="fixed right-4 bottom-4 z-40 flex flex-col space-y-2">
         {/* LINE Contact */}
         <button
           onClick={() => setShowQR('line')}

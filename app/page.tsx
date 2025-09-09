@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import LoadingScreen from "@/components/LoadingScreen"
-import FloatingQRCode from "@/components/ui/FloatingQRCode"
+import FixedContactWidget from "@/components/ui/FixedContactWidget"
 
 // Section components
 import {
@@ -39,7 +39,7 @@ export default function HomePage() {
         <ClientsSection />
         <ContactSection />
         <Footer />
-        <FloatingQRCode />
+        <FixedContactWidget />
       </div>
     </>
   )

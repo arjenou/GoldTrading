@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Coins, Menu, X } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher"
+import NavigationFlowerDecoration from "@/components/ui/NavigationFlowerDecoration"
 
 export default function Navigation() {
   const { t, i18n } = useTranslation()
@@ -61,6 +62,8 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+      {/* 花朵装饰层 */}
+      <NavigationFlowerDecoration />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo and Company Name */}
@@ -135,21 +138,9 @@ export default function Navigation() {
             </button>
           </div>
 
-          {/* Desktop Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Desktop Language Switcher */}
+          <div className="hidden md:flex items-center">
             <LanguageSwitcher isLightText={isLightText} />
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => scrollToSection('contact')}
-              className={`transition-all duration-300 backdrop-blur-sm shadow-lg ${
-                isLightText
-                  ? 'border-white/50 text-white hover:bg-white hover:text-black bg-transparent'
-                  : 'border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80'
-              }`}
-            >
-              <span className={`text-xs lg:text-sm ${getFontClass()}`}>{t('contact')}</span>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -199,12 +190,6 @@ export default function Navigation() {
               >
                 {t('clients')}
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
-              >
-                {t('contact')}
-              </button>
               {/* Mobile Language Switcher */}
               <div className="pt-2 border-t border-gray-200">
                 <div className="flex items-center justify-between mb-2">
@@ -251,17 +236,6 @@ export default function Navigation() {
                     🇺🇸 {t('english')}
                   </button>
                 </div>
-              </div>
-              
-              <div className="pt-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full border-gray-600 text-gray-800 hover:bg-gray-800 hover:text-white bg-white/80"
-                >
-                  <span className={`text-sm ${getFontClass()}`}>{t('consultant')}</span>
-                </Button>
               </div>
             </div>
           </div>

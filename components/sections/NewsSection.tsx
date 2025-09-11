@@ -74,6 +74,112 @@ export default function NewsSection() {
         />
       </div>
       
+      {/* 左下角花朵装饰 */}
+      <div className="absolute left-8 bottom-16 opacity-25 pointer-events-none hidden xl:block">
+        <img 
+          src="/flower/flower-1.png" 
+          alt="Flower decoration" 
+          className="w-16 h-16 object-contain transform rotate-12"
+        />
+      </div>
+      
+      {/* 右上角花朵装饰 */}
+      <div className="absolute right-12 top-20 opacity-25 pointer-events-none hidden xl:block">
+        <img 
+          src="/flower/flower-2.png" 
+          alt="Flower decoration" 
+          className="w-18 h-18 object-contain transform -rotate-6"
+        />
+      </div>
+      
+      {/* 中间左侧额外装饰 */}
+      <div className="absolute left-2 top-1/2 transform -translate-y-1/2 opacity-20 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-2.png" 
+          alt="Flower decoration" 
+          className="w-14 h-14 object-contain transform rotate-45"
+        />
+      </div>
+      
+      {/* 中间右侧额外装饰 */}
+      <div className="absolute right-2 bottom-1/4 opacity-20 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-1.png" 
+          alt="Flower decoration" 
+          className="w-12 h-12 object-contain transform -rotate-30"
+        />
+      </div>
+      
+      {/* 左上角小花装饰 */}
+      <div className="absolute left-16 top-32 opacity-15 pointer-events-none hidden xl:block animate-pulse">
+        <img 
+          src="/flower/flower-4.png" 
+          alt="Flower decoration" 
+          className="w-10 h-10 object-contain transform rotate-90"
+        />
+      </div>
+      
+      {/* 右中间装饰 */}
+      <div className="absolute right-6 top-1/2 transform -translate-y-1/2 opacity-18 pointer-events-none hidden xl:block">
+        <img 
+          src="/flower/flower-3.png" 
+          alt="Flower decoration" 
+          className="w-14 h-14 object-contain transform rotate-180"
+        />
+      </div>
+      
+      {/* 左中下装饰 */}
+      <div className="absolute left-6 bottom-1/3 opacity-22 pointer-events-none hidden lg:block">
+        <img 
+          src="/flower/flower-2.png" 
+          alt="Flower decoration" 
+          className="w-16 h-16 object-contain transform -rotate-45"
+        />
+      </div>
+      
+      {/* 右下角装饰 */}
+      <div className="absolute right-10 bottom-12 opacity-20 pointer-events-none hidden xl:block">
+        <img 
+          src="/flower/flower-1.png" 
+          alt="Flower decoration" 
+          className="w-18 h-18 object-contain transform rotate-60"
+        />
+      </div>
+      
+      {/* 超大屏幕额外装饰 */}
+      <div className="absolute left-1/4 top-16 opacity-12 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-3.png" 
+          alt="Flower decoration" 
+          className="w-8 h-8 object-contain transform rotate-135"
+        />
+      </div>
+      
+      <div className="absolute right-1/4 bottom-8 opacity-15 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-4.png" 
+          alt="Flower decoration" 
+          className="w-10 h-10 object-contain transform -rotate-90"
+        />
+      </div>
+      
+      {/* 边缘微小装饰 */}
+      <div className="absolute left-0 top-3/4 opacity-10 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-2.png" 
+          alt="Flower decoration" 
+          className="w-6 h-6 object-contain transform rotate-270"
+        />
+      </div>
+      
+      <div className="absolute right-0 top-1/4 opacity-10 pointer-events-none hidden 2xl:block">
+        <img 
+          src="/flower/flower-1.png" 
+          alt="Flower decoration" 
+          className="w-8 h-8 object-contain transform rotate-15"
+        />
+      </div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* 新着情報 Section Header */}
         <ScrollAnimation animation="fadeIn" delay={100}>

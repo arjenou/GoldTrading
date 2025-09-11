@@ -6,7 +6,7 @@ const resources = {
   ja: {
     translation: {
       // 导航栏
-      home: 'ホーム',
+      home: '会社概要',
       news: 'ニュース',
       services: '事業サービス',
       clients: 'お客様・パートナー',
@@ -248,7 +248,7 @@ const resources = {
   zh: {
     translation: {
       // 导航栏
-      home: '首页',
+      home: '公司介绍',
       news: '新闻资讯',
       services: '业务服务',
       clients: '客户伙伴',
@@ -490,7 +490,7 @@ const resources = {
   en: {
     translation: {
       // Navigation
-      home: 'Home',
+      home: 'About me',
       news: 'News',
       services: 'Services',
       clients: 'Clients & Partners',

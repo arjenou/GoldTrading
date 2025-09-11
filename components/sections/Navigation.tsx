@@ -136,6 +136,16 @@ export default function Navigation() {
             >
               {t('clients')}
             </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              } ${getFontClass()}`}
+            >
+              {t('contact')}
+            </button>
           </div>
 
           {/* Desktop Language Switcher */}
@@ -189,6 +199,12 @@ export default function Navigation() {
                 className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
               >
                 {t('clients')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
+              >
+                {t('contact')}
               </button>
               {/* Mobile Language Switcher */}
               <div className="pt-2 border-t border-gray-200">

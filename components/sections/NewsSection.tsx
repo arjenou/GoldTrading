@@ -56,6 +56,24 @@ export default function NewsSection() {
       {/* 花朵装饰 */}
       <LightFlowerDecoration />
       
+      {/* 左侧花朵装饰 */}
+      <div className="absolute left-4 top-1/3 transform -translate-y-1/2 opacity-30 pointer-events-none hidden lg:block">
+        <img 
+          src="/flower/flower-4.png" 
+          alt="Flower decoration" 
+          className="w-24 h-24 xl:w-32 xl:h-32 object-contain"
+        />
+      </div>
+      
+      {/* 右侧花朵装饰 */}
+      <div className="absolute right-4 top-2/3 transform -translate-y-1/2 opacity-30 pointer-events-none hidden lg:block">
+        <img 
+          src="/flower/flower-3.png" 
+          alt="Flower decoration" 
+          className="w-20 h-20 xl:w-28 xl:h-28 object-contain"
+        />
+      </div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* 新着情報 Section Header */}
         <ScrollAnimation animation="fadeIn" delay={100}>

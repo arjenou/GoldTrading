@@ -93,6 +93,17 @@ export default function FixedContactWidget() {
                     />
                   </div>
                 </div>
+                <a 
+                  href="https://line.me/ti/p/SdCL9gXx-w"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-green-600 hover:text-green-700 underline hover:no-underline transition-colors cursor-pointer block"
+                >
+                  https://line.me/ti/p/SdCL9gXx-w
+                </a>
+                <p className="text-sm text-gray-600 font-medium">
+                  LineID: osakagold
+                </p>
 
                 <p className="text-xs text-gray-500">
                   展示・サービスのご相談など 何でもお気軽にお聞きください

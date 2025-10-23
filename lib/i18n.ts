@@ -33,15 +33,15 @@ const resources = {
       
       // Hero Section
       heroTitle: '大阪ゴールドトレーディング',
-      heroSubtitle1: '大阪を拠点に、K18ジュエリーとダイヤモンドを中心とした国際貿易を展開。',
-      heroSubtitle2: '国際化が進む大阪、IR開発によって広がる新しい経済圏の中で、',
-      heroSubtitle3: '確かな供給力と専門性で、日本と世界を結ぶ信頼のパートナーを目指します。',
+      heroSubtitle1: '大阪を拠点に、K18・プラチナなどの貴金属ジュエリーやダイヤモンドを中心とした国際貿易を展開。',
+      heroSubtitle2: 'また、銀製品や銅鉱粉などの原材料も幅広く取り扱い、原材料供給が限られる日本市場において、確かな調達力と専門知識で安定した供給を実現しています。',
+      heroSubtitle3: '国際化が進む大阪、そしてIR開発によって拡大する新たな経済圏の中で、日本と世界を結ぶ信頼のパートナーを目指します。',
       
       // Company Overview Section
       companyOverviewTitle: '会社概要',
       companyOverviewSubtitle: '大阪を拠点とした国際貿易の専門企業',
       companyDescription1: '大阪を拠点に、K18ジュエリーとダイヤモンドの取引を主軸とし、精錬業者、宝飾商、コレクターなど多様なお客様に安定した供給と専門的なサービスを提供しています。',
-      companyDescription2: 'さらに、金地金の正規代理や鑑定サポート、洋酒・高級時計・金工芸品といったコレクション流通、そして会員制ラウンジ（シガーバー等）による交流の場を通じ、付加価値のあるサービスを展開しています。',
+      companyDescription2: 'さらに、金地金の正規代理や鑑定サポート、洋酒・高級時計・金工芸品といったコレクション流通、そして会員制カフェ＆サロンラウンジによる交流の場を通じ、付加価値のあるサービスを展開しています。',
       companyDescription3: '国際化とIR開発により新しい経済圏が広がる大阪において、お客様と長期的な信頼関係を築き、共に成長するパートナーであることを目指します。',
       
       // Company Pillars
@@ -65,7 +65,7 @@ const resources = {
       visionTitle: 'VISION',
       visionSubtitle: 'MISSIONを達成するために目指すべき未来',
       visionPoint1: '大阪は今、国際化と新しい経済時代へと歩みを進めています。',
-      visionPoint2: 'Osaka Gold Trading は、Kゴールドジュエリーとダイヤモンド貿易を中核に据え、市場コンサルティング、コレクション流通、そしてシガーバーを融合した社交空間を提供し、日本と世界のマーケットをつなぐ専門的な貿易会社として発展を続けます。',
+      visionPoint2: 'Osaka Gold Trading は、Kゴールドジュエリーとダイヤモンド貿易を中核に据え、市場コンサルティング、コレクション流通、そしてカフェ＆サロンラウンジを融合した社交空間を提供し、日本と世界のマーケットをつなぐ専門的な貿易会社として発展を続けます。',
       visionPoint3: 'そして、大阪の新しい時代において、信頼と高品質を代表する存在となります。',
       
       // Services Section
@@ -74,25 +74,6 @@ const resources = {
       servicesDescription: '取引から投資、鑑定から収集まで、包括的な専門サービスを提供',
       
       // Service Details
-      serviceKGoldTitle: 'K18ジュエリー取引',
-      serviceKGoldDesc: '新品・中古K18ジュエリーの卸売・輸出入、精錬業者・宝飾商・国際代理店に長期安定供給を提供。',
-      serviceKGoldPoint1: '新品・中古K18ジュエリー金卸売',
-      serviceKGoldPoint2: '国際輸出入取引サービス',
-      serviceKGoldPoint3: '長期安定サプライチェーン保証',
-      
-      serviceDiamondTitle: 'ダイヤモンド取引',
-      serviceDiamondDesc: '厳選されたダイヤモンドの国際取引',
-      serviceDiamondPoint1: '厳選されたダイヤモンドの国際取引',
-      serviceDiamondPoint2: '品質保証と鑑定サービス',
-      serviceDiamondPoint3: 'グローバルサプライチェーン',
-      
-      serviceConsultingTitle: '国際貿易コンサルティング',
-      serviceConsultingDesc: '貿易業務の専門的なアドバイスとサポート',
-      serviceConsultingPoint1: '市場分析と戦略提案',
-      serviceConsultingPoint2: 'リスク管理とコンプライアンス',
-      serviceConsultingPoint3: '国際取引サポート',
-      
-      // Additional Services
       serviceDiamondTitle: 'ダイヤモンド取引',
       serviceDiamondDesc: '厳選された高品質ダイヤモンドを、原産地に基づく優位性と世界的に競争力ある価格でご提供。国際的に認証された証明書を完備し、宝飾業界およびコレクターに安心と信頼のソースをお届けします。',
       serviceDiamondPoint1: '高品質ダイヤモンド卸売取引',
@@ -123,12 +104,12 @@ const resources = {
       serviceCollectionPoint2: '高級時計流通仲介サービス',
       serviceCollectionPoint3: '金工芸品価値評価',
       
-      serviceLoungeTitle: '会員制シガーバー',
+      serviceLoungeTitle: '会員制カフェ＆サロンラウンジ',
       serviceLoungeSubtitle: '近日オープン',
-      serviceLoungeDesc: '金文化と高級社交雰囲気を融合し、お客様にプライベートで上品なビジネス交流空間を提供。',
-      serviceLoungePoint1: 'プライベート高級社交空間',
-      serviceLoungePoint2: '金文化テーマ雰囲気',
-      serviceLoungePoint3: '上品なビジネス交流体験',
+      serviceLoungeDesc: '上質なコーヒーとスイーツで心を解きほぐす空間、人と地域をつなぐプレミアムな交流の場。',
+      serviceLoungePoint1: '上質なコーヒーとスイーツで心を解きほぐす空間',
+      serviceLoungePoint2: '人と地域をつなぐプレミアムな交流の場',
+      serviceLoungePoint3: '商談・イベントにもふさわしいプライベートラウンジ',
       
       // News Section
       newsTitle: 'ニュース',
@@ -163,7 +144,6 @@ const resources = {
       newsItem5Date: '2025.02.13',
       newsItem5Content: '野村総合研究所、日本の富裕層・超富裕層は合計約165万世帯、その純金融資産の総額は約469兆円と推計。',
       newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
-      readMore: '続きを読む',
       
       // Clients Section
       clientsTitle: 'お客様・パートナー',
@@ -275,15 +255,15 @@ const resources = {
       
       // Hero Section
       heroTitle: '大阪黄金交易',
-      heroSubtitle1: '以大阪为基地，专注于K18珠宝和钻石的国际贸易。',
-      heroSubtitle2: '在大阪国际化进程和IR开发带来的新经济圈中，',
-      heroSubtitle3: '我们致力于成为连接日本与世界的可靠合作伙伴，提供稳定的供应能力和专业性。',
+      heroSubtitle1: '以大阪为据点，开展以K18、铂金等贵金属珠宝和钻石为中心的国际贸易。',
+      heroSubtitle2: '同时，广泛经营银制品和铜矿粉等原材料，在原材料供应有限的日本市场，凭借可靠的采购能力和专业知识实现稳定供应。',
+      heroSubtitle3: '在国际化进程中的大阪，以及通过IR开发扩大的新经济圈中，我们致力于成为连接日本与世界的可信赖伙伴。',
       
       // Company Overview Section
       companyOverviewTitle: '公司概况',
       companyOverviewSubtitle: '以大阪为基地的专业国际贸易企业',
       companyDescription1: '以大阪为基地，以K18珠宝和钻石交易为主轴，为精炼商、珠宝商、收藏家等多样化客户提供稳定供应和专业服务。',
-      companyDescription2: '此外，通过金条正规代理、鉴定支持、洋酒、高级手表、金工艺品等收藏品流通，以及会员制休息室（雪茄吧等）的交流场所，提供高附加值的服务。',
+      companyDescription2: '此外，通过金条正规代理、鉴定支持、洋酒、高级手表、金工艺品等收藏品流通，以及会员制咖啡＆沙龙休息室的交流场所，提供高附加值的服务。',
       companyDescription3: '在因国际化和IR开发而扩展新经济圈的大阪，我们致力于与客户建立长期信赖关系，成为共同成长的合作伙伴。',
       
       // Company Pillars
@@ -307,7 +287,7 @@ const resources = {
       visionTitle: '愿景',
       visionSubtitle: '为实现使命而追求的未來',
       visionPoint1: '大阪现在正迈向国际化和新的经济时代。',
-      visionPoint2: '大阪黄金交易将以K金珠宝和钻石贸易为核心，提供市场咨询、收藏品流通，以及融合雪茄吧的社交空间，作为连接日本和世界市场的专业贸易公司持续发展。',
+      visionPoint2: '大阪黄金交易将以K金珠宝和钻石贸易为核心，提供市场咨询、收藏品流通，以及融合咖啡＆沙龙休息室的社交空间，作为连接日本和世界市场的专业贸易公司持续发展。',
       visionPoint3: '并且，在大阪的新时代中，成为代表信赖和高质量的存在。',
       
       // Services Section
@@ -316,25 +296,6 @@ const resources = {
       servicesDescription: '从交易到投资，从鉴定到收藏，提供全面的专业服务',
       
       // Service Details
-      serviceKGoldTitle: 'K18珠宝交易',
-      serviceKGoldDesc: '新品・二手K18珠宝的批发・进出口，为精炼商・珠宝商・国际代理商提供长期稳定供应。',
-      serviceKGoldPoint1: '新品・二手K18珠宝批发',
-      serviceKGoldPoint2: '国际进出口交易服务',
-      serviceKGoldPoint3: '长期稳定供应链保证',
-      
-      serviceDiamondTitle: '钻石交易',
-      serviceDiamondDesc: '精选钻石的国际交易',
-      serviceDiamondPoint1: '精选钻石的国际交易',
-      serviceDiamondPoint2: '质量保证和鉴定服务',
-      serviceDiamondPoint3: '全球供应链',
-      
-      serviceConsultingTitle: '国际贸易咨询',
-      serviceConsultingDesc: '贸易业务的专业建议和支持',
-      serviceConsultingPoint1: '市场分析和战略建议',
-      serviceConsultingPoint2: '风险管理和合规',
-      serviceConsultingPoint3: '国际贸易支持',
-      
-      // Additional Services
       serviceDiamondTitle: '钻石交易',
       serviceDiamondDesc: '精选高品质钻石，基于原产地优势以全球竞争力价格提供。配备国际认证证书，为珠宝行业及收藏家提供安心可靠的来源。',
       serviceDiamondPoint1: '高品质钻石批发交易',
@@ -365,12 +326,12 @@ const resources = {
       serviceCollectionPoint2: '高级手表流通中介服务',
       serviceCollectionPoint3: '金工艺品价值评估',
       
-      serviceLoungeTitle: '会员制雪茄吧',
+      serviceLoungeTitle: '会员制咖啡＆沙龙休息室',
       serviceLoungeSubtitle: '即将开业',
-      serviceLoungeDesc: '融合金文化和高级社交氛围，为客户提供私密优雅的商业交流空间。',
-      serviceLoungePoint1: '私密高级社交空间',
-      serviceLoungePoint2: '金文化主题氛围',
-      serviceLoungePoint3: '优雅的商业交流体验',
+      serviceLoungeDesc: '优质咖啡与甜点让心灵放松的空间，连接人与地区的高端交流场所。',
+      serviceLoungePoint1: '优质咖啡与甜点让心灵放松的空间',
+      serviceLoungePoint2: '连接人与地区的高端交流场所',
+      serviceLoungePoint3: '适合商务洽谈与活动的私密休息室',
       
       // News Section
       newsTitle: '新闻资讯',
@@ -405,7 +366,6 @@ const resources = {
       newsItem5Date: '2025.02.13',
       newsItem5Content: '野村综合研究所，日本富裕层・超富裕层合计约165万户，其纯金融资产总额约469兆円推算。',
       newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
-      readMore: '阅读更多',
       
       // Clients Section
       clientsTitle: '客户伙伴',
@@ -518,15 +478,15 @@ const resources = {
       
       // Hero Section
       heroTitle: 'Osaka Gold Trading',
-      heroSubtitle1: 'Based in Osaka, we specialize in international trade of K18 jewelry and diamonds.',
-      heroSubtitle2: 'In Osaka, which is advancing toward internationalization and expanding new economic zones through IR development,',
-      heroSubtitle3: 'we aim to be a reliable partner connecting Japan and the world with solid supply capabilities and expertise.',
+      heroSubtitle1: 'Based in Osaka, we engage in international trade centered on precious metal jewelry such as K18 and platinum, as well as diamonds.',
+      heroSubtitle2: 'We also handle a wide range of raw materials including silver products and copper ore powder, achieving stable supply with reliable procurement capabilities and expertise in the Japanese market where raw material supply is limited.',
+      heroSubtitle3: 'In Osaka, which is advancing in internationalization, and within the new economic zone expanding through IR development, we aim to be a trusted partner connecting Japan and the world.',
       
       // Company Overview Section
       companyOverviewTitle: 'Company Overview',
       companyOverviewSubtitle: 'Professional International Trading Company Based in Osaka',
       companyDescription1: 'Based in Osaka, we focus on K18 jewelry and diamond trading, providing stable supply and professional services to diverse clients including refiners, jewelers, and collectors.',
-      companyDescription2: 'Furthermore, through authorized gold bar agency, appraisal support, collection distribution including fine wines, luxury watches, and gold crafts, and member lounges (cigar bars, etc.) for networking, we provide value-added services.',
+      companyDescription2: 'Furthermore, through authorized gold bar agency, appraisal support, collection distribution including fine wines, luxury watches, and gold crafts, and member café & salon lounges for networking, we provide value-added services.',
       companyDescription3: 'In Osaka, where new economic zones are expanding through internationalization and IR development, we aim to build long-term trust relationships with clients and become partners for mutual growth.',
       
       // Company Pillars
@@ -550,7 +510,7 @@ const resources = {
       visionTitle: 'VISION',
       visionSubtitle: 'Future We Aim For to Achieve Our Mission',
       visionPoint1: 'Osaka is now advancing toward internationalization and a new economic era.',
-      visionPoint2: 'Osaka Gold Trading will continue to develop as a specialized trading company connecting Japanese and world markets, with K-gold jewelry and diamond trading at its core, providing market consulting, collection distribution, and social spaces integrating cigar bars.',
+      visionPoint2: 'Osaka Gold Trading will continue to develop as a specialized trading company connecting Japanese and world markets, with K-gold jewelry and diamond trading at its core, providing market consulting, collection distribution, and social spaces integrating café & salon lounges.',
       visionPoint3: 'And we will become a presence representing trust and high quality in Osaka\'s new era.',
       
       // Services Section
@@ -602,12 +562,12 @@ const resources = {
       serviceCollectionPoint2: 'Luxury watch distribution brokerage services',
       serviceCollectionPoint3: 'Gold craft value evaluation',
       
-      serviceLoungeTitle: 'Member Cigar Bar',
+      serviceLoungeTitle: 'Member Café & Salon Lounge',
       serviceLoungeSubtitle: 'Opening Soon',
-      serviceLoungeDesc: 'Integrating gold culture and luxury social atmosphere to provide clients with a private and elegant business networking space.',
-      serviceLoungePoint1: 'Private luxury social space',
-      serviceLoungePoint2: 'Gold culture themed atmosphere',
-      serviceLoungePoint3: 'Elegant business networking experience',
+      serviceLoungeDesc: 'A space to unwind with premium coffee and sweets, a premium meeting place connecting people and the community.',
+      serviceLoungePoint1: 'A space to unwind with premium coffee and sweets',
+      serviceLoungePoint2: 'A premium meeting place connecting people and community',
+      serviceLoungePoint3: 'Private lounge suitable for business meetings and events',
       
       // News Section
       newsTitle: 'News',

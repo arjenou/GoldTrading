@@ -316,7 +316,7 @@ export default function ServicesSection() {
             </div>
           </ScrollAnimation>
 
-          {/* Service 7: 会員制シガーバー */}
+          {/* Service 7: 会員制カフェ＆サロンラウンジ */}
           <ScrollAnimation animation="slideUp" delay={100}>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div id="service-7-text" className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 relative overflow-hidden order-13 lg:order-1">
@@ -354,7 +354,7 @@ export default function ServicesSection() {
               <div id="service-7-image" className="aspect-video overflow-hidden rounded-lg border border-border order-14 lg:order-2">
                 <img 
                   src="/service-image/Bar.jpg" 
-                  alt="会員制シガーバー" 
+                  alt="会員制カフェ＆サロンラウンジ" 
                   className="w-full h-full object-fill"
                   style={{ display: 'block' }}
                 />

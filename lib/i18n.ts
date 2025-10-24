@@ -74,6 +74,12 @@ const resources = {
       servicesDescription: '取引から投資、鑑定から収集まで、包括的な専門サービスを提供',
       
       // Service Details
+      serviceKGoldTitle: 'K18ジュエリー取引',
+      serviceKGoldDesc: '新品・中古K18ジュエリーの卸売・輸出入、精錬業者・宝飾商・国際代理店に長期安定供給を提供。',
+      serviceKGoldPoint1: '新品・中古K18ジュエリー金卸売',
+      serviceKGoldPoint2: '国際輸出入取引サービス',
+      serviceKGoldPoint3: '長期安定サプライチェーン保証',
+      
       serviceDiamondTitle: 'ダイヤモンド取引',
       serviceDiamondDesc: '厳選された高品質ダイヤモンドを、原産地に基づく優位性と世界的に競争力ある価格でご提供。国際的に認証された証明書を完備し、宝飾業界およびコレクターに安心と信頼のソースをお届けします。',
       serviceDiamondPoint1: '高品質ダイヤモンド卸売取引',
@@ -296,6 +302,12 @@ const resources = {
       servicesDescription: '从交易到投资，从鉴定到收藏，提供全面的专业服务',
       
       // Service Details
+      serviceKGoldTitle: 'K18珠宝交易',
+      serviceKGoldDesc: '新品・二手K18珠宝的批发・进出口，为精炼商・珠宝商・国际代理商提供长期稳定供应。',
+      serviceKGoldPoint1: '新品・二手K18珠宝批发',
+      serviceKGoldPoint2: '国际进出口交易服务',
+      serviceKGoldPoint3: '长期稳定供应链保证',
+      
       serviceDiamondTitle: '钻石交易',
       serviceDiamondDesc: '精选高品质钻石，基于原产地优势以全球竞争力价格提供。配备国际认证证书，为珠宝行业及收藏家提供安心可靠的来源。',
       serviceDiamondPoint1: '高品质钻石批发交易',

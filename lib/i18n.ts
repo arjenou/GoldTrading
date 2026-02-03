@@ -12,6 +12,7 @@ const resources = {
       clients: 'お客様・パートナー',
       contact: 'お問い合わせ',
       consultant: 'コンサルタントに相談',
+      price: '買取価格',
       
       // 公司名称
       companyName: 'GOLD TRADING OSAKA',
@@ -136,21 +137,21 @@ const resources = {
       companyContact: 'お問い合わせ',
       
       // News Items
-      newsItem1Date: '2026.01.18',
-      newsItem1Content: '大阪・キタの再開発が本格化。阪急阪神ホールディングスが推進する「芝田1丁目計画」では、超高層ビルの建設やスタートアップ企業の誘致を計画。2031年春の「なにわ筋線」開業によるアクセス強化と相まって、大阪の「国際交流拠点」化を促進します。',
-      newsItem1Link: 'https://www.sankei.com/article/20260118-G2NIQ26NSNP5HB5ZHGGOOWRHRQ/',
-      newsItem2Date: '2025.12.14',
-      newsItem2Content: '「OSAKA光のルネサンス2025」が大阪市役所周辺から中之島公園までのエリアで開催。大阪市中央公会堂のプロジェクションマッピングや3Dマッピング、「光のマルシェ」で食の体験も提供され、12月25日まで開催されます。',
-      newsItem2Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem3Date: '2025.12.12',
-      newsItem3Content: '大阪市が物価高対策として「プレミアム付商品券」の発行を発表。1口1万円で1万3千円分として利用でき、市内在住者は1人4口まで購入可能。計620万口を発行予定で、総事業費は約228億9500万円。経済活性化を目指します。',
-      newsItem3Link: 'https://www.sankei.com/article/20251212-IZZW3AR74ZJZ3LP4LUG4D6GT5I/',
-      newsItem4Date: '2025.11.03',
-      newsItem4Content: '「大阪・光の饗宴2025」が11月3日から本格スタート。御堂筋イルミネーション2025は、梅田から難波までの約4kmを7色のゾーンで表現。2026年1月31日まで開催され、大阪の冬の風物詩として多くの観光客を集めています。',
-      newsItem4Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem5Date: '2025.10.09',
-      newsItem5Content: '大阪取引所の金先物が初めて2万円台（2万130円）を突破。地金商最大手の田中貴金属工業の小売価格も1グラム当たり2万1890円の最高値を更新。金価格の上昇は、米連邦準備理事会（FRB）の利下げ観測が後押ししています。',
-      newsItem5Link: 'https://www.nikkei.com/article/DGKKZO91848990Z01C25A0QM8000/',
+      newsItem1Date: '2025.08.11',
+      newsItem1Content: '宝石市場の規模、シェア＆業界分析、製品（ネックレス、イヤリング、リング、ブレスレットなど）、材料タイプ（金、プラチナ、ダイヤモンドなど）、エンドユーザー（男性と女性）、地域予測、2025-2032別。',
+      newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
+      newsItem2Date: '2025.06.25',
+      newsItem2Content: 'マネーフォワードプライベートバンク、超富裕層のための資産管理プラットフォーム『Money Forward Private BANK』を2025年6月25日より提供開始。',
+      newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: '日本初のIR、大阪万博会場隣地で24日に本体工事着工へ。',
+      newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
+      newsItem4Date: '2025.03.01',
+      newsItem4Content: '大谷翔平選手オフィシャルジュエリー最新作「K18 SHIPPO DIAMOND PENDANTS」 全国主要百貨店および小売店にて好評受注販売中。',
+      newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
+      newsItem5Date: '2025.02.13',
+      newsItem5Content: '野村総合研究所、日本の富裕層・超富裕層は合計約165万世帯、その純金融資産の総額は約469兆円と推計。',
+      newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       
       // Clients Section
       clientsTitle: 'お客様・パートナー',
@@ -242,6 +243,7 @@ const resources = {
       clients: '客户伙伴',
       contact: '联系我们',
       consultant: '咨询顾问',
+      price: '收购价格',
       
       // 公司名称
       companyName: 'GOLD TRADING OSAKA',
@@ -366,21 +368,21 @@ const resources = {
       companyContact: '联系我们',
       
       // News Items
-      newsItem1Date: '2026.01.18',
-      newsItem1Content: '大阪・北区的大规模再开发正式启动。阪急阪神控股推进的「芝田1丁目计划」计划建设超高层建筑并吸引初创企业。结合2031年春季「难波筋线」开通带来的交通便利性提升，将促进大阪成为「国际交流据点」。',
-      newsItem1Link: 'https://www.sankei.com/article/20260118-G2NIQ26NSNP5HB5ZHGGOOWRHRQ/',
-      newsItem2Date: '2025.12.14',
-      newsItem2Content: '「OSAKA光之文艺复兴2025」在大阪市政府周边至中之岛公园区域举办。提供大阪市中央公会堂的投影映射和3D映射，以及「光之市集」的美食体验，活动将持续至12月25日。',
-      newsItem2Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem3Date: '2025.12.12',
-      newsItem3Content: '大阪市宣布发行「附赠商品券」以应对物价上涨。每张1万日元可当1万3千日元使用，市内居民每人最多可购买4张。计划发行总计620万张，总事业费约228亿9500万日元。旨在促进经济活力。',
-      newsItem3Link: 'https://www.sankei.com/article/20251212-IZZW3AR74ZJZ3LP4LUG4D6GT5I/',
-      newsItem4Date: '2025.11.03',
-      newsItem4Content: '「大阪・光之盛宴2025」于11月3日正式启动。御堂筋彩灯2025以7种颜色区域展现从梅田到难波约4公里的街道。活动将持续至2026年1月31日，作为大阪冬季的风景线吸引众多游客。',
-      newsItem4Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem5Date: '2025.10.09',
-      newsItem5Content: '大阪交易所的金期货首次突破2万日元大关（2万130日元）。地金商最大企业田中贵金属工业的零售价格也更新了每克2万1890日元的最高值。金价上涨受到美国联邦储备理事会（FRB）降息预期的推动。',
-      newsItem5Link: 'https://www.nikkei.com/article/DGKKZO91848990Z01C25A0QM8000/',
+      newsItem1Date: '2025.08.11',
+      newsItem1Content: '宝石市场规模、份额及行业分析，产品（项链、耳环、戒指、手镯等），材料类型（金、铂金、钻石等），终端用户（男性和女性），地区预测，2025-2032年分别。',
+      newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
+      newsItem2Date: '2025.06.25',
+      newsItem2Content: 'Money Forward Private Bank，超富裕层资产管理平台《Money Forward Private BANK》于2025年6月25日开始提供服务。',
+      newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: '日本首个IR，大阪万博会场邻地24日主体工程开工。',
+      newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
+      newsItem4Date: '2025.03.01',
+      newsItem4Content: '大谷翔平选手官方珠宝最新作品「K18 SHIPPO DIAMOND PENDANTS」在全国主要百货店及零售店好评预订销售中。',
+      newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
+      newsItem5Date: '2025.02.13',
+      newsItem5Content: '野村综合研究所，日本富裕层・超富裕层合计约165万户，其纯金融资产总额约469兆円推算。',
+      newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       
       // Clients Section
       clientsTitle: '客户伙伴',
@@ -472,6 +474,7 @@ const resources = {
       clients: 'Clients & Partners',
       contact: 'Contact',
       consultant: 'Consult with Expert',
+      price: 'Purchase Price',
       
       // Company Name
       companyName: 'GOLD TRADING OSAKA',
@@ -548,12 +551,6 @@ const resources = {
       serviceDiamondPoint2: 'Export Services for Overseas Markets Centered on Japanese Pearls',
       serviceDiamondPoint3: 'International Certification Institutions (GIA, etc.) & Various Certificate Services',
       
-      serviceConsultingTitle: 'International Trade Consulting',
-      serviceConsultingDesc: 'Professional advice and support for trading operations',
-      serviceConsultingPoint1: 'Market analysis and strategic proposals',
-      serviceConsultingPoint2: 'Risk management and compliance',
-      serviceConsultingPoint3: 'International trading support',
-      
       // Additional Services
       serviceGoldBarsTitle: 'Certified Gold & Silver Bullion Trading',
       serviceGoldBarsDesc: 'We handle Japanese certified brands and internationally certified gold and silver bullion based on legitimate distribution routes. Centered on highly reliable brands such as Tanaka Kikinzoku and Japan Material, we also handle export trading for overseas markets, building an international trading system with transparency and execution capability.',
@@ -604,21 +601,21 @@ const resources = {
       companyContact: 'Contact Us',
       
       // News Items
-      newsItem1Date: '2026.01.18',
-      newsItem1Content: 'Large-scale redevelopment of Osaka Kita district officially begins. Hankyu Hanshin Holdings\' "Shibata 1-chome Project" plans to construct super high-rise buildings and attract startup companies. Combined with improved access from the opening of "Naniwasuji Line" in spring 2031, this will promote Osaka as an "International Exchange Hub".',
-      newsItem1Link: 'https://www.sankei.com/article/20260118-G2NIQ26NSNP5HB5ZHGGOOWRHRQ/',
-      newsItem2Date: '2025.12.14',
-      newsItem2Content: '"OSAKA Light Renaissance 2025" held in area from Osaka City Hall to Nakanoshima Park. Features projection mapping and 3D mapping at Osaka Central Public Hall, plus food experiences at "Light Market". Event runs until December 25.',
-      newsItem2Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem3Date: '2025.12.12',
-      newsItem3Content: 'Osaka City announces issuance of "Premium Vouchers" to counter rising prices. Each ¥10,000 voucher can be used as ¥13,000, with city residents able to purchase up to 4 vouchers per person. Plans to issue 6.2 million vouchers total, with total project cost of approximately ¥22.895 billion. Aims to stimulate economic activity.',
-      newsItem3Link: 'https://www.sankei.com/article/20251212-IZZW3AR74ZJZ3LP4LUG4D6GT5I/',
-      newsItem4Date: '2025.11.03',
-      newsItem4Content: '"Osaka Light Festival 2025" officially starts from November 3. Midosuji Illumination 2025 displays approximately 4km from Umeda to Namba in 7 color zones. Event runs until January 31, 2026, attracting many tourists as Osaka\'s winter tradition.',
-      newsItem4Link: 'https://www.city.osaka.lg.jp/keizaisenryaku/page/0000664217.html',
-      newsItem5Date: '2025.10.09',
-      newsItem5Content: 'Osaka Exchange gold futures break through ¥20,000 for the first time (¥20,130). Tanaka Kikinzoku, the largest bullion dealer, also updates its retail price to a record high of ¥21,890 per gram. Gold price surge is supported by expectations of Federal Reserve interest rate cuts.',
-      newsItem5Link: 'https://www.nikkei.com/article/DGKKZO91848990Z01C25A0QM8000/',
+      newsItem1Date: '2025.08.11',
+      newsItem1Content: 'Jewelry market size, share & industry analysis, products (necklaces, earrings, rings, bracelets, etc.), material types (gold, platinum, diamonds, etc.), end users (male and female), regional forecasts, 2025-2032.',
+      newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
+      newsItem2Date: '2025.06.25',
+      newsItem2Content: 'Money Forward Private Bank launches ultra-high-net-worth asset management platform "Money Forward Private BANK" starting June 25, 2025.',
+      newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: 'Japan\'s first IR, main construction work begins on 24th adjacent to Osaka Expo site.',
+      newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
+      newsItem4Date: '2025.03.01',
+      newsItem4Content: 'Shohei Ohtani official jewelry latest work "K18 SHIPPO DIAMOND PENDANTS" receiving favorable advance orders at major department stores and retail stores nationwide.',
+      newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
+      newsItem5Date: '2025.02.13',
+      newsItem5Content: 'Nomura Research Institute estimates Japan\'s affluent and ultra-affluent households total approximately 1.65 million, with total net financial assets of approximately ¥469 trillion.',
+      newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
       
       // Clients Section
       clientsTitle: 'Clients & Partners',
@@ -640,6 +637,8 @@ const resources = {
       clientInstitutionDesc: 'Building long-term cooperative relationships with financial institutions, investment funds, and other professional institutions',
       
       // Contact Section
+      contactTitle: 'Contact Us',
+      contactSubtitle: 'Feel free to contact us',
       contactDescription1: 'We look forward to hearing from you at Osaka Gold Trading.',
       contactDescription2: 'Providing professional trading and investment services',
       nameLabel: 'Name',

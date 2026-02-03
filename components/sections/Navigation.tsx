@@ -136,6 +136,18 @@ export default function Navigation() {
             >
               {t('clients')}
             </button>
+            <a 
+              href="https://gold.tanaka.co.jp/retanaka/price/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
+                isLightText 
+                  ? 'text-white/90 hover:text-white' 
+                  : 'text-gray-800/90 hover:text-gray-900'
+              } ${getFontClass()}`}
+            >
+              {t('price')}
+            </a>
             <button 
               onClick={() => scrollToSection('contact')}
               className={`text-sm lg:text-base transition-colors drop-shadow-md leading-none flex items-center ${
@@ -200,6 +212,14 @@ export default function Navigation() {
               >
                 {t('clients')}
               </button>
+              <a 
+                href="https://gold.tanaka.co.jp/retanaka/price/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}
+              >
+                {t('price')}
+              </a>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className={`block text-sm font-medium text-gray-800 hover:text-gray-600 transition-colors text-left w-full ${getFontClass()}`}

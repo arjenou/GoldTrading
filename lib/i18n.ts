@@ -196,12 +196,12 @@ const resources = {
       messagePlaceholder: 'ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします...',
       
       // Service Options
-      serviceKGold: 'K18・プラチナ ジュエリー取引',
-      serviceGoldBars: 'ダイヤモンド・色石・パール取引',
-      serviceAppraisal: '認証金・銀地金取引',
-      serviceInvestment: '貴金属・宝石鑑定',
-      servicePartnership: '資産・事業・取引サポート',
-      serviceOther: 'コレクション・オークション流通',
+      serviceKGold: '貴金属・宝飾品の取引（国内・国際）',
+      serviceGoldBars: '個人向け買取・鑑定',
+      serviceAppraisal: '資金流動関連サポート',
+      serviceInvestment: 'コレクション流通・オークション関連',
+      servicePartnership: 'エンターテインメント・ラウンジ関連',
+      serviceOther: '事業売買（M&A）・事業連携',
       serviceOtherInquiry: 'その他のお問い合わせ',
       
       // Validation Messages
@@ -426,12 +426,12 @@ const resources = {
       messagePlaceholder: '请详细描述您的需求或问题。我们将尽快为您提供专业回答...',
       
       // Service Options
-      serviceKGold: 'K18・铂金 珠宝交易',
-      serviceGoldBars: '钻石・彩色宝石・珍珠交易',
-      serviceAppraisal: '认证金・银地金交易',
-      serviceInvestment: '贵金属・宝石鉴定',
-      servicePartnership: '资产・事业・交易支持',
-      serviceOther: '收藏品・拍卖流通',
+      serviceKGold: '贵金属・珠宝饰品的交易（国内・国际）',
+      serviceGoldBars: '面向个人的收购・鉴定',
+      serviceAppraisal: '资金流动相关支持',
+      serviceInvestment: '收藏品流通・拍卖相关',
+      servicePartnership: '娱乐・休息室相关',
+      serviceOther: '事业买卖（M&A）・事业合作',
       serviceOtherInquiry: '其他咨询',
       
       // Validation Messages
@@ -662,12 +662,12 @@ const resources = {
       messagePlaceholder: 'Please describe your needs or questions in detail. We will provide professional answers as soon as possible...',
       
       // Service Options
-      serviceKGold: 'K18 & Platinum Jewelry Trading',
-      serviceGoldBars: 'Diamond, Colored Stones & Pearl Trading',
-      serviceAppraisal: 'Certified Gold & Silver Bullion Trading',
-      serviceInvestment: 'Precious Metals & Gemstone Appraisal',
-      servicePartnership: 'Asset, Business & Trading Support',
-      serviceOther: 'Collection & Auction Distribution',
+      serviceKGold: 'Precious Metals & Jewelry Trading (Domestic & International)',
+      serviceGoldBars: 'Personal Purchase & Appraisal',
+      serviceAppraisal: 'Fund Liquidity Related Support',
+      serviceInvestment: 'Collection Distribution & Auction Related',
+      servicePartnership: 'Entertainment & Lounge Related',
+      serviceOther: 'Business Sales (M&A) & Business Partnership',
       serviceOtherInquiry: 'Other Inquiries',
       
       // Validation Messages

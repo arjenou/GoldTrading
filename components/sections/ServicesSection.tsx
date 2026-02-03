@@ -48,9 +48,11 @@ export default function ServicesSection() {
               {/* 标题区域使用半透明背景 */}
               {/* <div className="inline-block backdrop-blur-sm rounded-2xl px-8 py-6 mb-6"> */}
                 <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 drop-shadow-2xl ${getFontClass()}`} style={{ color: '#b8945f' }}>{t('servicesTitle')}</h2>
-                <p className={`text-base sm:text-lg max-w-2xl mx-auto drop-shadow-lg px-4 ${getFontClass()}`} style={{ color: '#b8945f' }}>
-                  {t('servicesDescription')}
-                </p>
+                {t('servicesDescription') && (
+                  <p className={`text-base sm:text-lg max-w-2xl mx-auto drop-shadow-lg px-4 ${getFontClass()}`} style={{ color: '#b8945f' }}>
+                    {t('servicesDescription')}
+                  </p>
+                )}
               {/* </div> */}
             </div>
         </ScrollAnimation>

@@ -7,7 +7,7 @@ import { X } from "lucide-react"
 
 export default function FixedContactWidget() {
   const { t, i18n } = useTranslation()
-  const [showQR, setShowQR] = useState<'line' | 'instagram' | null>(null)
+  const [showQR, setShowQR] = useState<'whatsapp' | 'wechat' | 'line' | 'instagram' | null>(null)
 
   // Helper function to get font class based on current language
   const getFontClass = () => {
@@ -19,6 +19,39 @@ export default function FixedContactWidget() {
   return (
     <>
       <div className="fixed right-4 bottom-4 z-40 flex flex-col space-y-2">
+        {/* WhatsApp Contact */}
+        <button
+          onClick={() => setShowQR('whatsapp')}
+          className="group text-white px-4 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 flex items-center justify-center min-w-[120px]"
+          style={{ backgroundColor: '#3b82f6' }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#2563eb'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#3b82f6'}
+        >
+          <div className="flex items-center space-x-2">
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            <span className={`text-sm font-medium ${getFontClass()}`}>
+              WhatsApp
+            </span>
+          </div>
+        </button>
+
+        {/* WeChat Contact */}
+        <button
+          onClick={() => setShowQR('wechat')}
+          className="group bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 flex items-center justify-center min-w-[120px]"
+        >
+          <div className="flex items-center space-x-2">
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.042-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.237-1.98 6.441-1.838-.576-3.583-4.196-6.348-8.496-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.179c0-.651.52-1.18 1.162-1.18zm5.34 3.218c-2.316 0-4.378 1.512-5.063 3.682-.923 2.916.392 5.228 1.687 6.884a.95.95 0 0 1 .198.606c-.02.3-.1.608-.1.923 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098c.91.252 1.873.4 2.877.4 3.801 0 6.89-2.9 6.89-6.478 0-3.578-3.088-6.478-6.89-6.478zm-2.846 4.22c.45 0 .815.37.815.827a.822.822 0 0 1-.815.826.822.822 0 0 1-.815-.826c0-.457.365-.827.815-.827zm5.691 0c.45 0 .815.37.815.827a.822.822 0 0 1-.815.826.822.822 0 0 1-.815-.826c0-.457.365-.827.815-.827z"/>
+            </svg>
+            <span className={`text-sm font-medium ${getFontClass()}`}>
+              WeChat
+            </span>
+          </div>
+        </button>
+
         {/* LINE Contact */}
         <button
           onClick={() => setShowQR('line')}
@@ -61,10 +94,25 @@ export default function FixedContactWidget() {
           
           {/* Modal Content */}
           <div className="relative w-full max-w-sm bg-white rounded-2xl shadow-2xl animate-in zoom-in-95 duration-300 mx-4 overflow-hidden">
-            <div className={`${showQR === 'line' ? 'bg-green-500' : 'bg-gradient-to-r from-purple-500 to-pink-500'} text-white p-4`}>
-              <div className="flex items-center justify-between">
+            <div 
+              className="text-white p-4"
+              style={
+                showQR === 'whatsapp' 
+                  ? { backgroundColor: '#3b82f6' } 
+                  : showQR === 'wechat' || showQR === 'line'
+                  ? { backgroundColor: '#22c55e' }
+                  : {}
+              }
+            >
+              {showQR === 'instagram' && (
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500" />
+              )}
+              <div className="relative z-10 flex items-center justify-between">
                 <h3 className="text-lg font-semibold">
-                  {showQR === 'line' ? 'LINE 相談' : 'Instagram 相談'}
+                  {showQR === 'whatsapp' ? 'WhatsApp 相談' :
+                   showQR === 'wechat' ? 'WeChat 相談' : 
+                   showQR === 'line' ? 'LINE 相談' : 
+                   'Instagram 相談'}
                 </h3>
                 <button
                   onClick={() => setShowQR(null)}
@@ -78,32 +126,46 @@ export default function FixedContactWidget() {
             <div className="p-6">
               <div className="text-center space-y-4">
                 <p className="text-sm text-gray-600 mb-4">
-                  QRコードをスキャンしてください
+                  {showQR === 'wechat' ? '微信二维码をスキャンしてください' : 'QRコードをスキャンしてください'}
                 </p>
                 
                 {/* QR Code */}
                 <div className="flex justify-center">
                   <div className="relative">
                     <Image
-                      src={showQR === 'line' ? '/gold-line-code.jpg' : '/gold-ins-code.png'}
-                      alt={`${showQR === 'line' ? 'LINE' : 'Instagram'} QR Code`}
+                      src={
+                        showQR === 'whatsapp' ? '/gold-whatsapp-code.jpg' :
+                        showQR === 'wechat' ? '/gold-wechat-code.png' :
+                        showQR === 'line' ? '/gold-line-code.jpg' : 
+                        '/gold-ins-code.png'
+                      }
+                      alt={`${
+                        showQR === 'whatsapp' ? 'WhatsApp' :
+                        showQR === 'wechat' ? 'WeChat' : 
+                        showQR === 'line' ? 'LINE' : 
+                        'Instagram'
+                      } QR Code`}
                       width={200}
                       height={200}
                       className="rounded-lg shadow-lg"
                     />
                   </div>
                 </div>
-                <a 
-                  href="https://line.me/ti/p/SdCL9gXx-w"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-green-600 hover:text-green-700 underline hover:no-underline transition-colors cursor-pointer block"
-                >
-                  https://line.me/ti/p/SdCL9gXx-w
-                </a>
-                <p className="text-sm text-gray-600 font-medium">
-                  LineID: osakagold
-                </p>
+                {showQR === 'line' && (
+                  <>
+                    <a 
+                      href="https://line.me/ti/p/SdCL9gXx-w"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-green-600 hover:text-green-700 underline hover:no-underline transition-colors cursor-pointer block"
+                    >
+                      https://line.me/ti/p/SdCL9gXx-w
+                    </a>
+                    <p className="text-sm text-gray-600 font-medium">
+                      LineID: osakagold
+                    </p>
+                  </>
+                )}
 
                 <p className="text-xs text-gray-500">
                   展示・サービスのご相談など 何でもお気軽にお聞きください

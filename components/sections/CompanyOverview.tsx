@@ -68,6 +68,7 @@ export default function CompanyOverview() {
                     </div>
                     <h4 className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base ${getFontClass()}`}>{t('collectionTitle')}</h4>
                     <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('collectionDesc')}</p>
+                    <p className={`text-xs sm:text-sm text-muted-foreground ${getFontClass()}`}>{t('collectionDesc2')}</p>
                   </div>
 
                   <div className="text-center">

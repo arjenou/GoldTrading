@@ -196,12 +196,13 @@ const resources = {
       messagePlaceholder: 'ご要望や質問を詳しくお書きください。専門的な回答をできるだけ早くお返しいたします...',
       
       // Service Options
-      serviceKGold: 'K18金',
-      serviceGoldBars: 'インゴットの購入・売却',
-      serviceAppraisal: '貴金属・宝石鑑定',
-      serviceInvestment: '資産運用',
-      servicePartnership: 'パートナーシップ',
-      serviceOther: 'その他のお問い合わせ',
+      serviceKGold: 'K18・プラチナ ジュエリー取引',
+      serviceGoldBars: 'ダイヤモンド・色石・パール取引',
+      serviceAppraisal: '認証金・銀地金取引',
+      serviceInvestment: '貴金属・宝石鑑定',
+      servicePartnership: '資産・事業・取引サポート',
+      serviceOther: 'コレクション・オークション流通',
+      serviceOtherInquiry: 'その他のお問い合わせ',
       
       // Validation Messages
       requiredFields: 'お名前、メールアドレス、サービス要望は必須項目です。',
@@ -222,12 +223,12 @@ const resources = {
       footerCertified: '認証済み',
       footerInternational: '国際取引',
       footerSecurity: 'セキュリティ',
-      footerService1: 'K18ジュエリー取引',
-      footerService2: 'ダイヤモンド大口卸売',
-      footerService3: '認証金地金代理',
+      footerService1: 'K18・プラチナ ジュエリー取引',
+      footerService2: 'ダイヤモンド・色石・パール取引',
+      footerService3: '認証金・銀地金取引',
       footerService4: '貴金属・宝石鑑定',
-      footerService5: '投資コンサルティング',
-      footerService6: '高級収集品流通',
+      footerService5: '資産・事業・取引サポート',
+      footerService6: 'コレクション・オークション流通',
       allRightsReserved: '© 2025 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
     }
@@ -425,12 +426,13 @@ const resources = {
       messagePlaceholder: '请详细描述您的需求或问题。我们将尽快为您提供专业回答...',
       
       // Service Options
-      serviceKGold: 'K18珠宝',
-      serviceGoldBars: '金条购买・销售',
-      serviceAppraisal: '贵金属・宝石鉴定',
-      serviceInvestment: '资产管理',
-      servicePartnership: '合作伙伴关系',
-      serviceOther: '其他咨询',
+      serviceKGold: 'K18・铂金 珠宝交易',
+      serviceGoldBars: '钻石・彩色宝石・珍珠交易',
+      serviceAppraisal: '认证金・银地金交易',
+      serviceInvestment: '贵金属・宝石鉴定',
+      servicePartnership: '资产・事业・交易支持',
+      serviceOther: '收藏品・拍卖流通',
+      serviceOtherInquiry: '其他咨询',
       
       // Validation Messages
       requiredFields: '姓名、邮箱地址、服务需求为必填项。',
@@ -660,12 +662,13 @@ const resources = {
       messagePlaceholder: 'Please describe your needs or questions in detail. We will provide professional answers as soon as possible...',
       
       // Service Options
-      serviceKGold: 'K18 Jewelry',
-      serviceGoldBars: 'Gold Bar Purchase & Sale',
-      serviceAppraisal: 'Precious Metals & Gemstone Appraisal',
-      serviceInvestment: 'Asset Management',
-      servicePartnership: 'Partnership',
-      serviceOther: 'Other Inquiries',
+      serviceKGold: 'K18 & Platinum Jewelry Trading',
+      serviceGoldBars: 'Diamond, Colored Stones & Pearl Trading',
+      serviceAppraisal: 'Certified Gold & Silver Bullion Trading',
+      serviceInvestment: 'Precious Metals & Gemstone Appraisal',
+      servicePartnership: 'Asset, Business & Trading Support',
+      serviceOther: 'Collection & Auction Distribution',
+      serviceOtherInquiry: 'Other Inquiries',
       
       // Validation Messages
       requiredFields: 'Name, email address, and service request are required fields.',

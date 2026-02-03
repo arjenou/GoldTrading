@@ -245,7 +245,8 @@ export default function ContactSection() {
                           <SelectItem value="appraisal">{t('serviceAppraisal')}</SelectItem>
                           <SelectItem value="investment">{t('serviceInvestment')}</SelectItem>
                           <SelectItem value="partnership">{t('servicePartnership')}</SelectItem>
-                          <SelectItem value="other">{t('serviceOther')}</SelectItem>
+                          <SelectItem value="collection">{t('serviceOther')}</SelectItem>
+                          <SelectItem value="other">{t('serviceOtherInquiry')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>

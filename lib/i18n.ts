@@ -266,7 +266,7 @@ const resources = {
       // Hero Section
       heroTitle: '大阪金饰奢品行',
       heroSubtitle1: '以大阪为据点，开展以贵金属珠宝、宝石、手表为中心的回收以及国际销售・进出口业务。',
-      heroSubtitle2: '同时，处理贵金属精炼用金属原料和古美术・古董品的交易、面向海外的拍卖对应，此外还通过会员制休息室提供来客对应・交流场所。',
+      heroSubtitle2: '同时，处理贵金属精炼用金属原料和古美术・古董品的交易、面向海外的拍卖对应，此外还通过休闲会所提供来客对应・交流场所。',
       heroSubtitle3: '在国际化进程中的大阪，以及通过IR开发扩大的市场环境中，我们致力于成为支撑有价值交易和人际连接的综合商社。',
       
       // Company Overview Section
@@ -274,7 +274,7 @@ const resources = {
       companyOverviewSubtitle: '以大阪为基地的专业国际贸易企业',
       companyDescription1: '以大阪为基地，开展以贵金属珠宝、宝石、手表为中心的国内回收以及国际销售・进出口，连接日本市场与海外市场的流通事业。',
       companyDescription2: '同时，处理贵金属精炼用原材料、古美术・古董品的交易和拍卖对应、价值评估・鉴定支援等，广泛提供支撑交易的周边服务。',
-      companyDescription3: '此外，通过会员制休息室以及以来客对应为目的的咖啡空间，提供商务洽谈・交流・信息交换的场所，重视长期信赖关系构建的事业运营。',
+      companyDescription3: '此外，通过休闲会所以及以来客对应为目的的咖啡空间，提供商务洽谈・交流・信息交换的场所，重视长期信赖关系构建的事业运营。',
       
       // Company Pillars
       coreTradingTitle: '核心交易',
@@ -284,7 +284,7 @@ const resources = {
       collectionTitle: '收藏品流通',
       collectionDesc: '古美术・古董／洋酒・高级手表',
       collectionDesc2: '展示・流通・拍卖对应',
-      loungeTitle: '会员制休息室',
+      loungeTitle: '休闲会所',
       loungeDesc1: '交流活动・宴会・娱乐',
       loungeDesc2: '来客对应休息室・咖啡吧・俱乐部',
       
@@ -298,7 +298,7 @@ const resources = {
       visionTitle: '愿景',
       visionSubtitle: '从大阪，到世界。成为信赖和流动性的枢纽',
       visionPoint1: '大阪现在正以国际化和IR开发为背景，迈向新的经济阶段。',
-      visionPoint2: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及会员制休息室和来客对应空间，构建立体的流通模式。',
+      visionPoint2: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及休闲会所和来客对应空间，构建立体的流通模式。',
       visionPoint3: '不仅作为交易场所，更作为人与信息汇聚、培育信赖的据点，致力于成为连接日本与世界的存在。',
       
       // Services Section

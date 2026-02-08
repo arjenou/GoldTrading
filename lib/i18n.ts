@@ -117,7 +117,7 @@ const resources = {
       serviceLoungeDesc: '上質なコーヒーとスイーツで心を解きほぐす空間、人と地域をつなぐプレミアムな交流の場。',
       serviceLoungePoint1: '上質なコーヒーとスイーツで心を解きほぐす空間',
       serviceLoungePoint2: '人と地域をつなぐプレミアムな交流の場',
-      serviceLoungePoint3: '商談・イベントにもふさわしいプライベートラウンジ',
+      serviceLoungePoint3: 'ビジネスパーソン向けエンターテインメント活動を提供するプライベートクラブ',
       
       // News Section
       newsTitle: 'ニュース',
@@ -243,7 +243,7 @@ const resources = {
       clients: '客户伙伴',
       contact: '联系我们',
       consultant: '咨询顾问',
-      price: '收购价格',
+      price: '回收价格',
       
       // 公司名称
       companyName: 'GOLD TRADING OSAKA',
@@ -265,20 +265,20 @@ const resources = {
       
       // Hero Section
       heroTitle: '大阪金饰奢品行',
-      heroSubtitle1: '以大阪为据点，开展以贵金属珠宝、宝石、手表为中心的收购以及国际销售・进出口业务。',
+      heroSubtitle1: '以大阪为据点，开展以贵金属珠宝、宝石、手表为中心的回收以及国际销售・进出口业务。',
       heroSubtitle2: '同时，处理贵金属精炼用金属原料和古美术・古董品的交易、面向海外的拍卖对应，此外还通过会员制休息室提供来客对应・交流场所。',
       heroSubtitle3: '在国际化进程中的大阪，以及通过IR开发扩大的市场环境中，我们致力于成为支撑有价值交易和人际连接的综合商社。',
       
       // Company Overview Section
       companyOverviewTitle: '公司概况',
       companyOverviewSubtitle: '以大阪为基地的专业国际贸易企业',
-      companyDescription1: '以大阪为基地，开展以贵金属珠宝、宝石、手表为中心的国内收购以及国际销售・进出口，连接日本市场与海外市场的流通事业。',
+      companyDescription1: '以大阪为基地，开展以贵金属珠宝、宝石、手表为中心的国内回收以及国际销售・进出口，连接日本市场与海外市场的流通事业。',
       companyDescription2: '同时，处理贵金属精炼用原材料、古美术・古董品的交易和拍卖对应、价值评估・鉴定支援等，广泛提供支撑交易的周边服务。',
       companyDescription3: '此外，通过会员制休息室以及以来客对应为目的的咖啡空间，提供商务洽谈・交流・信息交换的场所，重视长期信赖关系构建的事业运营。',
       
       // Company Pillars
       coreTradingTitle: '核心交易',
-      coreTradingDesc: '贵金属珠宝・宝石・手表／收购・国内外交易',
+      coreTradingDesc: '贵金属珠宝・宝石・手表／回收・国内外交易',
       assetSolutionTitle: '价值支持',
       assetSolutionDesc: '鉴定支持・数字资产相关・典当相关交易・结算相关',
       collectionTitle: '收藏品流通',
@@ -298,7 +298,7 @@ const resources = {
       visionTitle: '愿景',
       visionSubtitle: '从大阪，到世界。成为信赖和流动性的枢纽',
       visionPoint1: '大阪现在正以国际化和IR开发为背景，迈向新的经济阶段。',
-      visionPoint2: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内收购和国际销售为核心，结合古美术・古董交易、拍卖对应，以及会员制休息室和来客对应空间，构建立体的流通模式。',
+      visionPoint2: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及会员制休息室和来客对应空间，构建立体的流通模式。',
       visionPoint3: '不仅作为交易场所，更作为人与信息汇聚、培育信赖的据点，致力于成为连接日本与世界的存在。',
       
       // Services Section
@@ -343,12 +343,12 @@ const resources = {
       serviceCollectionPoint2: '国内外拍卖对应・交易支持',
       serviceCollectionPoint3: '面向海外收藏家・法人的出口交易',
       
-      serviceLoungeTitle: '会员制咖啡＆沙龙休息室',
+      serviceLoungeTitle: '会员制咖啡＆休闲会所',
       serviceLoungeSubtitle: '即将开业',
       serviceLoungeDesc: '优质咖啡与甜点让心灵放松的空间，连接人与地区的高端交流场所。',
       serviceLoungePoint1: '优质咖啡与甜点让心灵放松的空间',
       serviceLoungePoint2: '连接人与地区的高端交流场所',
-      serviceLoungePoint3: '适合商务洽谈与活动的私密休息室',
+      serviceLoungePoint3: '为商务人士提供娱乐活动的私人会所',
       
       // News Section
       newsTitle: '新闻资讯',
@@ -429,7 +429,7 @@ const resources = {
       
       // Service Options
       serviceKGold: '贵金属・珠宝饰品的交易（国内・国际）',
-      serviceGoldBars: '面向个人的收购・鉴定',
+      serviceGoldBars: '面向个人的回收・鉴定',
       serviceAppraisal: '资金流动相关支持',
       serviceInvestment: '收藏品流通・拍卖相关',
       servicePartnership: '娱乐・休息室相关',
@@ -474,7 +474,7 @@ const resources = {
       clients: 'Clients & Partners',
       contact: 'Contact',
       consultant: 'Consult with Expert',
-      price: 'Purchase Price',
+      price: 'Buyback Price',
       
       // Company Name
       companyName: 'GOLD TRADING OSAKA',
@@ -497,20 +497,20 @@ const resources = {
       
       // Hero Section
       heroTitle: 'Osaka Gold Trading',
-      heroSubtitle1: 'Based in Osaka, we conduct domestic purchase and international sales・import/export centered on precious metal jewelry, gemstones, and watches.',
+      heroSubtitle1: 'Based in Osaka, we conduct domestic buyback and international sales・import/export centered on precious metal jewelry, gemstones, and watches.',
       heroSubtitle2: 'We also handle metal materials for precious metal refining, trade in antiques and vintage items, provide auction services for overseas markets, and offer guest reception and networking spaces through our member lounge.',
       heroSubtitle3: 'In Osaka, which is advancing in internationalization, and within the market environment expanding through IR development, we aim to be a comprehensive trading company that supports valuable transactions and human connections.',
       
       // Company Overview Section
       companyOverviewTitle: 'Company Overview',
       companyOverviewSubtitle: 'Professional International Trading Company Based in Osaka',
-      companyDescription1: 'Based in Osaka, we conduct domestic purchase and international sales・import/export centered on precious metal jewelry, gemstones, and watches, developing distribution business that connects Japanese and overseas markets.',
+      companyDescription1: 'Based in Osaka, we conduct domestic buyback and international sales・import/export centered on precious metal jewelry, gemstones, and watches, developing distribution business that connects Japanese and overseas markets.',
       companyDescription2: 'We also handle raw materials for precious metal refining, trade in antiques and vintage items, provide auction services, value evaluation and appraisal support, and offer a wide range of peripheral services that support trading.',
       companyDescription3: 'Furthermore, through our member lounge and café space designed for guest reception, we provide venues for business negotiations, networking, and information exchange, operating our business with emphasis on building long-term trust relationships.',
       
       // Company Pillars
       coreTradingTitle: 'Core Trading',
-      coreTradingDesc: 'Precious Metal Jewelry, Gemstones & Watches / Purchase & International Trade',
+      coreTradingDesc: 'Precious Metal Jewelry, Gemstones & Watches / Buyback & International Trade',
       assetSolutionTitle: 'Value Support',
       assetSolutionDesc: 'Appraisal Support, Digital Assets, Pawn-Related Trading & Settlement Services',
       collectionTitle: 'Collection Distribution',
@@ -530,7 +530,7 @@ const resources = {
       visionTitle: 'VISION',
       visionSubtitle: 'From Osaka, to the World. Becoming a Hub of Trust and Liquidity',
       visionPoint1: 'Osaka is now advancing toward a new economic stage against the backdrop of internationalization and IR development.',
-      visionPoint2: 'Osaka Gold Trading will build a three-dimensional distribution model centered on domestic purchase and international sales of precious metal jewelry, gemstones, and watches, combined with antiques and vintage trading, auction services, and member lounges and guest reception spaces.',
+      visionPoint2: 'Osaka Gold Trading will build a three-dimensional distribution model centered on domestic buyback and international sales of precious metal jewelry, gemstones, and watches, combined with antiques and vintage trading, auction services, and member lounges and guest reception spaces.',
       visionPoint3: 'Not just as a place for transactions, but as a hub where people and information gather and trust is nurtured, we aim to be a presence connecting Japan and the world.',
       
       // Services Section
@@ -581,7 +581,7 @@ const resources = {
       serviceLoungeDesc: 'A space to unwind with premium coffee and sweets, a premium meeting place connecting people and the community.',
       serviceLoungePoint1: 'A space to unwind with premium coffee and sweets',
       serviceLoungePoint2: 'A premium meeting place connecting people and community',
-      serviceLoungePoint3: 'Private lounge suitable for business meetings and events',
+      serviceLoungePoint3: 'Private club providing entertainment activities for business professionals',
       
       // News Section
       newsTitle: 'News',
@@ -662,7 +662,7 @@ const resources = {
       
       // Service Options
       serviceKGold: 'Precious Metals & Jewelry Trading (Domestic & International)',
-      serviceGoldBars: 'Personal Purchase & Appraisal',
+      serviceGoldBars: 'Personal Buyback & Appraisal',
       serviceAppraisal: 'Fund Liquidity Related Support',
       serviceInvestment: 'Collection Distribution & Auction Related',
       servicePartnership: 'Entertainment & Lounge Related',

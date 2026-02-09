@@ -16,7 +16,8 @@ export default function Navigation() {
   const getFontClass = () => {
     return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
            i18n.language === 'zh' ? 'font-noto-sans-sc' : 
-           i18n.language === 'en' ? 'font-montserrat' : ''
+           i18n.language === 'en' ? 'font-montserrat' : 
+           i18n.language === 'vi' ? 'font-montserrat' : ''
   }
 
   // Smooth scroll function
@@ -231,7 +232,7 @@ export default function Navigation() {
                 <div className="flex items-center justify-between mb-2">
                   <span className={`text-sm font-medium text-gray-700 ${getFontClass()}`}>{t('language')}</span>
                 </div>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   <button
                     onClick={() => {
                       i18n.changeLanguage('ja')
@@ -270,6 +271,19 @@ export default function Navigation() {
                     }`}
                   >
                     🇺🇸 {t('english')}
+                  </button>
+                  <button
+                    onClick={() => {
+                      i18n.changeLanguage('vi')
+                      closeMobileMenu()
+                    }}
+                    className={`px-2 py-2 text-xs rounded-md border transition-colors ${
+                      i18n.language === 'vi'
+                        ? 'bg-accent text-white border-accent'
+                        : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+                    } ${getFontClass()}`}
+                  >
+                    🇻🇳 {t('vietnamese')}
                   </button>
                 </div>
               </div>

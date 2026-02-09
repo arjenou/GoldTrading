@@ -13,7 +13,8 @@ export default function FixedContactWidget() {
   const getFontClass = () => {
     return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
            i18n.language === 'zh' ? 'font-noto-sans-sc' : 
-           i18n.language === 'en' ? 'font-montserrat' : ''
+           i18n.language === 'en' ? 'font-montserrat' : 
+           i18n.language === 'vi' ? 'font-montserrat' : ''
   }
 
   return (
@@ -108,11 +109,11 @@ export default function FixedContactWidget() {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500" />
               )}
               <div className="relative z-10 flex items-center justify-between">
-                <h3 className="text-lg font-semibold">
-                  {showQR === 'whatsapp' ? 'WhatsApp 相談' :
-                   showQR === 'wechat' ? 'WeChat 相談' : 
-                   showQR === 'line' ? 'LINE 相談' : 
-                   'Instagram 相談'}
+                <h3 className={`text-lg font-semibold ${getFontClass()}`}>
+                  {showQR === 'whatsapp' ? t('whatsappConsultation') :
+                   showQR === 'wechat' ? t('wechatConsultation') : 
+                   showQR === 'line' ? t('lineConsultation') : 
+                   t('instagramConsultation')}
                 </h3>
                 <button
                   onClick={() => setShowQR(null)}
@@ -125,8 +126,8 @@ export default function FixedContactWidget() {
 
             <div className="p-6">
               <div className="text-center space-y-4">
-                <p className="text-sm text-gray-600 mb-4">
-                  {showQR === 'wechat' ? '微信二维码をスキャンしてください' : 'QRコードをスキャンしてください'}
+                <p className={`text-sm text-gray-600 mb-4 ${getFontClass()}`}>
+                  {showQR === 'wechat' ? t('scanWeChatQRCode') : t('scanQRCode')}
                 </p>
                 
                 {/* QR Code */}
@@ -167,8 +168,8 @@ export default function FixedContactWidget() {
                   </>
                 )}
 
-                <p className="text-xs text-gray-500">
-                  展示・サービスのご相談など 何でもお気軽にお聞きください
+                <p className={`text-xs text-gray-500 ${getFontClass()}`}>
+                  {t('consultationMessage')}
                 </p>
               </div>
             </div>

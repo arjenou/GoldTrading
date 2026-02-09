@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { X, MessageCircle, Instagram } from "lucide-react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
@@ -10,8 +11,17 @@ interface FloatingQRCodeProps {
 }
 
 export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
+  const { t, i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [selectedPlatform, setSelectedPlatform] = useState<'line' | 'instagram' | null>(null)
+  
+  // Helper function to get font class based on current language
+  const getFontClass = () => {
+    return i18n.language === 'ja' ? 'font-noto-sans-jp' : 
+           i18n.language === 'zh' ? 'font-noto-sans-sc' : 
+           i18n.language === 'en' ? 'font-montserrat' : 
+           i18n.language === 'vi' ? 'font-montserrat' : ''
+  }
 
   const toggleQR = () => {
     setIsOpen(!isOpen)
@@ -37,7 +47,7 @@ export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
         >
           <div className="flex flex-col items-center space-y-1">
             <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
-            <span className="text-xs font-medium hidden sm:block">相談</span>
+            <span className={`text-xs font-medium hidden sm:block ${getFontClass()}`}>{t('consultation')}</span>
           </div>
         </button>
       </div>
@@ -55,7 +65,7 @@ export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
           <div className="relative w-full max-w-sm sm:max-w-md bg-white rounded-2xl shadow-2xl animate-in zoom-in-95 duration-300 mx-4 overflow-hidden">
             <div className="bg-green-500 text-white p-3 sm:p-4">
               <div className="flex items-center justify-between">
-                <h3 className="text-base sm:text-lg font-semibold">SNS相談</h3>
+                <h3 className={`text-base sm:text-lg font-semibold ${getFontClass()}`}>{t('snsConsultation')}</h3>
                 <button
                   onClick={toggleQR}
                   className="text-white hover:text-gray-200 transition-colors p-1"
@@ -69,8 +79,8 @@ export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
               {!selectedPlatform ? (
                 // Platform Selection
                 <div className="space-y-4">
-                  <p className="text-center text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
-                    ご希望の相談方法をお選びください
+                  <p className={`text-center text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base ${getFontClass()}`}>
+                    {t('selectConsultationMethod')}
                   </p>
                   
                   <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -101,11 +111,11 @@ export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
                 // QR Code Display
                 <div className="space-y-4">
                   <div className="text-center">
-                    <h4 className="text-base sm:text-lg font-semibold mb-2">
-                      {selectedPlatform === 'line' ? 'LINE 相談' : 'Instagram 相談'}
+                    <h4 className={`text-base sm:text-lg font-semibold mb-2 ${getFontClass()}`}>
+                      {selectedPlatform === 'line' ? t('lineConsultation') : t('instagramConsultation')}
                     </h4>
-                    <p className="text-xs sm:text-sm text-gray-600 mb-4">
-                      QRコードをスキャンしてください
+                    <p className={`text-xs sm:text-sm text-gray-600 mb-4 ${getFontClass()}`}>
+                      {t('scanQRCode')}
                     </p>
                   </div>
 
@@ -123,20 +133,20 @@ export default function FloatingQRCode({ className }: FloatingQRCodeProps) {
                   </div>
 
                   <div className="text-center space-y-2">
-                    <p className="text-xs sm:text-sm text-gray-600">
-                      スマートフォンで QRコードをスキャン
+                    <p className={`text-xs sm:text-sm text-gray-600 ${getFontClass()}`}>
+                      {t('scanQRCodeWithPhone')}
                     </p>
-                    <p className="text-xs text-gray-500">
-                      展示・サービスのご相談など 何でもお気軽にお聞きください
+                    <p className={`text-xs text-gray-500 ${getFontClass()}`}>
+                      {t('consultationMessage')}
                     </p>
                   </div>
 
                   {/* Back Button */}
                   <button
                     onClick={() => setSelectedPlatform(null)}
-                    className="w-full mt-4 py-2 px-4 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors text-sm"
+                    className={`w-full mt-4 py-2 px-4 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors text-sm ${getFontClass()}`}
                   >
-                    選択に戻る
+                    {t('backToSelection')}
                   </button>
                 </div>
               )}

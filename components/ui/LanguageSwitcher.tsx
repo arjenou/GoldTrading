@@ -30,6 +30,12 @@ const languages: LanguageOption[] = [
     name: 'English',
     flag: '🇺🇸',
     nativeName: 'English'
+  },
+  {
+    code: 'vi',
+    name: 'Vietnamese',
+    flag: '🇻🇳',
+    nativeName: 'Tiếng Việt'
   }
 ];
 
@@ -64,7 +70,8 @@ export default function LanguageSwitcher({ isLightText = true }: LanguageSwitche
                 <span className={`text-xs font-medium hidden sm:block ${
                   currentLanguage.code === 'ja' ? 'font-noto-sans-jp' : 
                   currentLanguage.code === 'zh' ? 'font-noto-sans-sc' : 
-                  currentLanguage.code === 'en' ? 'font-montserrat' : ''
+                  currentLanguage.code === 'en' ? 'font-montserrat' : 
+                  currentLanguage.code === 'vi' ? 'font-montserrat' : ''
                 }`}>
                   {currentLanguage.nativeName}
                 </span>
@@ -89,7 +96,8 @@ export default function LanguageSwitcher({ isLightText = true }: LanguageSwitche
                   <span className={`text-sm font-medium ${
                     language.code === 'ja' ? 'font-noto-sans-jp' : 
                     language.code === 'zh' ? 'font-noto-sans-sc' : 
-                    language.code === 'en' ? 'font-montserrat' : ''
+                    language.code === 'en' ? 'font-montserrat' : 
+                    language.code === 'vi' ? 'font-montserrat' : ''
                   }`}>
                     {language.nativeName}
                   </span>

@@ -22,6 +22,7 @@ const resources = {
       language: '言語',
       japanese: '日本語',
       chinese: '中文',
+      vietnamese: 'Tiếng Việt',
       
       // 其他常用文本
       learnMore: '詳細を見る',
@@ -232,6 +233,20 @@ const resources = {
       footerService6: 'コレクション・オークション流通',
       allRightsReserved: '© 2025 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
+      
+      // Contact Widget & QR Code
+      whatsappConsultation: 'WhatsApp 相談',
+      wechatConsultation: 'WeChat 相談',
+      lineConsultation: 'LINE 相談',
+      instagramConsultation: 'Instagram 相談',
+      snsConsultation: 'SNS相談',
+      consultation: '相談',
+      scanQRCode: 'QRコードをスキャンしてください',
+      scanWeChatQRCode: '微信二维码をスキャンしてください',
+      scanQRCodeWithPhone: 'スマートフォンで QRコードをスキャン',
+      selectConsultationMethod: 'ご希望の相談方法をお選びください',
+      consultationMessage: '展示・サービスのご相談など 何でもお気軽にお聞きください',
+      backToSelection: '選択に戻る',
     }
   },
   zh: {
@@ -253,6 +268,7 @@ const resources = {
       language: '语言',
       japanese: '日本語',
       chinese: '中文',
+      vietnamese: 'Tiếng Việt',
       
       // 其他常用文本
       learnMore: '了解更多',
@@ -463,6 +479,20 @@ const resources = {
       footerService6: '收藏品・拍卖流通',
       allRightsReserved: '© 2025 阪福商事合同会社・大阪金饰奢品行. 版权所有.',
       licensedCompany: '获得许可和监管的贵金属交易公司',
+      
+      // Contact Widget & QR Code
+      whatsappConsultation: 'WhatsApp 咨询',
+      wechatConsultation: 'WeChat 咨询',
+      lineConsultation: 'LINE 咨询',
+      instagramConsultation: 'Instagram 咨询',
+      snsConsultation: 'SNS咨询',
+      consultation: '咨询',
+      scanQRCode: '请扫描QR码',
+      scanWeChatQRCode: '请扫描微信二维码',
+      scanQRCodeWithPhone: '使用智能手机扫描QR码',
+      selectConsultationMethod: '请选择您希望的咨询方式',
+      consultationMessage: '请随时咨询展览、服务等任何问题',
+      backToSelection: '返回选择',
     }
   },
   en: {
@@ -696,6 +726,267 @@ const resources = {
       footerService6: 'Collection & Auction Distribution',
       allRightsReserved: '© 2025 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
+      
+      // Contact Widget & QR Code
+      whatsappConsultation: 'WhatsApp Consultation',
+      wechatConsultation: 'WeChat Consultation',
+      lineConsultation: 'LINE Consultation',
+      instagramConsultation: 'Instagram Consultation',
+      snsConsultation: 'SNS Consultation',
+      consultation: 'Consultation',
+      scanQRCode: 'Please scan the QR code',
+      scanWeChatQRCode: 'Please scan the WeChat QR code',
+      scanQRCodeWithPhone: 'Scan QR code with your smartphone',
+      selectConsultationMethod: 'Please select your preferred consultation method',
+      consultationMessage: 'Please feel free to ask about exhibitions, services, etc.',
+      backToSelection: 'Back to Selection',
+    }
+  },
+  vi: {
+    translation: {
+      // Điều hướng
+      home: 'Giới thiệu công ty',
+      news: 'Tin tức',
+      services: 'Dịch vụ kinh doanh',
+      clients: 'Khách hàng & Đối tác',
+      contact: 'Liên hệ',
+      consultant: 'Tư vấn chuyên gia',
+      price: 'Giá mua lại',
+      
+      // Tên công ty
+      companyName: 'GOLD TRADING OSAKA',
+      companyNameJP: 'Giao dịch vàng Osaka',
+      
+      // Chuyển đổi ngôn ngữ
+      language: 'Ngôn ngữ',
+      japanese: '日本語',
+      chinese: '中文',
+      english: 'English',
+      vietnamese: 'Tiếng Việt',
+      
+      // Các văn bản thông dụng khác
+      learnMore: 'Tìm hiểu thêm',
+      readMore: 'Đọc thêm',
+      submit: 'Gửi',
+      cancel: 'Hủy',
+      loading: 'Đang tải...',
+      error: 'Đã xảy ra lỗi',
+      success: 'Gửi thành công',
+      
+      // Hero Section
+      heroTitle: 'Giao dịch vàng Osaka',
+      heroSubtitle1: 'Dựa tại Osaka, chúng tôi thực hiện mua lại trong nước và bán hàng quốc tế・nhập khẩu/xuất khẩu tập trung vào trang sức kim loại quý, đá quý và đồng hồ.',
+      heroSubtitle2: 'Chúng tôi cũng xử lý nguyên liệu kim loại cho tinh chế kim loại quý, giao dịch đồ cổ và đồ vintage, cung cấp dịch vụ đấu giá cho thị trường nước ngoài, và cung cấp không gian tiếp đón khách và kết nối thông qua phòng khách thành viên của chúng tôi.',
+      heroSubtitle3: 'Tại Osaka, nơi đang phát triển quốc tế hóa, và trong môi trường thị trường mở rộng thông qua phát triển IR, chúng tôi hướng tới trở thành một công ty thương mại toàn diện hỗ trợ các giao dịch có giá trị và kết nối con người.',
+      
+      // Company Overview Section
+      companyOverviewTitle: 'Tổng quan công ty',
+      companyOverviewSubtitle: 'Công ty thương mại quốc tế chuyên nghiệp dựa tại Osaka',
+      companyDescription1: 'Dựa tại Osaka, chúng tôi thực hiện mua lại trong nước và bán hàng quốc tế・nhập khẩu/xuất khẩu tập trung vào trang sức kim loại quý, đá quý và đồng hồ, phát triển kinh doanh phân phối kết nối thị trường Nhật Bản và nước ngoài.',
+      companyDescription2: 'Chúng tôi cũng xử lý nguyên liệu thô cho tinh chế kim loại quý, giao dịch đồ cổ và đồ vintage, cung cấp dịch vụ đấu giá, đánh giá giá trị và hỗ trợ thẩm định, và cung cấp một loạt các dịch vụ ngoại vi hỗ trợ giao dịch.',
+      companyDescription3: 'Hơn nữa, thông qua phòng khách thành viên và không gian cà phê được thiết kế để tiếp đón khách, chúng tôi cung cấp địa điểm cho đàm phán kinh doanh, kết nối và trao đổi thông tin, vận hành kinh doanh của chúng tôi với trọng tâm xây dựng các mối quan hệ tin cậy lâu dài.',
+      
+      // Company Pillars
+      coreTradingTitle: 'Giao dịch cốt lõi',
+      coreTradingDesc: 'Trang sức kim loại quý, đá quý & đồng hồ / Mua lại & Thương mại quốc tế',
+      assetSolutionTitle: 'Hỗ trợ giá trị',
+      assetSolutionDesc: 'Hỗ trợ thẩm định, Tài sản kỹ thuật số, Giao dịch liên quan đến cầm đồ & Dịch vụ thanh toán',
+      collectionTitle: 'Phân phối bộ sưu tập',
+      collectionDesc: 'Đồ cổ & Vintage / Rượu cao cấp & Đồng hồ sang trọng',
+      collectionDesc2: 'Triển lãm, Phân phối & Dịch vụ đấu giá',
+      loungeTitle: 'Phòng khách thành viên',
+      loungeDesc1: 'Sự kiện kết nối, Tiệc & Giải trí',
+      loungeDesc2: 'Phòng khách tiếp đón khách, Quán cà phê & Câu lạc bộ',
+      
+      // Mission & Vision
+      missionTitle: 'SỨ MỆNH',
+      missionSubtitle: 'Lưu thông giá trị, Kết nối thị trường đáng tin cậy với tương lai',
+      missionPoint1: 'Đóng góp cho xã hội bền vững thông qua lưu thông và phân phối đúng đắn các nguồn tài nguyên bắt đầu với kim loại quý và trang sức',
+      missionPoint2: 'Nhấn mạnh tuân thủ và minh bạch để xây dựng các mối quan hệ tin cậy lâu dài với các đối tác thương mại trong nước và quốc tế',
+      missionPoint3: 'Xây dựng một hệ sinh thái kinh doanh nơi các giao dịch, kết nối và thông tin lưu thông lành mạnh',
+      
+      visionTitle: 'TẦM NHÌN',
+      visionSubtitle: 'Từ Osaka, đến thế giới. Trở thành trung tâm của niềm tin và thanh khoản',
+      visionPoint1: 'Osaka hiện đang tiến tới một giai đoạn kinh tế mới trong bối cảnh quốc tế hóa và phát triển IR.',
+      visionPoint2: 'Giao dịch vàng Osaka sẽ xây dựng một mô hình phân phối ba chiều tập trung vào mua lại trong nước và bán hàng quốc tế của trang sức kim loại quý, đá quý và đồng hồ, kết hợp với giao dịch đồ cổ và vintage, dịch vụ đấu giá, và phòng khách thành viên và không gian tiếp đón khách.',
+      visionPoint3: 'Không chỉ là nơi giao dịch, mà còn là trung tâm nơi mọi người và thông tin tụ tập và niềm tin được nuôi dưỡng, chúng tôi hướng tới trở thành một sự hiện diện kết nối Nhật Bản và thế giới.',
+      
+      // Services Section
+      servicesTitle: 'Dịch vụ kinh doanh',
+      servicesSubtitle: 'Dịch vụ thương mại chuyên nghiệp',
+      servicesDescription: '',
+      
+      // Service Details
+      serviceKGoldTitle: 'Giao dịch trang sức K18 & Bạch kim',
+      serviceKGoldDesc: 'Tập trung vào trang sức K18 và bạch kim mới và đã qua sử dụng lưu thông tại Nhật Bản, chúng tôi tận dụng công nghệ chế biến đáng tin cậy và tiêu chuẩn hoàn thiện để phát triển bán buôn và giao dịch nhập khẩu/xuất khẩu cho thị trường nước ngoài. Chúng tôi xây dựng hệ thống giao dịch ổn định cho các nhà tinh chế, thợ kim hoàn và đối tác quốc tế.',
+      serviceKGoldPoint1: 'Bán buôn trang sức K18 & Bạch kim (Mới & Đã qua sử dụng)',
+      serviceKGoldPoint2: 'Giao dịch nhập khẩu/xuất khẩu sử dụng chất lượng Nhật Bản cho thị trường nước ngoài',
+      serviceKGoldPoint3: 'Hệ thống cung ứng nhấn mạnh tính liên tục',
+      
+      serviceDiamondTitle: 'Giao dịch kim cương, đá màu & ngọc trai',
+      serviceDiamondDesc: 'Chúng tôi xử lý kim cương, các loại đá quý khác nhau, đá màu và ngọc trai Nhật Bản (ngọc trai Akoya, ngọc trai nước ngọt, v.v.), thực hiện phân phối và dịch vụ xuất khẩu cho thị trường nước ngoài bằng cách tận dụng đặc điểm nguồn gốc và sức mạnh tập hợp thị trường của Nhật Bản. Chúng tôi cung cấp giao dịch đáng tin cậy cao dựa trên các tổ chức chứng nhận quốc tế và các chứng nhận khác nhau.',
+      serviceDiamondPoint1: 'Bán buôn kim cương, đá quý, đá màu & ngọc trai',
+      serviceDiamondPoint2: 'Dịch vụ xuất khẩu cho thị trường nước ngoài tập trung vào ngọc trai Nhật Bản',
+      serviceDiamondPoint3: 'Tổ chức chứng nhận quốc tế (GIA, v.v.) & Dịch vụ chứng chỉ khác nhau',
+      
+      serviceGoldBarsTitle: 'Giao dịch vàng & bạc thỏi được chứng nhận',
+      serviceGoldBarsDesc: 'Chúng tôi xử lý các thương hiệu được chứng nhận của Nhật Bản và vàng và bạc thỏi được chứng nhận quốc tế dựa trên các tuyến phân phối hợp pháp. Tập trung vào các thương hiệu đáng tin cậy cao như Tanaka Kikinzoku và Japan Material, chúng tôi cũng xử lý giao dịch xuất khẩu cho thị trường nước ngoài, xây dựng hệ thống giao dịch quốc tế với tính minh bạch và khả năng thực thi.',
+      serviceGoldBarsPoint1: 'Giao dịch hợp pháp của vàng & bạc thỏi thương hiệu được chứng nhận Nhật Bản',
+      serviceGoldBarsPoint2: 'Xử lý vàng & bạc thỏi được chứng nhận quốc tế',
+      serviceGoldBarsPoint3: 'Dịch vụ xuất khẩu & giao dịch quốc tế cho thị trường nước ngoài',
+      
+      serviceAppraisalTitle: 'Thẩm định kim loại quý & đá quý',
+      serviceAppraisalDesc: 'Hợp tác với các tổ chức có thẩm quyền để cung cấp thẩm định và đánh giá chuyên nghiệp về vàng, kim cương và đá quý, đảm bảo giá trị thực cho giao dịch và sưu tập.',
+      serviceAppraisalPoint1: 'Thẩm định hợp tác tổ chức có thẩm quyền',
+      serviceAppraisalPoint2: 'Dịch vụ đánh giá giá trị chuyên nghiệp',
+      serviceAppraisalPoint3: 'Đảm bảo giá trị giao dịch và sưu tập',
+      
+      serviceInvestmentTitle: 'Hỗ trợ tài sản, kinh doanh & giao dịch',
+      serviceInvestmentDesc: 'Dựa trên các lĩnh vực kim loại quý và bộ sưu tập, chúng tôi cung cấp hỗ trợ thực tế cho các giao dịch liên quan đến đánh giá giá trị, giao dịch liên quan đến cầm đồ, thanh toán và trao đổi, tài sản kỹ thuật số và bán doanh nghiệp (M&A). Thông qua hợp tác với các doanh nghiệp liên quan đến IR, chúng tôi hỗ trợ cải thiện thanh khoản trong giao dịch và kinh doanh.',
+      serviceInvestmentPoint1: 'Hỗ trợ giao dịch dựa trên đánh giá giá trị / Dịch vụ giao dịch liên quan đến cầm đồ',
+      serviceInvestmentPoint2: 'Hỗ trợ chuyển tiền bao gồm trao đổi & thanh toán / Giao dịch liên quan đến tài sản kỹ thuật số',
+      serviceInvestmentPoint3: 'Hỗ trợ thực tế bán doanh nghiệp (M&A) / Hợp tác doanh nghiệp liên quan đến IR',
+      
+      serviceCollectionTitle: 'Phân phối bộ sưu tập & đấu giá',
+      serviceCollectionDesc: 'Trong lĩnh vực bộ sưu tập bao gồm rượu cao cấp, đồng hồ sang trọng, đồ thủ công vàng và đồ cổ, chúng tôi thực hiện phân phối, môi giới và dịch vụ đấu giá cho thị trường trong nước và quốc tế.',
+      serviceCollectionPoint1: 'Phân phối & môi giới rượu cao cấp, đồng hồ sang trọng, đồ thủ công vàng & đồ cổ',
+      serviceCollectionPoint2: 'Dịch vụ đấu giá trong nước & quốc tế & Hỗ trợ giao dịch',
+      serviceCollectionPoint3: 'Giao dịch xuất khẩu cho nhà sưu tập & tập đoàn nước ngoài',
+      
+      serviceLoungeTitle: 'Cà phê thành viên & Phòng khách salon',
+      serviceLoungeSubtitle: 'Sắp mở cửa',
+      serviceLoungeDesc: 'Không gian thư giãn với cà phê và đồ ngọt cao cấp, nơi gặp gỡ cao cấp kết nối mọi người và cộng đồng.',
+      serviceLoungePoint1: 'Không gian thư giãn với cà phê và đồ ngọt cao cấp',
+      serviceLoungePoint2: 'Nơi gặp gỡ cao cấp kết nối mọi người và cộng đồng',
+      serviceLoungePoint3: 'Câu lạc bộ riêng cung cấp hoạt động giải trí cho các chuyên gia kinh doanh',
+      
+      // News Section
+      newsTitle: 'Tin tức',
+      newsSubtitle: 'Thông tin mới nhất',
+      
+      // Company Information
+      companyLegalName: 'Tên công ty (Tên thương mại)',
+      companyNameLegal: 'Hanpuku Shouji LLC (ハンフクショウジ)',
+      companyAddress: 'Vị trí trụ sở chính',
+      companyAddressDetail: '〒541-0054 Tầng 2, Phòng 2FB, 3-2-11 Minami-Honmachi, Chuo-ku, Osaka-shi, Tỉnh Osaka',
+      companyNumber: 'Số công ty',
+      companyNumberValue: '6120-0030-29168',
+      companyCapital: 'Vốn',
+      companyCapitalValue: '¥10,000,000',
+      companyBusiness: 'Mô tả kinh doanh',
+      companyBusinessDetail: 'Kinh doanh giao dịch, phân phối và thương mại quốc tế tập trung vào các lĩnh vực kim loại quý, trang sức và bộ sưu tập; hỗ trợ giao dịch liên quan đến đánh giá giá trị và thẩm định; giao dịch liên quan đến cầm đồ và hỗ trợ giao dịch thanh toán/trao đổi; lập kế hoạch và vận hành các cơ sở liên quan đến ngành công nghiệp thực phẩm và đồ uống; dịch vụ inbound và các doanh nghiệp liên quan.',
+      companyContact: 'Liên hệ chúng tôi',
+      
+      // News Items
+      newsItem1Date: '2025.08.11',
+      newsItem1Content: 'Quy mô thị trường trang sức, phân tích thị phần & ngành, sản phẩm (dây chuyền, bông tai, nhẫn, vòng tay, v.v.), loại vật liệu (vàng, bạch kim, kim cương, v.v.), người dùng cuối (nam và nữ), dự báo khu vực, 2025-2032.',
+      newsItem1Link: 'https://www.fortunebusinessinsights.com/jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B8%82%E5%A0%B4-102107',
+      newsItem2Date: '2025.06.25',
+      newsItem2Content: 'Money Forward Private Bank ra mắt nền tảng quản lý tài sản siêu giàu có "Money Forward Private BANK" bắt đầu từ ngày 25 tháng 6 năm 2025.',
+      newsItem2Link: 'https://prtimes.jp/main/html/rd/p/000000007.000141034.html',
+      newsItem3Date: '2025.04.24',
+      newsItem3Content: 'IR đầu tiên của Nhật Bản, công việc xây dựng chính bắt đầu vào ngày 24 bên cạnh địa điểm Expo Osaka.',
+      newsItem3Link: 'https://www.nikkei.com/article/DGXZQOUF11CGD0R10C25A4000000/',
+      newsItem4Date: '2025.03.01',
+      newsItem4Content: 'Trang sức chính thức Shohei Ohtani tác phẩm mới nhất "K18 SHIPPO DIAMOND PENDANTS" nhận được đơn đặt hàng trước thuận lợi tại các cửa hàng bách hóa và cửa hàng bán lẻ lớn trên toàn quốc.',
+      newsItem4Link: 'https://prtimes.jp/main/html/rd/p/000000084.000049012.html',
+      newsItem5Date: '2025.02.13',
+      newsItem5Content: 'Viện Nghiên cứu Nomura ước tính các hộ gia đình giàu có và siêu giàu có của Nhật Bản tổng cộng khoảng 1,65 triệu, với tổng tài sản tài chính ròng khoảng ¥469 nghìn tỷ.',
+      newsItem5Link: 'https://www.nri.com/jp/news/newsrelease/20250213_1.html',
+      
+      // Clients Section
+      clientsTitle: 'Khách hàng & Đối tác',
+      clientsSubtitle: 'Quan hệ đối tác đáng tin cậy',
+      clientsDescription: 'Khách hàng chọn chúng tôi không chỉ vì nguồn cung ứng ổn định và khả năng thực thi chuyên nghiệp, mà còn vì chúng tôi có thể cung cấp hỗ trợ toàn diện bao gồm giao dịch, thẩm định, tư vấn và mạng xã hội.',
+      
+      // Client Types
+      clientRefiner: 'Nhà tinh chế',
+      clientRefinerDesc: 'Cung cấp nguồn cung ứng nguyên liệu thô ổn định và dịch vụ phân tích thị trường chuyên nghiệp cho các công ty tinh chế kim loại quý',
+      clientJewelry: 'Thợ kim hoàn & Nhà bán lẻ',
+      clientJewelryDesc: 'Hỗ trợ các nhà bán lẻ trang sức đảm bảo nguồn cung ứng chất lượng, cung cấp dịch vụ thẩm định sản phẩm và tư vấn xu hướng thị trường',
+      clientInternational: 'Thương nhân quốc tế',
+      clientInternationalDesc: 'Cung cấp hỗ trợ giao dịch xuyên biên giới và đảm bảo tuân thủ cho các thương nhân vàng và kim cương quốc tế',
+      clientCollector: 'Nhà sưu tập & Khách hàng giàu có',
+      clientCollectorDesc: 'Cung cấp giao dịch bộ sưu tập hiếm, tư vấn đầu tư và dịch vụ tùy chỉnh riêng cho các nhà sưu tập',
+      clientCorporate: 'Tập đoàn & Văn phòng gia đình',
+      clientCorporateDesc: 'Cung cấp lời khuyên phân bổ tài sản và giải pháp quản lý tài sản cho các tập đoàn và văn phòng gia đình',
+      clientInstitution: 'Tổ chức chuyên nghiệp',
+      clientInstitutionDesc: 'Xây dựng mối quan hệ hợp tác lâu dài với các tổ chức tài chính, quỹ đầu tư và các tổ chức chuyên nghiệp khác',
+      
+      // Contact Section
+      contactTitle: 'Liên hệ chúng tôi',
+      contactSubtitle: 'Vui lòng liên hệ với chúng tôi',
+      contactDescription1: 'Chúng tôi mong muốn được nghe từ bạn tại Giao dịch vàng Osaka.',
+      contactDescription2: 'Cung cấp dịch vụ giao dịch và đầu tư chuyên nghiệp',
+      nameLabel: 'Tên',
+      emailLabel: 'Địa chỉ email',
+      phoneLabel: 'Số điện thoại',
+      serviceLabel: 'Yêu cầu dịch vụ',
+      messageLabel: 'Tin nhắn chi tiết',
+      sendButton: 'Gửi',
+      sending: 'Đang gửi...',
+      successMessage: 'Email đã được gửi thành công. Chúng tôi sẽ trả lời trong vòng 24 giờ.',
+      errorMessage: 'Vui lòng thử lại.',
+      privacyMessage: 'Chúng tôi cam kết bảo vệ thông tin riêng tư của bạn',
+      responseMessage: 'Chúng tôi sẽ trả lời yêu cầu của bạn trong vòng 24 giờ',
+      
+      // Form Placeholders
+      namePlaceholder: 'Vui lòng nhập tên của bạn',
+      emailPlaceholder: 'Vui lòng nhập địa chỉ email của bạn',
+      phonePlaceholder: 'Vui lòng nhập số điện thoại của bạn',
+      servicePlaceholder: 'Vui lòng chọn dịch vụ bạn quan tâm',
+      messagePlaceholder: 'Vui lòng mô tả nhu cầu hoặc câu hỏi của bạn chi tiết. Chúng tôi sẽ cung cấp câu trả lời chuyên nghiệp càng sớm càng tốt...',
+      
+      // Service Options
+      serviceKGold: 'Giao dịch kim loại quý & trang sức (Trong nước & Quốc tế)',
+      serviceGoldBars: 'Mua lại & thẩm định cá nhân',
+      serviceAppraisal: 'Hỗ trợ liên quan đến thanh khoản quỹ',
+      serviceInvestment: 'Phân phối bộ sưu tập & liên quan đến đấu giá',
+      servicePartnership: 'Giải trí & liên quan đến phòng khách',
+      serviceOther: 'Bán doanh nghiệp (M&A) & Quan hệ đối tác kinh doanh',
+      serviceOtherInquiry: 'Yêu cầu khác',
+      
+      // Validation Messages
+      requiredFields: 'Tên, địa chỉ email và yêu cầu dịch vụ là các trường bắt buộc.',
+      invalidEmail: 'Vui lòng nhập địa chỉ email hợp lệ.',
+      networkError: 'Đã xảy ra lỗi mạng.',
+      sendFailed: 'Gửi thất bại.',
+      
+      // Footer
+      footerDescription: 'Công ty thương mại quốc tế chuyên nghiệp dựa tại Osaka',
+      footerCompanyDesc: 'Là Hanpuku Shouji LLC, chúng tôi phát triển thương mại quốc tế và phân phối tập trung vào các lĩnh vực kim loại quý và trang sức. Với khả năng mua sắm và hệ thống thực thi được nuôi dưỡng bởi văn hóa kinh doanh của Osaka, chúng tôi hỗ trợ các giao dịch toàn cầu.',
+      footerServices: 'Dịch vụ',
+      footerContact: 'Liên hệ',
+      footerHeadquarters: 'Vị trí trụ sở chính',
+      footerPhone: 'Tư vấn điện thoại',
+      footerEmail: 'Hỗ trợ email',
+      footerVisit: 'Thăm tại chỗ',
+      footerByAppointment: 'Theo lịch hẹn',
+      footerCertified: 'Đã chứng nhận',
+      footerInternational: 'Thương mại quốc tế',
+      footerSecurity: 'Bảo mật',
+      footerService1: 'Giao dịch trang sức K18 & Bạch kim',
+      footerService2: 'Giao dịch kim cương, đá màu & ngọc trai',
+      footerService3: 'Giao dịch vàng & bạc thỏi được chứng nhận',
+      footerService4: 'Thẩm định kim loại quý & đá quý',
+      footerService5: 'Hỗ trợ tài sản, kinh doanh & giao dịch',
+      footerService6: 'Phân phối bộ sưu tập & đấu giá',
+      allRightsReserved: '© 2025 Hanpuku Shouji LLC・Giao dịch vàng Osaka. Bảo lưu mọi quyền.',
+      licensedCompany: 'Công ty giao dịch kim loại quý được cấp phép và quy định',
+      
+      // Contact Widget & QR Code
+      whatsappConsultation: 'Tư vấn WhatsApp',
+      wechatConsultation: 'Tư vấn WeChat',
+      lineConsultation: 'Tư vấn LINE',
+      instagramConsultation: 'Tư vấn Instagram',
+      snsConsultation: 'Tư vấn SNS',
+      consultation: 'Tư vấn',
+      scanQRCode: 'Vui lòng quét mã QR',
+      scanWeChatQRCode: 'Vui lòng quét mã QR WeChat',
+      scanQRCodeWithPhone: 'Quét mã QR bằng điện thoại thông minh của bạn',
+      selectConsultationMethod: 'Vui lòng chọn phương thức tư vấn bạn muốn',
+      consultationMessage: 'Vui lòng thoải mái hỏi về triển lãm, dịch vụ, v.v.',
+      backToSelection: 'Quay lại lựa chọn',
     }
   }
 };

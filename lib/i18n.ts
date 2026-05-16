@@ -68,7 +68,8 @@ const resources = {
       visionTitle: 'VISION',
       visionSubtitle: '大阪から、世界へ。信頼と流動性のハブとなる',
       visionPoint1: '大阪は今、国際化とIR開発を背景に、新たな経済ステージへと進みつつあります。',
-      visionPoint2: '大阪ゴールドトレーディングは、貴金属ジュエリー、宝石、時計などの国内買取と国際販売を中核に、古美術・アンティーク取引、オークション対応、そして会員制ラウンジや来客対応空間を組み合わせた立体的な流通モデルを構築していきます。',
+      // 復帰用（社名あり）: '大阪ゴールドトレーディングは、貴金属ジュエリー、宝石、時計などの国内買取と国際販売を中核に、古美術・アンティーク取引、オークション対応、そして会員制ラウンジや来客対応空間を組み合わせた立体的な流通モデルを構築していきます。'
+      visionPoint2: '貴金属ジュエリー、宝石、時計などの国内買取と国際販売を中核に、古美術・アンティーク取引、オークション対応、そして会員制ラウンジや来客対応空間を組み合わせた立体的な流通モデルを構築していきます。',
       visionPoint3: '取引の場にとどまらず、人と情報が集い、信頼が育まれる拠点として、日本と世界を結ぶ存在を目指します。',
       
       // Services Section
@@ -126,7 +127,8 @@ const resources = {
       
       // Company Information
       companyLegalName: '社名（商号）',
-      companyNameLegal: '阪福商事合同会社（ハンフクショウジ）',
+      // 復帰用（法人格表記）: '阪福商事合同会社（ハンフクショウジ）'
+      companyNameLegal: '',
       companyAddress: '本店所在地',
       companyAddressDetail: '〒541-0054 大阪府大阪市中央区南本町3丁目2番11号 2階 2FB号室',
       companyNumber: '法人番号',
@@ -214,7 +216,8 @@ const resources = {
       
       // Footer
       footerDescription: '大阪を拠点とした国際貿易の専門企業',
-      footerCompanyDesc: '阪福商事合同会社として、貴金属・宝飾品分野を軸に国際取引・流通を展開。大阪の商い文化に育まれた調達力と実行体制で、グローバルな取引を支えています。',
+      // 復帰用（法人格表記あり）: '阪福商事合同会社として、貴金属・宝飾品分野を軸に国際取引・流通を展開。大阪の商い文化に育まれた調達力と実行体制で、グローバルな取引を支えています。'
+      footerCompanyDesc: '貴金属・宝飾品分野を軸に国際取引・流通を展開。大阪の商い文化に育まれた調達力と実行体制で、グローバルな取引を支えています。',
       footerServices: 'サービス',
       footerContact: '連絡先',
       footerHeadquarters: '本社所在地',
@@ -231,7 +234,8 @@ const resources = {
       footerService4: '貴金属・宝石鑑定',
       footerService5: '資産・事業・取引サポート',
       footerService6: 'コレクション・オークション流通',
-      allRightsReserved: '© 2025 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.',
+      // 復帰用（法人格表記あり）: '© 2025 阪福商事合同会社・大阪ゴールドトレーディング. All rights reserved.'
+      allRightsReserved: '© 2025 大阪ゴールドトレーディング. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
       
       // Contact Widget & QR Code
@@ -314,7 +318,8 @@ const resources = {
       visionTitle: '愿景',
       visionSubtitle: '从大阪，到世界。成为信赖和流动性的枢纽',
       visionPoint1: '大阪现在正以国际化和IR开发为背景，迈向新的经济阶段。',
-      visionPoint2: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及休闲会所和来客对应空间，构建立体的流通模式。',
+      // 復帰用（社名あり）: '大阪金饰奢品行将以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及休闲会所和来客对应空间，构建立体的流通模式。'
+      visionPoint2: '以贵金属珠宝、宝石、手表等的国内回收和国际销售为核心，结合古美术・古董交易、拍卖对应，以及休闲会所和来客对应空间，构建立体的流通模式。',
       visionPoint3: '不仅作为交易场所，更作为人与信息汇聚、培育信赖的据点，致力于成为连接日本与世界的存在。',
       
       // Services Section
@@ -372,7 +377,8 @@ const resources = {
       
       // Company Information
       companyLegalName: '公司名称（商号）',
-      companyNameLegal: '阪福商事合同会社（ハンフクショウジ）',
+      // 復帰用（法人格表記）: '阪福商事合同会社（ハンフクショウジ）'
+      companyNameLegal: '',
       companyAddress: '总部所在地',
       companyAddressDetail: '〒541-0054 大阪府大阪市中央区南本町3丁目2番11号 2階 2FB号室',
       companyNumber: '法人编号',
@@ -460,7 +466,8 @@ const resources = {
       
       // Footer
       footerDescription: '以大阪为基地的专业国际贸易企业',
-      footerCompanyDesc: '作为阪福商事合同会社，以贵金属・珠宝饰品领域为轴心开展国际交易・流通。凭借大阪商业文化培育的采购力和执行体制，支撑全球交易。',
+      // 復帰用（法人格表記あり）: '作为阪福商事合同会社，以贵金属・珠宝饰品领域为轴心开展国际交易・流通。凭借大阪商业文化培育的采购力和执行体制，支撑全球交易。'
+      footerCompanyDesc: '以贵金属・珠宝饰品领域为轴心开展国际交易・流通。凭借大阪商业文化培育的采购力和执行体制，支撑全球交易。',
       footerServices: '服务',
       footerContact: '联系方式',
       footerHeadquarters: '总部所在地',
@@ -477,7 +484,8 @@ const resources = {
       footerService4: '贵金属・宝石鉴定',
       footerService5: '资产・事业・交易支持',
       footerService6: '收藏品・拍卖流通',
-      allRightsReserved: '© 2025 阪福商事合同会社・大阪金饰奢品行. 版权所有.',
+      // 復帰用（法人格表記あり）: '© 2025 阪福商事合同会社・大阪金饰奢品行. 版权所有.'
+      allRightsReserved: '© 2025 大阪金饰奢品行. 版权所有.',
       licensedCompany: '获得许可和监管的贵金属交易公司',
       
       // Contact Widget & QR Code
@@ -560,7 +568,8 @@ const resources = {
       visionTitle: 'VISION',
       visionSubtitle: 'From Osaka, to the World. Becoming a Hub of Trust and Liquidity',
       visionPoint1: 'Osaka is now advancing toward a new economic stage against the backdrop of internationalization and IR development.',
-      visionPoint2: 'Osaka Gold Trading will build a three-dimensional distribution model centered on domestic buyback and international sales of precious metal jewelry, gemstones, and watches, combined with antiques and vintage trading, auction services, and member lounges and guest reception spaces.',
+      // Restore with brand name: 'Osaka Gold Trading will build a three-dimensional distribution model centered on domestic buyback and international sales of precious metal jewelry, gemstones, and watches, combined with antiques and vintage trading, auction services, and member lounges and guest reception spaces.'
+      visionPoint2: 'We will build a three-dimensional distribution model centered on domestic buyback and international sales of precious metal jewelry, gemstones, and watches, combined with antiques and vintage trading, auction services, and member lounges and guest reception spaces.',
       visionPoint3: 'Not just as a place for transactions, but as a hub where people and information gather and trust is nurtured, we aim to be a presence connecting Japan and the world.',
       
       // Services Section
@@ -619,7 +628,8 @@ const resources = {
       
       // Company Information
       companyLegalName: 'Company Name (Trade Name)',
-      companyNameLegal: 'Hanpuku Shouji LLC (ハンフクショウジ)',
+      // Restore legal entity: 'Hanpuku Shouji LLC (ハンフクショウジ)'
+      companyNameLegal: '',
       companyAddress: 'Head Office Location',
       companyAddressDetail: '〒541-0054 2F, 2FB Room, 3-2-11 Minami-Honmachi, Chuo-ku, Osaka-shi, Osaka Prefecture',
       companyNumber: 'Corporate Number',
@@ -707,7 +717,8 @@ const resources = {
       
       // Footer
       footerDescription: 'Professional international trading company based in Osaka',
-      footerCompanyDesc: 'As Hanpuku Shouji LLC, we develop international trading and distribution centered on precious metals and jewelry fields. With procurement capabilities and execution systems nurtured by Osaka\'s business culture, we support global transactions.',
+      // Restore with legal entity: 'As Hanpuku Shouji LLC, we develop international trading and distribution centered on precious metals and jewelry fields. With procurement capabilities and execution systems nurtured by Osaka\'s business culture, we support global transactions.'
+      footerCompanyDesc: 'We develop international trading and distribution centered on precious metals and jewelry fields. With procurement capabilities and execution systems nurtured by Osaka\'s business culture, we support global transactions.',
       footerServices: 'Services',
       footerContact: 'Contact',
       footerHeadquarters: 'Headquarters Location',
@@ -724,7 +735,8 @@ const resources = {
       footerService4: 'Precious Metals & Gemstone Appraisal',
       footerService5: 'Asset, Business & Trading Support',
       footerService6: 'Collection & Auction Distribution',
-      allRightsReserved: '© 2025 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.',
+      // Restore with legal entity: '© 2025 Hanpuku Shouji LLC・Osaka Gold Trading. All rights reserved.'
+      allRightsReserved: '© 2025 Osaka Gold Trading. All rights reserved.',
       licensedCompany: 'Licensed and regulated precious metals trading company',
       
       // Contact Widget & QR Code
@@ -808,7 +820,8 @@ const resources = {
       visionTitle: 'TẦM NHÌN',
       visionSubtitle: 'Từ Osaka, đến thế giới. Trở thành trung tâm của niềm tin và thanh khoản',
       visionPoint1: 'Osaka hiện đang tiến tới một giai đoạn kinh tế mới trong bối cảnh quốc tế hóa và phát triển IR.',
-      visionPoint2: 'Giao dịch vàng Osaka sẽ xây dựng một mô hình phân phối ba chiều tập trung vào mua lại trong nước và bán hàng quốc tế của trang sức kim loại quý, đá quý và đồng hồ, kết hợp với giao dịch đồ cổ và vintage, dịch vụ đấu giá, và phòng khách thành viên và không gian tiếp đón khách.',
+      // Khôi phục kèm tên thương hiệu: 'Giao dịch vàng Osaka sẽ xây dựng một mô hình phân phối ba chiều tập trung vào mua lại trong nước và bán hàng quốc tế của trang sức kim loại quý, đá quý và đồng hồ, kết hợp với giao dịch đồ cổ và vintage, dịch vụ đấu giá, và phòng khách thành viên và không gian tiếp đón khách.'
+      visionPoint2: 'Chúng tôi sẽ xây dựng một mô hình phân phối ba chiều tập trung vào mua lại trong nước và bán hàng quốc tế của trang sức kim loại quý, đá quý và đồng hồ, kết hợp với giao dịch đồ cổ và vintage, dịch vụ đấu giá, và phòng khách thành viên và không gian tiếp đón khách.',
       visionPoint3: 'Không chỉ là nơi giao dịch, mà còn là trung tâm nơi mọi người và thông tin tụ tập và niềm tin được nuôi dưỡng, chúng tôi hướng tới trở thành một sự hiện diện kết nối Nhật Bản và thế giới.',
       
       // Services Section
@@ -866,7 +879,8 @@ const resources = {
       
       // Company Information
       companyLegalName: 'Tên công ty (Tên thương mại)',
-      companyNameLegal: 'Hanpuku Shouji LLC (ハンフクショウジ)',
+      // Khôi phục pháp nhân: 'Hanpuku Shouji LLC (ハンフクショウジ)'
+      companyNameLegal: '',
       companyAddress: 'Vị trí trụ sở chính',
       companyAddressDetail: '〒541-0054 Tầng 2, Phòng 2FB, 3-2-11 Minami-Honmachi, Chuo-ku, Osaka-shi, Tỉnh Osaka',
       companyNumber: 'Số công ty',
@@ -954,7 +968,8 @@ const resources = {
       
       // Footer
       footerDescription: 'Công ty thương mại quốc tế chuyên nghiệp dựa tại Osaka',
-      footerCompanyDesc: 'Là Hanpuku Shouji LLC, chúng tôi phát triển thương mại quốc tế và phân phối tập trung vào các lĩnh vực kim loại quý và trang sức. Với khả năng mua sắm và hệ thống thực thi được nuôi dưỡng bởi văn hóa kinh doanh của Osaka, chúng tôi hỗ trợ các giao dịch toàn cầu.',
+      // Khôi phục kèm pháp nhân: 'Là Hanpuku Shouji LLC, chúng tôi phát triển thương mại quốc tế và phân phối tập trung vào các lĩnh vực kim loại quý và trang sức. Với khả năng mua sắm và hệ thống thực thi được nuôi dưỡng bởi văn hóa kinh doanh của Osaka, chúng tôi hỗ trợ các giao dịch toàn cầu.'
+      footerCompanyDesc: 'Chúng tôi phát triển thương mại quốc tế và phân phối tập trung vào các lĩnh vực kim loại quý và trang sức. Với khả năng mua sắm và hệ thống thực thi được nuôi dưỡng bởi văn hóa kinh doanh của Osaka, chúng tôi hỗ trợ các giao dịch toàn cầu.',
       footerServices: 'Dịch vụ',
       footerContact: 'Liên hệ',
       footerHeadquarters: 'Vị trí trụ sở chính',
@@ -971,7 +986,8 @@ const resources = {
       footerService4: 'Thẩm định kim loại quý & đá quý',
       footerService5: 'Hỗ trợ tài sản, kinh doanh & giao dịch',
       footerService6: 'Phân phối bộ sưu tập & đấu giá',
-      allRightsReserved: '© 2025 Hanpuku Shouji LLC・Giao dịch vàng Osaka. Bảo lưu mọi quyền.',
+      // Khôi phục kèm pháp nhân: '© 2025 Hanpuku Shouji LLC・Giao dịch vàng Osaka. Bảo lưu mọi quyền.'
+      allRightsReserved: '© 2025 Giao dịch vàng Osaka. Bảo lưu mọi quyền.',
       licensedCompany: 'Công ty giao dịch kim loại quý được cấp phép và quy định',
       
       // Contact Widget & QR Code

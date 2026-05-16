@@ -28,7 +28,10 @@ export default function CompanyOverview() {
             <ScrollAnimation animation="slideInLeft" delay={100}>
               <div className="space-y-6 sm:space-y-8">
                 <div>
+                  {/* 社名・ブランド表記を再表示する場合: Gold Trading Osaka
                   <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">Gold Trading Osaka</h2>
+                  */}
+                  <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 mb-4 sm:mb-6">{t('companyOverviewTitle')}</h2>
                   <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${getFontClass()}`} style={{ textIndent: '1em' }}>
                     {t('companyDescription1')}
                   </p>

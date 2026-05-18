@@ -124,6 +124,9 @@ export default function ContactSection() {
     return false;
   };
 
+  // 会社情報（商号・所在地・法人番号・資本金・事業内容）と Google マップ欄。再表示する場合は true に変更。
+  const showCompanyProfileAndMap = false
+
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 relative">
       {/* 花朵装饰 */}
@@ -309,7 +312,7 @@ export default function ContactSection() {
           </div>
         </ScrollAnimation>
 
-        {/* Additional Contact Options */}
+        {showCompanyProfileAndMap && (
         <ScrollAnimation animation="fadeIn" delay={300}>
           <div className="mt-12 sm:mt-16">
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
@@ -371,6 +374,7 @@ export default function ContactSection() {
             </div>
           </div>
         </ScrollAnimation>
+        )}
       </div>
     </section>
   )

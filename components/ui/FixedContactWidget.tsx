@@ -135,7 +135,7 @@ export default function FixedContactWidget() {
                   <div className="relative">
                     <Image
                       src={
-                        showQR === 'whatsapp' ? '/gold-whatsapp-code.jpg' :
+                        showQR === 'whatsapp' ? '/gold-whatsapp-code.png' :
                         showQR === 'wechat' ? '/gold-wechat-code.png' :
                         showQR === 'line' ? '/gold-line-code.jpg' : 
                         '/gold-ins-code.png'
